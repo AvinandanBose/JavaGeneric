@@ -49,12 +49,12 @@ class Pair <A,B> {} : Here A and B are formal type parameters.
 
 1.  Type 1 Representation of Java Generic Framework:
 Pair<Integer, String> p1 ;
-p1 = new Pair<Integer, String>(1, "apple"); //1
+p1 = new Pair<Integer, String>(1, "apple"); //Generic Type Parameters are explicitly specified between Angle Bracket.
 
 2. Also, We Can subsequestly instantiate the generic class using the following syntax:
 
 Pair<Integer, String> p3 ;
-p3 = new Pair<>(3, "orange"); //2
+p3 = new Pair<>(3, "orange"); //Rely on type interference.
 
 3. Classic type of Instantiation of Object:
 
@@ -62,7 +62,7 @@ p3 = new Pair<>(3, "orange"); //2
   p2 = new Pair(2, "pear"); // Classic Type
 
 ```
-
+<h3> Note: </h3>
   
 </ul>
 
