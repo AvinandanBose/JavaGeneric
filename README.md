@@ -28,5 +28,21 @@ Integer price2 = p2.getSecond();
 ```
 
 
+<h3>Hence using <ins>Java Generic Framework</ins> we can remove such explicit casts. In the framework we have to use a pair class using formal type of parameters to represent the two relevant types in our composition. An implementation using this framework is given in the Code below: </h3>
 
+<ul>
+<h3><a href= "https://github.com/AvinandanBose/JavaGeneric/blob/main/java_generics1.java" >Eg:  Representation a generic pair using a Java Generic Framework </a></h3>
+  
+  ```Syntax
+
+class Pair <A,B> {} : Here A and B are formal type parameters.
+ Pair<Integer, String> p1 :  Here Integer , String are Actual Parameters.
+ 
+  So, we can write :
+  
+  p1 = new Pair<Integer, String>(1, "apple");
+
+```
+  
+</ul>
 
