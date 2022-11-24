@@ -6,7 +6,7 @@ This is all about Java Generics
 
 
 <ul>
-<h3><a href= "https://github.com/AvinandanBose/JavaGeneric/blob/main/ObjectPair.java" > Representation a generic pair using a classic style </a></h3>
+<h3><a href= "https://github.com/AvinandanBose/JavaGeneric/blob/main/java_generics.java" > Representation a generic pair using a classic style </a></h3>
 </ul>
 
 
