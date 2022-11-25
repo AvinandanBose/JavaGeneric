@@ -109,5 +109,14 @@ p3 = new Pai(3, "orange");
 <ul>
 
 <h3><a href= "https://github.com/AvinandanBose/JavaGeneric/blob/main/java_generics3.java" >Eg: Automatic-Unboxing of Wrapper Type To Primitive Data Type  </a></h3>
+  
+  
+```Syntax
 
+ int price = p1.getFirst();
+ double price2 = p2.getSecond();
+
+```
+ <h3> Here automatic unboxing occurs , where Integer and Double wrapper type , convert to their primitive value of int , double primitive data type. </h3>
+  
 </ul>
