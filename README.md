@@ -105,3 +105,9 @@ p3 = new Pai(3, "orange");
 
 </ul>
 
+<h2> Automatic-Unboxing of Wrapper Type To Primitive Data Type </h2> 
+<ul>
+
+<h3><a href= "https://github.com/AvinandanBose/JavaGeneric/blob/main/java_generics3.java" >Eg: Automatic-Unboxing of Wrapper Type To Primitive Data Type  </a></h3>
+
+</ul>
