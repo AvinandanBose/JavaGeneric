@@ -88,7 +88,7 @@ p3 = new Pair<Integer, String>(3, "orange");
 
 <h3> The above style existed prior to JAVA SE 7 , in which the generic type parameters are explicitly specified between angle brackets during instantiation. </h3>
 
-<h2> <ins> 2. Classic Style.  </ins> </h2>
+<h2> <ins> 3. Classic Style.  </ins> </h2>
 
 <h3>
 
@@ -101,6 +101,7 @@ p3 = new Pai(3, "orange");
 
 <h3> However , it is important that one of the above styles used . If angle brackets are entirely omitted as shown above, this reverts to the classic style , with Object automatically used for all generic type parameters and resulting in a compiler warning to a variable with more specific types.</h3>
 
+![Screenshot (177)](https://user-images.githubusercontent.com/38869235/203878492-0760c2c9-c2f9-4f09-95c1-431abc3f97f1.png)
 
 </ul>
 
