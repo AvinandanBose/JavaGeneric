@@ -62,7 +62,45 @@ p3 = new Pair<>(3, "orange"); //Rely on type interference.
   p2 = new Pair(2, "pear"); // Classic Type
 
 ```
-<h3> Note: </h3>
-  
+<h2> <ins> 1. Type Interference </ins> </h2>
+
+<h3>
+
+```Syntax
+
+p3 = new Pair<>(3, "orange");
+
+```
+</h3>
+
+<h3> After the new operator , we provide the name of the generic class , then an empty set of angle brackets(known as "diamond") and finally the parameters to the constructor. An instance of the generic class is created , with the actual types for the formal type parameters determined based upon the original declaration of the variable to which it is assigned . This process is known as <i> <ins> Type Interference <ins> </i> and was introduced to the generics framework in JAVA SE 7 .</h3> 
+
+<h2> <ins> 2. Generic Type Parameters Are Explicitly Specified Between Angle Brackets During Instantiation.  </ins> </h2>
+
+<h3>
+
+```Syntax
+
+p3 = new Pair<Integer, String>(3, "orange");
+
+```
+</h3>
+
+<h3> The above style existed prior to JAVA SE 7 , in which the generic type parameters are explicitly specified between angle brackets during instantiation. </h3>
+
+<h2> <ins> 2. Classic Style.  </ins> </h2>
+
+<h3>
+
+```Syntax
+
+p3 = new Pai(3, "orange");
+
+```
+</h3>
+
+<h3> However , it is important that one of the above styles used . If angle brackets are entirely omitted as shown above, this reverts to the classic style , with Object automatically used for all generic type parameters and resulting in a compiler warning to a variable with more specific types.</h3>
+
+
 </ul>
 
