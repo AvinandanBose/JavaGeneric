@@ -127,6 +127,35 @@ p3 = new Pai(3, "orange");
  <h3>A. For Loop </h3>
  <ul>
  <h3><li><a href= "https://github.com/AvinandanBose/JavaGeneric/blob/main/java_generics5.java" >Generics and Arrays[Using For Loop]- Eg-1  </a></li></h3>
+   
+   <h3>
+     
+   ```Syntax
+   java_generics5<Integer, String>[] holdings;
+     
+    :Array of Object:
+     
+    holdings = new java_generics5[2];
+     
+   Size of the Array of Object holdings → 2
+   :-------------------------------------------:  
+   holdings[0] = new java_generics5<>(1, "apple");
+   Hence:
+     
+   holdings[0].getFirst() → Returns Integer (1) 
+   holdings[0].getSecond() → Returns String ("apple")
+   
+   :-------------------------------------------:
+   holdings[1] = new java_generics5<>(2, "pear");
+    Hence:
+     
+   holdings[1].getFirst() → Returns Integer (2) 
+   holdings[1].getSecond() → Returns String  ("pear")
+     
+    
+   ```
+   </h3>
+     
   <h3><li><a href= "https://github.com/AvinandanBose/JavaGeneric/blob/main/java_generics6.java" >Generics and Arrays[Using For Loop]- Eg-2  </a></li></h3>
    <h3><li><a href= "https://github.com/AvinandanBose/JavaGeneric/blob/main/java_generics7.java" >Generics and Arrays[Using For Loop]- Eg-3  </a></li></h3>
    <h3><li><a href= "https://github.com/AvinandanBose/JavaGeneric/blob/main/java_generics8.java" >Generics and Arrays[Using For Loop]- Eg-4  </a></li></h3>
