@@ -12,12 +12,20 @@ public class java_generics19<T> {
         
     }
 
-    public static void main(String[] args) {
-        java_generics16<Integer> p1;
-        p1 = new java_generics16<>(1, 2);
+    public static <T> int view2(T item) {
+        return (Integer) item;
 
-        System.out.println(p1.view(p1.a));
-        System.out.println(p1.view(p1.b));
+    }
+
+   public static void main(String[] args) {
+        java_generics19<Integer> p1;
+        p1 = new java_generics19<>(1, 2);
+
+        view(p1.a);
+        view(p1.b);
+
+        System.out.println(view2(p1.a));
+        System.out.println(view2(p1.b));
 
     }
 
