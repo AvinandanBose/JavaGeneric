@@ -11,7 +11,7 @@ public class java_generics15<T> {
     public int view(T item) {
 
         data = item;
-        return (Integer) data;
+        return (Integer) data; //(int) data; → For primitive type
     }
 
     public static void main(String[] args) {
