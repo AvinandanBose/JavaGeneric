@@ -173,7 +173,8 @@ p3 = new Pai(3, "orange");
  <h3><li><a href= "https://github.com/AvinandanBose/JavaGeneric/blob/main/java_generics13.java" >Generics and Arrays[Using For Loop]- Eg-9  </a></li></h3>
   <h3><li><a href= "https://github.com/AvinandanBose/JavaGeneric/blob/main/java_generics14.java" >Generics and Arrays[Using For Each Loop]- Eg-10  </a></li></h3>
  </ul>
+ 
+ </ul>
  <h2> Generics Methods</h2> 
  <ul>
- </ul>
  </ul>
