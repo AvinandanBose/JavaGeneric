@@ -175,6 +175,6 @@ p3 = new Pai(3, "orange");
  </ul>
  
  </ul>
- <h2> Generics Methods</h2> 
+ <h2> Generic Methods</h2> 
  <ul>
  </ul>
