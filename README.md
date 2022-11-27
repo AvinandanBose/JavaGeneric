@@ -158,8 +158,70 @@ p3 = new Pai(3, "orange");
    </h3>
      
   <h3><li><a href= "https://github.com/AvinandanBose/JavaGeneric/blob/main/java_generics6.java" >Generics and Arrays[Using For Loop]- Eg-2  </a></li></h3>
+  
+  <h3>
+  
+   ```Syntax
+     
+    :Array of Object:
+     
+    T[] data; → Also A Member Instance of Class
+    
+    :Creating Object of A Generic Class:
+    
+    java_generics6<Integer> p1;
+    p1 = new java_generics6<Integer>()
+    
+    :It represents : 
+    
+    Integer[] data ; → The formal Argument replaced by actual i.e. Integer.
+    And p1 is object of the Generic Class.
+     
+   :Allocation of Size of the Array of Object:
+   
+   p1.data = new Integer[2];
+   
+  :Elements Assigned:
+  
+   p1.data[0] = 1;
+   p1.data[1] = 2;
+     
+  :Fetching Elements from Array:
+  
+  for (Integer i =0 ; i < p1.data.length; i++) {
+            System.out.println(p1.data[i]);
+        }
+     
+   ```
+   </h3>
+    
    <h3><li><a href= "https://github.com/AvinandanBose/JavaGeneric/blob/main/java_generics7.java" >Generics and Arrays[Using For Loop]- Eg-3  </a></li></h3>
+   
+   <h3>
+  
+   ```Syntax
+     
+    Here A,B i.e. Two formal arguments used .
+     
+   ```
+   </h3>
+   
    <h3><li><a href= "https://github.com/AvinandanBose/JavaGeneric/blob/main/java_generics8.java" >Generics and Arrays[Using For Loop]- Eg-4  </a></li></h3>
+   
+   <h3>
+  
+   ```Syntax
+     
+    java_generics8(int capacity) {
+        data = (T[]) new Integer[capacity];
+    }
+    
+    Here we are assigning size of the Array through the Constructor.
+    (T[]) is casted before with Compiler warning. 
+     
+   ```
+   </h3>
+   
  </ul>
  <h3>B. For Each Loop </h3>
  <ul>
