@@ -259,4 +259,4 @@ p3 = new Pai(3, "orange");
  
    </ul>
     
-    <h2> Bounded Generic Types</h2>
+<h2> Bounded Generic Types</h2>
