@@ -272,12 +272,6 @@ p3 = new Pai(3, "orange");
   
  </ul>
   
-  <ul>
- <h3><li><a href= "" >Eg-1  </a></li></h3>
-  <h3><li><a href= "" >Eg-2  </a></li></h3>
-  <h3><li><a href= "" >Eg-3  </a></li></h3>
-  
- </ul>
  </ul>
      
    </ul>
