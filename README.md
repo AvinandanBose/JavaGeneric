@@ -240,10 +240,272 @@ p3 = new Pai(3, "orange");
  <h2> Generic Methods</h2> 
  <ul>
  <h3><li><a href= "https://github.com/AvinandanBose/JavaGeneric/blob/main/java_generics15.java" >Generic Methods -Eg-11  </a></li></h3>
+   
+   ```Syntax
+
+class A2<T>{
+    T data;
+
+    A2(T item){
+
+        data = item;
+
+    }
+
+    int view(){
+
+        return(Integer)data;
+
+    }
+
+    public static void main(String[] args) {
+        A2<Integer> p1;
+        p1 = new A2<>( 2);
+
+        System.out.println(p1.view());
+
+    }
+
+}
+
+
+
+```
+   
   <h3><li><a href= "https://github.com/AvinandanBose/JavaGeneric/blob/main/java_generics16.java" >Generic Methods- Eg-12  </a></li></h3>
-  <h3><li><a href= "https://github.com/AvinandanBose/JavaGeneric/blob/main/java_generics17.java" >Generic Methods- Eg-13  </a></li></h3>
-  <h3><li><a href= "https://github.com/AvinandanBose/JavaGeneric/blob/main/java_generics18.java" >Generic Methods- Eg-14  </a></li></h3>
+   
+```Syntax
+
+class A2<T>{
+    T data;
+
+    A2(T item){
+
+        data = item;
+
+    }
+
+    T view(){
+
+        return data;
+
+    }
+
+    public static void main(String[] args) {
+        A2<Integer> p1;
+        p1 = new A2<>( 2);
+
+        System.out.println(p1.view());
+
+    }
+
+}
+
+
+
+```
+  
+<h3><li><a href= "https://github.com/AvinandanBose/JavaGeneric/blob/main/java_generics17.java" >Generic Methods- Eg-13  </a></li></h3>
+   
+   
+```Syntax
+
+class A2<S,T>{
+    T data1;
+    S data2;
+
+    A2(T item1, S item2){
+
+        data1 = item1;
+        data2 = item2;
+
+    }
+
+    T view1(){
+
+        return data1;
+
+    }
+
+    S view2(){
+
+        return data2;
+
+    }
+
+    public static void main(String[] args) {
+        A2<Integer, Integer> p1;
+        p1 = new A2<>(  10, 2);
+
+        System.out.println(p1.view1());
+        System.out.println(p1.view2());
+
+    }
+
+}
+
+
+
+```
+   
+<h3><li><a href= "https://github.com/AvinandanBose/JavaGeneric/blob/main/java_generics18.java" >Generic Methods- Eg-14  </a></li></h3>
+   
+   
+```Syntax
+
+class A2<S,T>{
+    T data1;
+    S data2;
+
+    A2(T item1, S item2){
+
+        data1 = item1;
+        data2 = item2;
+
+    }
+
+    T view1(){
+
+        return data1;
+
+    }
+
+    S view2(){
+
+        return data2;
+
+    }
+
+    public static void main(String[] args) {
+       A2<Integer, String> p1;
+        p1 = new A2<>(   "Hello",2);
+
+        System.out.println(p1.view1());
+        System.out.println(p1.view2());
+
+    }
+
+}
+
+
+
+```
+   
   <h3><li><a href= "https://github.com/AvinandanBose/JavaGeneric/blob/main/java_generics19.java" >Generic Methods- Eg-15  </a></li></h3>
+   
+```Syntax
+
+class A2{
+
+
+    public static <A> void view(A item) {
+        System.out.println("The value is: " + item);
+
+    }
+
+    public static <B> String view2(B item) {
+        return (String) item;
+
+    }
+
+
+
+    public static void main(String[] args) {
+
+
+        view(2);
+        System.out.println(view2("Hello"));
+
+    }
+
+}
+
+```
+
+   <h3> Another : </h3>
+ 
+```Syntax
+
+class A2<T>{
+
+    <A> T view(T data, A item) {
+         System.out.print(item);
+        return data;
+
+    }
+
+
+
+    public static void main(String[] args) {
+
+        A2<Integer> a2 = new A2<>();
+
+        System.out.println(a2.view(12, "Hello"));
+
+    }
+
+}
+
+```
+ <h3> Note : </h3>
+      
+```Syntax
+
+class A2<T>{
+
+   <T> T view(T data, T item) {
+         System.out.print(item);
+        return data;
+
+    }
+}
+
+
+Here T represents the Type T of Generic Method but not of Parameterized Class.
+     
+Hence:
+     
+class A2<T>{
+
+    <T> T view(T data, T item) {
+         System.out.print(item);
+        return data;
+
+    }
+
+
+
+    public static void main(String[] args) {
+
+        A2<Integer> a2 = new A2<>();
+
+        System.out.println(a2.view("A", "Hello"));
+
+    }
+
+}
+      
+      
+```      
+  <h3> But if : </h3>
+
+```Syntax
+      
+  class A2<T>{
+
+  <A> T view(T data, A item) {
+
+        return item;
+
+  }
+    
+ :Will generate error as return type now needs generic class's T type as:
+    
+ :T view() i.e. return Generric class T type,: 
+ :though Generic method have an extended type A which has scope to the Method only.:  
+      
+``` 
+        
   <h3><li><a href= "https://github.com/AvinandanBose/JavaGeneric/blob/main/java_generics20.java" >Generic Methods- Eg-16  </a></li></h3>
   <h3><li><a href= "https://github.com/AvinandanBose/JavaGeneric/blob/main/java_generics21.java" >Generic Methods- Eg-17  </a></li></h3>
   <h3><li><a href= "https://github.com/AvinandanBose/JavaGeneric/blob/main/java_generics39.java" >Generic Methods- Eg-18  </a></li></h3>
