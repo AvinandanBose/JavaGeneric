@@ -272,7 +272,44 @@ p3 = new Pai(3, "orange");
   
  </ul>
      
+  <h3>
   
+  ```Syntax
+     
+   Note:
+    
+    : As the Class is Generic :
+    :b ) Overloading by Difference in Sequence or Order of Parameter (Is Not Possible ):
+    
+    Eg: 
+    class A<T,K>{
+    
+    void swap<T a, K b >(
+    
+    }
+    
+     void swap<K b, T b >(
+    
+    }
+    //Is Not Possible
+    
+    :c ) Overloading by Difference in datatypes of parameters passed in methods (Is Not Possible ):
+    
+     Eg: 
+    class A<T,K>{
+    
+    void swap<T a, T b >(
+    
+    }
+    
+     void swap<K a, K b >(
+    
+    }
+    
+    //Is Not Possible
+    
+  ```
+   </h3>
   
  </ul>
      
