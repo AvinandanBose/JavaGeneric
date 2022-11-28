@@ -262,6 +262,9 @@ p3 = new Pai(3, "orange");
    <h2>Generic Type Overloading (Static Polymorphism ) </h2>
    <ul>
      <h3> <li>1. Type 1 [Using Class Generics]</li></h3>
+     <ul>
+       <h3> <li>1.a. Difference in the number of parameters passed with methods having the same name .</li></h3>
+      </ul>
      
    </ul>
 <h2> Bounded Generic Types</h2>
