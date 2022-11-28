@@ -258,5 +258,8 @@ p3 = new Pai(3, "orange");
   <h3><li><a href= "https://github.com/AvinandanBose/JavaGeneric/blob/main/java_generics27.java" >Generic Methods AND Generic Arrays- Eg-23  </a></li></h3>
  
    </ul>
-    
+   
+   <h2>Generic Type Overloading (Static Polymorphism ) </h2>
+   <ul>
+   </ul>
 <h2> Bounded Generic Types</h2>
