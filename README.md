@@ -285,11 +285,11 @@ p3 = new Pai(3, "orange");
     Eg: 
     class A<T,K>{
     
-    void swap<T a, K b >(
+    void swap(T a, K b ){
     
     }
     
-     void swap<K b, T b >(
+     void swap(K b, T b ){
     
     }
     //Is Not Possible
@@ -299,11 +299,11 @@ p3 = new Pai(3, "orange");
      Eg: 
     class A<T,K>{
     
-    void swap<T a, T b >(
+    void swap(T a, T b ){
     
     }
     
-     void swap<K a, K b >(
+     void swap(K a, K b ){
     
     }
     
