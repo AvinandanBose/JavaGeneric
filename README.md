@@ -312,6 +312,8 @@ p3 = new Pai(3, "orange");
    </h3>
   
  </ul>
-     
-   </ul>
+  <h3> <li>2. Type 2 [Using static Generics Method]</li></h3>
+  <ul>
+  </ul>
+  </ul>
 <h2> Bounded Generic Types</h2>
