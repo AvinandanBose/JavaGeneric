@@ -270,6 +270,14 @@ p3 = new Pai(3, "orange");
   <h3><li><a href= "https://github.com/AvinandanBose/JavaGeneric/blob/main/java_generics32.java" >Eg-3  </a></li></h3>
   
  </ul>
+     
+  <h3> <li>1.b Difference in the sequence or order of parameters </h3>
+  <ul>
+ <h3><li><a href= "" >Eg-1  </a></li></h3>
+  <h3><li><a href= "" >Eg-2  </a></li></h3>
+  <h3><li><a href= "" >Eg-3  </a></li></h3>
+  
+ </ul>
  </ul>
      
    </ul>
