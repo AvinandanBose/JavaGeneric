@@ -313,7 +313,7 @@ p3 = new Pai(3, "orange");
    </h3>
   
  </ul>
-  <h3> <li>2. Type 2 [Using static Generics Method]</li></h3>
+  <h3> <li>2. Type 2 [Using static and nonstatic Generics Method]</li></h3>
   <ul>
   <h3><li><a href= "https://github.com/AvinandanBose/JavaGeneric/blob/main/java_generics34.java" >Eg-1  </a></li></h3>
   <h3><li><a href= "https://github.com/AvinandanBose/JavaGeneric/blob/main/java_generics35.java" >Eg-2  </a></li></h3>
