@@ -585,3 +585,14 @@ class A2<T>{
   </ul>
   </ul>
 <h2> Bounded Generic Types</h2>
+
+<h1> Implementation of  Set in Java Generics</h1>
+<ul>
+<li><h2>1. Implementation of  Hash Set in Java Generics</h2></li>
+<ul>
+<h3><li><a href= "https://github.com/AvinandanBose/JavaGeneric/blob/main/javaGenericsSet1.java" >Hash Set in Java Generics →Eg-1  </a></li></h3>
+<h3><li><a href= "https://github.com/AvinandanBose/JavaGeneric/blob/main/javaGenericsSet2.java" >Hash Set in Java Generics →Eg-2  </a></li></h3>
+<h3><li><a href= "https://github.com/AvinandanBose/JavaGeneric/blob/main/javaGenericsSet3.java" >Hash Set in Java Generics →Eg-3(Constructor)  </a></li></h3>
+<h3><li><a href= "https://github.com/AvinandanBose/JavaGeneric/blob/main/javaGenericsSet4.java" >Hash Set in Java Generics →Eg-4(Function)  </a></li></h3>
+</ul>
+</ul>
