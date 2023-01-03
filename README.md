@@ -609,5 +609,8 @@ class A2<T>{
 
 </ul>
 </ul>
-<h3> <i></ins>Note:</ins> </i> Except EnumSet which only depends only on Enum type , Every other Set such as LinkedHashSet ,Navigable Set, TreeSet etc. follow the same kinds of implementation . </h3>
+  
+<h3> <i> </ins> Note: </ins> </i> Except EnumSet which only depends only on Enum type , Every other Set such as LinkedHashSet ,Navigable Set, TreeSet etc. follow the same kinds of implementation . </i> </h3>
+      
+      
 </ul>
