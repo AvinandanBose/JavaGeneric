@@ -588,7 +588,7 @@ class A2<T>{
 
 <h1> Implementation of  Set in Java Generics</h1>
 <ul>
-<li><h2>1. Implementation of  Hash Set in Java Generics</h2></li>
+<li><h2> Implementation of  Hash Set in Java Generics</h2></li>
 <ul>
 <h3><li><a href= "https://github.com/AvinandanBose/JavaGeneric/blob/main/javaGenericsSet1.java" >Hash Set in Java Generics →Eg-1  </a></li></h3>
 <h3><li><a href= "https://github.com/AvinandanBose/JavaGeneric/blob/main/javaGenericsSet2.java" >Hash Set in Java Generics →Eg-2  </a></li></h3>
@@ -606,6 +606,8 @@ class A2<T>{
 <h3><i><ins>Now, </ins> lets implement every functions of the HashSet in Generics type method using the logic.</i></h3>
 <ul>
 <h3><li><a href= "https://github.com/AvinandanBose/JavaGeneric/blob/main/javaGenericsSet14.java" >Implementation of every functions of the Hash Set in Java Generics</a></li></h3>
+
 </ul>
 </ul>
+<h3> <i></ins>Note:</ins> </i> Except EnumSet which only depends only on Enum type , Every other Set such as LinkedHashSet ,Navigable Set, TreeSet etc. follow the same kinds of implementation . </h3>
 </ul>
