@@ -585,7 +585,11 @@ class A2<T>{
   </ul>
   </ul>
 <h2> Bounded Generic Types</h2>
-
+<ul>
+<h3><li>1. There are times when we want to restrict the kind of types that are allowed to be passed to a type parameter.</li></h3>
+<h3><li>2. To declare a bounded type parameter, list the parameter's name , followed by the extends keyword.</li></h3>
+<h3><li>3. Parameter followed by extends called as upper bound.</li></h3>
+</ul>
 <h1> Implementation of  Set in Java Generics</h1>
 <ul>
 <li><h2> Implementation of  Hash Set in Java Generics</h2></li>
