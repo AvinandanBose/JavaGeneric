@@ -589,6 +589,14 @@ class A2<T>{
 <h3><li>1. There are times when we want to restrict the kind of types that are allowed to be passed to a type parameter.</li></h3>
 <h3><li>2. To declare a bounded type parameter, list the parameter's name , followed by the extends keyword.</li></h3>
 <h3><li>3. Parameter followed by extends called as upper bound.</li></h3>
+
+<h2>Upper Bound Generic Types</h2>
+<ul>
+<h3><li><a href= "https://github.com/AvinandanBose/JavaGeneric/blob/main/javaGenUBEg2.java" > Upper Bound Eg-1  </a></li></h3>
+<h3><li><a href= "https://github.com/AvinandanBose/JavaGeneric/blob/main/javaGenUBEg3.java" >Upper Bound Eg-2  </a></li></h3>
+
+<h3> <i> <ins>Note:</ins> The abstract class Number is the superclass of platform classes representing numeric values that are convertible to the primitive types byte, double, float, int, long, and short.</i></h3>
+</ul>
 </ul>
 <h1> Implementation of  Set in Java Generics</h1>
 <ul>
