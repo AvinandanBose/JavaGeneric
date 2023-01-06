@@ -535,7 +535,6 @@ class A2<T>{
   
  </ul>
      
-  <h3>
   
   ```Syntax
      
@@ -572,7 +571,7 @@ class A2<T>{
     //Is Not Possible
     
   ```
-   </h3>
+ 
   
  </ul>
   <h3> <li>2. Type 2 [Using static and nonstatic Generics Method]</li></h3>
