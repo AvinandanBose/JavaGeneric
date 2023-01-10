@@ -615,6 +615,9 @@ class A2<T>{
 <h3><li><a href= "https://github.com/AvinandanBose/JavaGeneric/blob/main/javaGenUBEg13.java" >Upper Bound Eg-18[CharSequence]  </a></li></h3>
 <h3><li><a href= "https://github.com/AvinandanBose/JavaGeneric/blob/main/javaGenUBEg21.java" >Upper Bound Eg-19[Object]  </a></li></h3>
 <h2> Custom Creation of UpperBound [user defined]</h2>
+<ul>
+<h3><li><a href= "https://github.com/AvinandanBose/JavaGeneric/blob/main/javaGenUBEg23.java" >Upper Bound Eg-20[Class[User Defined]]  </a></li></h3>
+</ul>
 <h3> <i> <ins>Note:</ins> Likewise we can create upper bound by following above examples.</i></h3>
 </ul>
 </ul>
