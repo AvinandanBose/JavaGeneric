@@ -623,6 +623,11 @@ class A2<T>{
 </ul>
 <h3> <i> <ins>Note:</ins> Likewise we can create upper bound by following above examples.</i></h3>
 </ul>
+
+<h2>Multiple Upper Bound Generic Types</h2>
+<ul>
+
+</ul>
 </ul>
 <h1> Implementation of  Set in Java Generics</h1>
 <ul>
