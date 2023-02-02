@@ -682,8 +682,35 @@ class A2<T>{
    <h3><li><a href="https://github.com/AvinandanBose/JavaGeneric/blob/main/JavaGenMUB4.java">Example for Multiple Upper Bound Generic Types-4 </a></li></h3>
   </ul>
   <ul>
-   </ul>
+  
 </ul>
+<h3> <i><ins>Rules:What if for Abstract Methods? </ins></i></h3>
+  <ul> 
+  <h3><li>Now for Abstract Methods the Class which extends Abstract Class and implement Interface becomes type T of Generic Class.But there is a difference that is we cannot use Generic type to extends the Class which extends Abstract Class if Abstract Class is extended by Generic Type 'T'. That we can only have one class and 'n' number of interfaces.</li></h3>
+   
+```Syntax
+ 
+ interface A{}
+ interface B{}
+ abstract class C{}
+ class D extends extends C implements A,B{}
+ class Ex<T extends C &  A & B>{
+  Ex<D>ex = new Ex<>();
+ }
+
+:OR:
+
+ interface A{}
+ interface B{}
+ abstract class C{}
+ class D extends extends C implements A,B{}
+ class Ex<T extends D &  A & B>{
+  Ex<D>ex = new Ex<>();
+ }
+
+:i.e. T either extends D or abstract Class C:
+```
+   </ul>
 </ul>
 </ul>
 <h1> Implementation of  Set in Java Generics</h1>
