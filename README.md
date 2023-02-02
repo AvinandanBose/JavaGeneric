@@ -655,7 +655,7 @@ class A2<T>{
    <h3><li><a href="https://github.com/AvinandanBose/JavaGeneric/blob/main/JavaGenMUB1.java">Example for Multiple Upper Bound Generic Types-1 </a></li></h3>
   </ul>
  <h3><li>3. Next it can extend two interfaces instead of a class and interface. </li></h3>
- <h3><li>4. And in that case the Type 'T' will represent the class implementing the two interfaces. </li></h3>
+ <h3><li>4. And in that case the Type 'T'of Generic Class will represent the class implementing the two interfaces. </li></h3>
   
   ```Syntax
   
