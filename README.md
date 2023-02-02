@@ -626,7 +626,12 @@ class A2<T>{
 
 <h2>Multiple Upper Bound Generic Types</h2>
 <ul>
-
+<h3> <i><ins>Rules for Multiple Upper Bound Generic Types:</ins></i></h3>
+<ul>
+<li><h3>1. As per Upper Bound , only extends is allowed for Type , to extend Class and Interfaces.</h3></li>
+<h3><li>2. T is a type class can extends a Class and an Interface.  </li></h3>
+<h3><li>3. No 'implement' Keyword is allowed it will generate error. </li></h3>
+</ul>
 </ul>
 </ul>
 <h1> Implementation of  Set in Java Generics</h1>
