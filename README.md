@@ -623,7 +623,7 @@ class A2<T>{
 </ul>
 <h3> <i> <ins>Note:</ins> Likewise we can create upper bound by following above examples.</i></h3>
 </ul>
-
+<h2></h2>
 <h2>Multiple Upper Bound Generic Types</h2>
 <ul>
 <h3> <i><ins>Rules for Multiple Upper Bound Generic Types:</ins></i></h3>
@@ -710,6 +710,12 @@ class A2<T>{
 
 :i.e. T either extends D or abstract Class C:
 ```
+<ul>
+
+<h3><li><a href="https://github.com/AvinandanBose/JavaGeneric/blob/main/JavaGenMUB5.java">Example for Multiple Upper Bound Generic Types-5 </a></li></h3>
+<h3><li><a href="https://github.com/AvinandanBose/JavaGeneric/blob/main/JavaGenMUB6.java">Example for Multiple Upper Bound Generic Types-6 </a></li></h3>
+
+</ul>
    </ul>
 </ul>
 </ul>
