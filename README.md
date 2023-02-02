@@ -629,11 +629,43 @@ class A2<T>{
 <h3> <i><ins>Rules for Multiple Upper Bound Generic Types:</ins></i></h3>
 <ul>
 <li><h3>1. As per Upper Bound , only extends is allowed for Type , to extend Class and Interfaces.</h3></li>
-<h3><li>2. T is a type class can extends a Class and an Interface.  </li></h3>
-<h3><li>3. No 'implement' Keyword is allowed it will generate error. </li></h3>
+<h3><li>2. T is a type class can extends a Class and an Interface joined through '&' AND.  </li></h3>
+<h3><li>3. Note the class being extended by type T must implement the Interface .  </li></h3>
+<h3><li>4. No 'implement' Keyword is allowed it will generate error. </li></h3>
+ 
+```Syntax
+  
+  interface A{
+  }
+  class B imlpements A{
+  }
+  class Ex<T extends B & A>{
+  Ex<B> ex = new Ex<>();
+  }
+  
+  :Here B is Class:
+  :Here A is Interface:
+  :And Class B implements Interface A:
+  :And Type for Object is the Class which implements the Interface:
+  :i.e. Ex<B> ex = new Ex<>():
+```
+
+
  <ul>
    <h3><li><a href="https://github.com/AvinandanBose/JavaGeneric/blob/main/JavaGenMUB1.java">Example for Multiple Upper Bound Generic Types-1 </a></li></h3>
   </ul>
+ <h3><li>3. Next it can extend two interfaces instead of a class and interface. </li></h3>
+ <h3><li>4. And in that case the Type 'T' will represent the class implementing the two interfaces. </li></h3>
+  
+  ```Syntax
+  
+  interface A {}
+  interface B {}
+  Class C implements A , B{}
+  class Ex<T extends A & B>{
+  Ex<C> ex = new Ex<>();
+  }
+```
 </ul>
 </ul>
 </ul>
