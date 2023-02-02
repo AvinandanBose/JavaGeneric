@@ -673,6 +673,9 @@ class A2<T>{
   :i.e. Ex<C> ex = new Ex<>():
   
 ```
+ <ul>
+   <h3><li><a href="https://github.com/AvinandanBose/JavaGeneric/blob/main/JavaGenMUB2.java">Example for Multiple Upper Bound Generic Types-2 </a></li></h3>
+  </ul>
 </ul>
 </ul>
 </ul>
