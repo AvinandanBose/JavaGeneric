@@ -646,7 +646,7 @@ class A2<T>{
   :Here B is Class:
   :Here A is Interface:
   :And Class B implements Interface A:
-  :And Type for Object is the Class which implements the Interface:
+  :And Type for Generic Class Ex is the Class which implements the Interface:
   :i.e. Ex<B> ex = new Ex<>():
 ```
 
@@ -665,6 +665,13 @@ class A2<T>{
   class Ex<T extends A & B>{
   Ex<C> ex = new Ex<>();
   }
+  
+  :Here B is Interface:
+  :Here A is Interface:
+  :And Class C implements Interface A and Interface B:
+  :And Type for Generic Class Ex is the Class which implements the Interface:
+  :i.e. Ex<C> ex = new Ex<>():
+  
 ```
 </ul>
 </ul>
