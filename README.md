@@ -726,6 +726,15 @@ java.lang.Number → Number is abstract class of java.lang package.
 java.lang.Comparable<T> → Comparable<T> is interface of java.lang package.
 
 ```
+
+<h3><li><a href="https://github.com/AvinandanBose/JavaGeneric/blob/main/JavaGenMUB8.java">T extends Number & Serializable</a></li></h3>
+
+```Syntax
+
+java.lang.Number → Number is abstract class of java.lang package.
+java.io.Serializable → Serializable is interface of java.io.
+
+```
 </ul>
    </ul>
 </ul>
