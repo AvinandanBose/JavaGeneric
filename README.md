@@ -716,6 +716,17 @@ class A2<T>{
 <h3><li><a href="https://github.com/AvinandanBose/JavaGeneric/blob/main/JavaGenMUB6.java">Example for Multiple Upper Bound Generic Types-6 </a></li></h3>
 
 </ul>
+<h3> <i><ins>Implementation of Multiple Upper Bound based on Rules for predefined classes and interfaces of Java </ins></i></h3>
+<ul>
+<h3><li><a href="https://github.com/AvinandanBose/JavaGeneric/blob/main/JavaGenMUB7.java">T extends Number & Comparable<T> </a></li></h3>
+
+```Syntax
+
+java.lang.Number → Number is abstract class of java.lang package.
+java.lang.Comparable<T> → Comparable<T> is interface of java.lang package.
+
+```
+</ul>
    </ul>
 </ul>
 </ul>
