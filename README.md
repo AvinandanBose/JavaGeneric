@@ -740,8 +740,11 @@ java.io.Serializable → Serializable is interface of java.io package.
 
 ```Syntax
 
-java.lang.Thread → Thread is a class of java.lang package which implements interface Runnabe.
-java.lang.Runnable → Runnable is an interface of java.lang package implemented by Thread class.
+java.lang.Thread → Thread is a class of java.lang package ,
+which implements interface Runnabe.
+
+java.lang.Runnable → Runnable is an interface of java.lang package ,
+implemented by Thread class.
 
 ```
 </ul>
