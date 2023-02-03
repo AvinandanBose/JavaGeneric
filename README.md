@@ -760,6 +760,53 @@ java.util.Map → Map is an interface of java.util package ,
 implemented by HashMap class.
 
 ```
+
+
+<h3><li><a href="https://github.com/AvinandanBose/JavaGeneric/blob/main/JavaGenMUB11.java">T extends ArrayList<V> & List<V></a></li></h3>
+
+```Syntax
+
+java.util.ArrayList → ArrayList is a Class which is in java.util package.
+ArrayList implements List interface.
+
+java.util.List → List is an interface of java.util package ,
+implemented by ArrayList class.
+
+```
+
+<h3><li><a href="https://github.com/AvinandanBose/JavaGeneric/blob/main/JavaGenMUB12.java">T extends HashSet<V> & Set<V></a></li></h3>
+
+```Syntax
+
+java.util.HashSet → HashSet is a Class which is in java.util package.
+HashSet implements Set interface.
+
+java.util.Set → Set is an interface of java.util package ,
+implemented by HashSet class.
+
+```
+
+<h3><li><a href="https://github.com/AvinandanBose/JavaGeneric/blob/main/JavaGenMUB13.java">T extends CharSequence & Comparable<T></a></li></h3>
+
+```Syntax
+
+java.lang.CharSequence → CharSequence is an interface in java.lang package.
+
+java.lang.Comparable<T> → Comparable is an interface in java.lang package.
+
+```
+
+<h3><li><a href="https://github.com/AvinandanBose/JavaGeneric/blob/main/JavaGenMUB14.java">T extends Object & Comparable<T></a></li></h3>
+
+```Syntax
+
+java.lang.Object → Object is an interface in java.lang package.
+Class Object is the root of the class hierarchy. 
+Every class has Object as a superclass. 
+
+java.lang.Comparable<T> → Comparable is an interface in java.lang package.
+
+```
 </ul>
    </ul>
 </ul>
