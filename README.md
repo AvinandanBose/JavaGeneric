@@ -747,6 +747,18 @@ java.lang.Runnable → Runnable is an interface of java.lang package ,
 implemented by Thread class.
 
 ```
+
+<h3><li><a href="https://github.com/AvinandanBose/JavaGeneric/blob/main/JavaGenMUB10.java">T extends HashMap<K,V>& Map<K,V></a></li></h3>
+
+```Syntax
+
+java.util.HashMap → HashMap is a Class which is in java.util package.
+Hash Map implements Map interface.
+
+java.util.Map → Map is an interface of java.util package ,
+implemented by HashMap class.
+
+```
 </ul>
    </ul>
 </ul>
