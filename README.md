@@ -589,7 +589,7 @@ class A2<T>{
 <h3><li>2. To declare a bounded type parameter, list the parameter's name , followed by the extends keyword.</li></h3>
 <h3><li>3. Parameter followed by extends called as upper bound.</li></h3>
 
-<h2>Upper Bound Generic Types</h2>
+<h2>1. Upper Bound Generic Types</h2>
 <ul>
 <h3><li><a href= "https://github.com/AvinandanBose/JavaGeneric/blob/main/javaGenUBEg2.java" > Upper Bound Eg-1  </a></li></h3>
 <h3><li><a href= "https://github.com/AvinandanBose/JavaGeneric/blob/main/javaGenUBEg3.java" >Upper Bound Eg-2  </a></li></h3>
@@ -625,7 +625,7 @@ class A2<T>{
 <h3> <i> <ins>Note:</ins> Likewise we can create upper bound by following above examples.</i></h3>
 </ul>
 <h2></h2>
-<h2>Multiple Upper Bound Generic Types</h2>
+<h2>1.A. Multiple Upper Bound Generic Types</h2>
 <ul>
 <h3> <i><ins>Rules for Multiple Upper Bound Generic Types:</ins></i></h3>
 <ul>
