@@ -735,6 +735,15 @@ java.lang.Number → Number is abstract class of java.lang package.
 java.io.Serializable → Serializable is interface of java.io package.
 
 ```
+
+<h3><li><a href="https://github.com/AvinandanBose/JavaGeneric/blob/main/JavaGenMUB9.java">T extends Thread & Runnable</a></li></h3>
+
+```Syntax
+
+java.lang.Thread → Thread is a class of java.lang package which implements interface Runnabe.
+java.lang.Runnable → Runnable is an interface of java.lang package implemented by Thread class.
+
+```
 </ul>
    </ul>
 </ul>
