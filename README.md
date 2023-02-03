@@ -809,6 +809,10 @@ java.lang.Comparable<T> → Comparable is an interface in java.lang package.
 ```
 </ul>
    </ul>
+  <h2>2. Lower Bound Generic Types</h2>
+  <ul>
+    
+  </ul>
 </ul>
 </ul>
 <h1> Implementation of  Set in Java Generics</h1>
