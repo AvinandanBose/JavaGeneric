@@ -732,7 +732,7 @@ java.lang.Comparable<T> → Comparable<T> is interface of java.lang package.
 ```Syntax
 
 java.lang.Number → Number is abstract class of java.lang package.
-java.io.Serializable → Serializable is interface of java.io.
+java.io.Serializable → Serializable is interface of java.io package.
 
 ```
 </ul>
