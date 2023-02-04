@@ -849,6 +849,11 @@ class_name var/obj_name = class_name();
      <h3><ins><i>Note: Its better to continue with static method rather than of creation of object.</i><ins>
     </ul>
  </ul>
+ <h2></h2>
+ <h2>1.C.  Multiple Upper Bound Generic Type Methods</h2>
+ <ul>
+ <h3><ins><i>Note: The rules followed here are the same just like above.</i><ins></h3>
+ </ul>
 </ul>
 </ul>
 <h1> Implementation of  Set in Java Generics</h1>
