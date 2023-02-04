@@ -814,7 +814,40 @@ java.lang.Comparable<T> → Comparable is an interface in java.lang package.
 <h2></h2>
  <h2>1.B.  Upper Bound Generic Type Methods</h2>
  <ul>
- <h3><ins><i>Note: The rules followed here are the same just like above.</i><ins>
+ <h3><ins><i>Note: The rules followed here are the same just like above.</i><ins></h3>
+   <ul>
+   <h3><li><a href= "https://github.com/AvinandanBose/JavaGeneric/blob/main/javaUBM1.java" >Upper Bound Generic Type Methods →Eg-1 (public static) </a></li></h3>
+     
+```Syntax
+
+Syntax:
+     
+public static <Type extends Class/Interface> returnType funcName(parameter){
+    //code
+}
+
+```
+   <h3><li><a href= "https://github.com/AvinandanBose/JavaGeneric/blob/main/javaUBM2.java" >Upper Bound Generic Type Methods →Eg-2 (public static) </a></li></h3>
+   <h3><li><a href= "https://github.com/AvinandanBose/JavaGeneric/blob/main/javaUBM3.java" >Upper Bound Generic Type Methods →Eg-3 (creation of object) </a></li></h3>
+     
+```Syntax
+
+Syntax:
+     
+ <Type extends Class/Interface> returnType funcName(parameter){
+    //code
+}
+public static void main(String[] args)
+{
+class_name<Type> var/obj_name = class_name<>();
+:Or if not generic class:  
+class_name var/obj_name = class_name();
+}
+
+```
+   <h3><li><a href= "https://github.com/AvinandanBose/JavaGeneric/blob/main/javaUBM4.java" >Upper Bound Generic Type Methods →Eg-4 (creation of object) </a></li></h3>
+     <h3><ins><i>Note: Its better to continue with static method rather than of creation of object.</i><ins>
+    </ul>
  </ul>
 </ul>
 </ul>
