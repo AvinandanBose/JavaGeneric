@@ -816,7 +816,7 @@ java.lang.Comparable<T> → Comparable is an interface in java.lang package.
  <ul>
  <h3><ins><i>Note: The rules followed here are the same just like above.</i><ins></h3>
    <ul>
-   <h3><li><a href= "https://github.com/AvinandanBose/JavaGeneric/blob/main/javaUBM1.java" >Upper Bound Generic Type Methods →Eg-1 (public static) </a></li></h3>
+   <h3><li><a href= "https://github.com/AvinandanBose/JavaGeneric/blob/main/javaUBM1.java" >Upper Bound Generic Type Methods →Eg-1 (public static)[ T extends Number]  </a></li></h3>
      
 ```Syntax
 
@@ -827,8 +827,8 @@ public static <Type extends Class/Interface> returnType funcName(parameter){
 }
 
 ```
-   <h3><li><a href= "https://github.com/AvinandanBose/JavaGeneric/blob/main/javaUBM2.java" >Upper Bound Generic Type Methods →Eg-2 (public static) </a></li></h3>
-   <h3><li><a href= "https://github.com/AvinandanBose/JavaGeneric/blob/main/javaUBM3.java" >Upper Bound Generic Type Methods →Eg-3 (creation of object) </a></li></h3>
+   <h3><li><a href= "https://github.com/AvinandanBose/JavaGeneric/blob/main/javaUBM2.java" >Upper Bound Generic Type Methods →Eg-2 (public static)[T extends Comparable<T>]</a></li></h3>
+   <h3><li><a href= "https://github.com/AvinandanBose/JavaGeneric/blob/main/javaUBM3.java" >Upper Bound Generic Type Methods →Eg-3 (creation of object)[ T extends Number]  </a></li></h3>
      
 ```Syntax
 
@@ -845,8 +845,11 @@ class_name var/obj_name = class_name();
 }
 
 ```
-   <h3><li><a href= "https://github.com/AvinandanBose/JavaGeneric/blob/main/javaUBM4.java" >Upper Bound Generic Type Methods →Eg-4 (creation of object) </a></li></h3>
+   <h3><li><a href= "https://github.com/AvinandanBose/JavaGeneric/blob/main/javaUBM4.java" >Upper Bound Generic Type Methods →Eg-4 (creation of object)[T extends Comparable<T>] </a></li></h3>
      <h3><ins><i>Note: Its better to continue with static method rather than of creation of object.</i><ins>
+    </ul>
+    <h3><ins><i>Other Examples- Static Methods </i><ins>
+    <ul>
     </ul>
  </ul>
  <h2></h2>
