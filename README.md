@@ -951,7 +951,36 @@ class_name var/obj_name = class_name();
 <h2></h2>
 <h2>1.A. UpperBoundedWildcards</h2>
 <ul>
-  <h3><li>1.To declare a upper bounded Wildcard parameter, list the ?, followed by the extends keyword, followed by its upper bound.</li></h3>
+  <h3><li>To declare a upper bounded Wildcard parameter, list the ?, followed by the extends keyword, followed by its upper bound.</li></h3>
+  
+  <h3><i><ins>Upper Bounded Wildcard </ins></i></h3>
+  <h3><li><a href= "https://github.com/AvinandanBose/JavaGeneric/blob/main/WildCards.java" >Upper Bounded Wildcards →Eg-1 </a></li></h3>
+  
+```Syntax
+
+interface A {
+
+}
+
+class Example<T> implements A {
+
+}
+
+public class WildCards<T extends Example<? extends A>>{
+
+public static void main(String[] args) {
+
+    WildCards<Example<A>> obj = new WildCards<>();
+}
+
+}
+
+:Note→ As Generic Type Example class implements interface A:
+:It is taken as Type to create object:
+
+
+````
+  
 
 </ul>
 </ul>
