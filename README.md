@@ -922,6 +922,38 @@ class_name var/obj_name = class_name();
 </ul>
 <h1></h1>
 <h1> WildCards</h1>
+<ul>
+<h3><li>1. In generic code, the question mark (?), called the wildcard, represents an unknown type.</li></h3>
+
+<h3><li>2. The wildcard is never used as a type argument for a generic method invocation, a generic class instance creation, or a supertype.</li></h3>
+
+<h3><li>3.The wildcard can be used in a variety of situations such as the type of a parameter, field, or local variable; sometimes as a return type.</li></h3>
+
+
+<h3><li>4.Unlike arrays, different instantiations of a generic type are not compatible with each other, not even explicitly. This incompatibility may be softened by the wildcard if ? is used as an actual type parameter.</li></h3>
+
+<h2></h2>
+<h2>Division of  WildCards</h2>
+<ul>
+
+```mermaid
+ 
+ graph TD;
+
+    Wildcards-->| | UpperBoundedWildcards;
+    Wildcards-->| | LowerBoundedWildcards;
+    Wildcards-->| | UnBoundedWildcards;
+   
+
+```
+
+</ul>
+<h2></h2>
+<h2>1.A. UpperBoundedWildcards</h2>
+<ul>
+
+</ul>
+</ul>
 </ul>
 <h1> Implementation of  Set in Java Generics</h1>
 <ul>
