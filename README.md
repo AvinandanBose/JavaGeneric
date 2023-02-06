@@ -980,7 +980,42 @@ public static void main(String[] args) {
 
 
 ````
+
+<h3><i><ins>Now,</ins></i></h3>
   
+```Syntax
+
+interface A {
+
+}
+
+interface B<T> {
+
+}
+
+:OR:
+
+interface B<T>extends A {
+
+}
+
+class Example<T> implements A,B<T> {
+
+}
+
+public class WildCards<T extends Example<? extends A> & & B<? extends A>>{
+
+
+}
+
+}
+
+:Will generate error as Example implements B<T>:
+:It will be considered as - B<? extends A> in both the cases:
+:B<? extends A> & B<? extends A> cannot exists in same time:
+
+
+````
 
 </ul>
 </ul>
