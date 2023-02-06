@@ -1017,6 +1017,34 @@ public class WildCards<T extends Example<? extends A> & & B<? extends A>>{
 
 ````
 
+<h3><i><ins>Now, if interface B is not generic , then it can be possible:</ins></i></h3>
+<h3><li><a href= "https://github.com/AvinandanBose/JavaGeneric/blob/main/WildCards1.java" >Upper Bounded Wildcards →Eg-2 </a></li></h3>
+
+```Syntax
+
+interface A {
+
+}
+
+interface B {
+}
+
+class Example<T> implements A,B {
+
+}
+
+public class WildCards<T extends Example<? extends A> & B>{
+
+public static void main(String[] args) {
+
+    WildCards<Example<A>> obj = new WildCards<>();
+}
+
+}
+
+:Reason→As both the interfaces now considered as specific and different from each other:
+````
+
 </ul>
 </ul>
 </ul>
