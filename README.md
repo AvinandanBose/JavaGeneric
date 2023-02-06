@@ -951,6 +951,7 @@ class_name var/obj_name = class_name();
 <h2></h2>
 <h2>1.A. UpperBoundedWildcards</h2>
 <ul>
+  <h3><li>1.To declare a upper bounded Wildcard parameter, list the ?, followed by the extends keyword, followed by its upper bound.</li></h3>
 
 </ul>
 </ul>
