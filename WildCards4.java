@@ -2,20 +2,20 @@ interface A {
 
 }
 
-interface B<T > {
+interface B<T> {
 
 }
 
-interface D<T> {
+interface C<T> {
 
 }
 		
-class C<T> implements B<A>, D<A>{
+class D<T> implements B<A>, C<A>{
 }
 
 
 
-public class WildCards4<T extends B<? extends A> & D<? extends A>> {
+public class WildCards4<T extends B<? extends A> & C<? extends A>> {
 
     public void add(int a, int b) {
         System.out.println(a + b);
@@ -23,7 +23,7 @@ public class WildCards4<T extends B<? extends A> & D<? extends A>> {
 
     public static void main(String[] args) {
 
-        WildCards4<C<A>> obj = new WildCards4<>();
+        WildCards4<D<A>> obj = new WildCards4<>();
         obj.add(10, 20);
 
     }
