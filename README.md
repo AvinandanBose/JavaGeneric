@@ -1046,6 +1046,41 @@ public static void main(String[] args) {
 ````
 <h3><li><a href= "https://github.com/AvinandanBose/JavaGeneric/blob/main/WildCards2.java" >Upper Bounded Wildcards →Eg-3 </a></li></h3>
 
+
+```Syntax
+
+interface A {
+
+}
+
+interface B<T> {
+}
+
+:OR:
+
+interface B<T> extends A {
+}
+
+class Example<T> implements  B<T> {
+
+}
+
+public class WildCards2 <T extends Example<? extends B<? extends A>>>  {
+    
+    
+        public static void main(String[] args) {
+    
+            WildCards2<Example<B<A>>> obj = new WildCards2<>();
+            
+    
+        }
+    
+}
+
+:The above is inclusive nature of Wildcard in Generic Types:
+:During generating object of Class , the type of Class would be the Class that implements the Interfaces:
+````
+
 </ul>
 </ul>
 </ul>
