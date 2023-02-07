@@ -1178,6 +1178,92 @@ public static void main(String[] args) {
 
 ```
 
+<h3><i>Hence here are the rules :</i></h3>
+
+<h3> <li>1. if the class extends a generic interface.</li></h3>
+
+<h3>
+
+```Syntax
+
+interface A <T>{
+
+}
+
+
+class Example<T> implements A<T> {
+
+}
+
+```
+
+</h3>
+
+<h3>Then any class having upper bound wildcard cannot have both the class and the interface, As the upper bound wildcard of interface represent the same as upper bound wildcard of the class and both cannot co exists .</h3>
+
+<h3>
+
+```Syntax
+
+class WildCards <T extends Example<? extends T> & A<? extends T>> {
+    
+}
+
+:As→Example<? extends T> = A<? extends T>:
+:And A<? extends T> & A<? extends T> cannot co-exists.:
+
+```
+
+</h3>
+
+
+<h3> <li>2. The generic class that implements interfaces becomes the Type which helps to create the object of the classes.</li></h3>
+
+
+<h3>
+
+```Syntax
+
+interface A {
+
+}
+
+interface B<T> {
+
+}
+
+
+class Example<T> implements A , B<T> {
+
+    //Creation of Object\'s
+
+    Example<String> e1 = new Example<String>();
+    Example<Integer> e2 = new Example<Integer>();
+    Example<Example<String>> e3 = new Example<Example<String>>();
+
+}
+
+public class WildCards6 <T extends B<? extends A>> {
+
+    public static void main(String[] args){
+
+	//Same Objects can be created in class WildCard6 java class
+
+  	Example<String> e1 = new Example<String>();
+    	Example<Integer> e2 = new Example<Integer>();
+    	Example<Example<String>> e3 = new Example<Example<String>>();
+
+
+        // Creation of Object\'s of WildCards6
+
+        WildCards6<Example<A>> obj = new WildCards6<>();
+    }
+    
+}
+
+```
+</h3>
+
 </ul>
 </ul>
 </ul>
