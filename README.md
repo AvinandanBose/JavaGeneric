@@ -1079,7 +1079,7 @@ public class WildCards2 <T extends Example<? extends B<? extends A>>>  {
 
 :The above is inclusive nature of Wildcard in Generic Types:
 :During generating object of Class ,: 
-:The type of Class would be the Class that implements the Interfaces:
+:The type of Class should be the Class that implements the Interfaces:
 ````
 
 </ul>
