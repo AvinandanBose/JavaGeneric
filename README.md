@@ -1082,6 +1082,8 @@ public class WildCards2 <T extends Example<? extends B<? extends A>>>  {
 :The type of Class should be the Class that implements the Interfaces:
 ````
 
+
+
 </ul>
 </ul>
 </ul>
