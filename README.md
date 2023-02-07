@@ -1044,6 +1044,7 @@ public static void main(String[] args) {
 
 :Reason→As both the interfaces now considered as specific and different from each other:
 ````
+<h3><li><a href= "https://github.com/AvinandanBose/JavaGeneric/blob/main/WildCards2.java" >Upper Bounded Wildcards →Eg-3 </a></li></h3>
 
 </ul>
 </ul>
@@ -1068,6 +1069,8 @@ public static void main(String[] args) {
 <h3><i><ins>Now, </ins> lets implement every functions of the HashSet in Generics type method using the logic.</i></h3>
 <ul>
 <h3><li><a href= "https://github.com/AvinandanBose/JavaGeneric/blob/main/javaGenericsSet14.java" >Implementation of every functions of the Hash Set in Java Generics</a></li></h3>
+
+
 
 </ul>
 </ul>
