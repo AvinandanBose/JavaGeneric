@@ -1081,8 +1081,102 @@ public class WildCards2 <T extends Example<? extends B<? extends A>>>  {
 :During generating object of Class ,: 
 :The type of Class should be the Class that implements the Interfaces:
 ````
+<h3><li><a href= "https://github.com/AvinandanBose/JavaGeneric/blob/main/WildCards3.java" >Upper Bounded Wildcards →Eg-4 </a></li></h3>
+
+```Syntax
+
+interface A {
+
+}
+
+interface B<T extends A> {
+
+}
+
+class Example<T> implements B<A> {
+
+}
+class WildCards3 <T extends Example<? extends B<? extends A>>>{
+
+public static void main(String[] args) {
+
+        WildCards3<Example<B<A>>> obj = new WildCards3<>();
+        
+        obj.add(10, 20);
+
+    }
+
+}
 
 
+```
+
+<h3><li><a href= "https://github.com/AvinandanBose/JavaGeneric/blob/main/WildCards4.java" >Upper Bounded Wildcards →Eg-5 </a></li></h3>
+
+```Syntax
+
+interface A {
+
+}
+
+interface B<T> {
+
+}
+
+interface C<T> {
+
+}
+
+class D<T> implements B<A>, C<A>{
+}
+
+class WildCards4<T extends B<? extends A> & C<? extends A>> {
+
+public static void main(String[] args) {
+
+        WildCards4<D<A>> obj = new WildCards4<>();
+        
+        }
+
+
+}
+
+
+```
+
+<h3><li><a href= "https://github.com/AvinandanBose/JavaGeneric/blob/main/WildCards5.java" >Upper Bounded Wildcards →Eg-6 </a></li></h3>
+
+```Syntax
+
+interface A {
+
+}
+
+interface B<T extends A> {
+
+}
+
+interface C<T extends A> {
+
+}
+
+class D<T extends A> implements B<A>, C<A> {
+}
+
+
+class WildCards5 <T extends B<? extends A> & C<? extends A>> {
+
+public static void main(String[] args) {
+
+       WildCards5<D<A>> obj = new WildCards5<>();
+        
+        }
+
+
+}
+
+
+```
 
 </ul>
 </ul>
