@@ -1652,6 +1652,205 @@ And both cannot co-exists.
 </h3>
 
 <h1></h1>
+<h3><li>7. Unlike Multiple Upper Bound we cannot use '&' operator inside Upper Bound Wild Card.  </li></h3>
+
+<h3>
+
+```Syntax
+
+class A{
+
+}
+
+class A1<T> {
+    
+}
+
+interface B1{
+
+
+}
+
+interface C1{
+
+
+}
+
+class WildCards<T  extends A1<? extends A & B1 & C1>> 
+
+= NOT ALLOWED
+
+
+
+```
+</h3>
+
+<h3><li>8. Suppose there are two classes and one of them is generic , then it is possible to create an Upper Bound Wild Card and its object.  </li></h3>
+
+<h3>
+
+```Syntax
+
+class A1 {
+    
+}
+
+
+class B1<T>  {
+    
+}
+
+class WildCards<T  extends B1<? extends A1>>{
+
+public static void main(String[] args) { 
+
+WildCards<B1<A1>> obj = new WildCards<>();
+
+}
+
+}
+
+
+```
+</h3>
+
+<h3><i> Or an Interface and a generic class , then also it gives permission to create Upper Bound WildCards and its Object . </i></h3>
+
+<h3>
+
+```Syntax
+
+interface A1 {
+    
+}
+
+
+class B1<T>  {
+    
+}
+
+class WildCards<T  extends B1<? extends A1>>{
+
+public static void main(String[] args) { 
+
+WildCards<B1<A1>> obj = new WildCards<>();
+
+}
+
+}
+
+
+```
+</h3>
+
+<h3><i> But when there are more than one interface, then we need a Class which implement those interfaces so that we can create its object using the Class as Type during multiple upper bound is applied else Type remains unknown and in such cases we use <i> <ins>Unbounded Wild Cards</ins></i>  . </i></h3>
+
+<h3>
+
+```Syntax
+
+interface A1 {
+    
+}
+
+interface C1 <T>{
+
+
+}
+
+
+class B1<T> {
+
+}
+
+class WildCards<T  extends B1<? extends A1> & C<? extends A1>>{
+
+public static void main(String[] args) {
+
+WildCards<TypeUnkown> obj = new WildCards<>();
+
+//As TypeUnkown we cannot create Object hence here we use unbounded wild card.
+
+}
+
+}
+
+OR
+
+interface A1 {
+    
+}
+
+interface B1<T>{
+
+}
+
+interface C1 <T>{
+
+
+}
+
+
+class WildCards<T  extends B1<? extends A1> & C<? extends A1>>{
+
+WildCards<TypeUnkown> obj = new WildCards<>();
+
+//As TypeUnkown we cannot create Object hence here we use unbounded wild card.
+
+}
+
+}
+
+```
+</h3>
+
+<h3><li>9. Whether its Abstract Class or Class procedure remains same for Abstract Class and Class.  </li></h3>
+
+<h3>
+
+```Syntax
+
+Eg: 
+
+interface A{
+
+}
+
+interface B<T>{
+
+}
+
+interface C<T>{
+
+}
+abstract class A1<T> implements A,B<T>, C<T> {
+
+}
+
+class WildCards8<T  extends A1<? extends A>> {
+
+}
+
+public static void main(String[] args) {
+
+WildCards<A1<A>> obj = new WildCards<>();
+
+}
+
+}
+
+
+```
+
+</h3>
+
+<h1></h1>
+
+</ul>
+
+<h2></h2>
+<h2>1.B. Lower Bound And Lower Bounded Wildcards</h2>
+<ul>
 
 </ul>
 </ul>
