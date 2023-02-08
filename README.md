@@ -1178,6 +1178,52 @@ public static void main(String[] args) {
 
 ```
 
+<h3><li><a href= "https://github.com/AvinandanBose/JavaGeneric/blob/main/WildCards6.java" >Upper Bounded Wildcards →Eg-7 </a></li></h3>
+
+```Syntax
+
+interface B<T>{
+
+}
+
+class WildCards <T extends B<? extends A>> {
+
+public static void main(String[] args) {
+
+        WildCards<B<A>> obj = new WildCards<>();
+	
+	}
+
+}
+
+
+```
+
+<h3><li><a href= "https://github.com/AvinandanBose/JavaGeneric/blob/main/WildCards7.java" >Upper Bounded Wildcards →Eg-8 </a></li></h3>
+
+```Syntax
+
+interface B<T>{
+
+}
+
+class C<T> implements B<A> {
+
+}
+
+class WildCards <T extends C<? extends A>> {
+
+public static void main(String[] args) {
+
+        WildCards<C<A>> obj = new WildCards<>();
+	
+	}
+
+}
+
+
+```
+
 <h3><i>Hence here are the rules :</i></h3>
 
 <h3> <li>1. if the class extends a generic interface.</li></h3>
@@ -1298,6 +1344,8 @@ class Example<T> implements A,B {
 
 ```
 </h3>
+
+
 
 <h3> <i>But if the interface is generic , then the generic class which implements the generic interface cannot be present at same time with the interface i.e. rule 1.</i></h3>
 
