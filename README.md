@@ -1415,7 +1415,7 @@ WildCards<B<A>> obj = new WildCards<>();
 
 <h1> </h1>
 
-<h3><li>5. Rather than using the generic Class which implements the generic interfaces, single generic interfaces can also be taken as Upper Bound WildCard.  And can be used as types to generate object .</li></h3>
+<h3><li>5. Rather than using the generic Class which implements the generic interfaces, single generic interfaces can also be taken as Upper Bound WildCard.  And can be used as types to generate object of the Class.</li></h3>
 
 
 <h3>
