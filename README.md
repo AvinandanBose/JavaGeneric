@@ -1416,7 +1416,7 @@ WildCards<B<A>> obj = new WildCards<>();
 
 <h1> </h1>
 
-<h3><li>5. Rather than using the generic Class which implements the generic interfaces, single generic interfaces can also be taken as Upper Bound WildCard.  And can be used as types to generate object of the Class.</li></h3>
+<h3><li>5. Rather than using the generic Class which implements the generic interfaces, single generic interfaces can also be taken as Upper Bound WildCard.  And can be used as types to generate object of the Class. Also we can use the generic class(if present) which implement the interface/s. </li></h3>
 
 
 <h3>
@@ -1442,11 +1442,216 @@ WildCards<B<A>> obj = new WildCards<>();
 
 }
 
+OR
+
+interface A{
+
+}
+
+interface B<T>{
+
+}
+
+class E<T> implements B<T>{
+
+}
+
+class WildCards <T extends B<? extends A>>{
+
+public static void main(String[] args) {
+
+WildCards<E<A>> obj = new WildCards<>();
+
+     }
+
+
+}
+
 
 
 ```
 
 </h3>
+
+<h3><i>But if two Upper Bound WildCard joined by '&' [AND] i.e. constituting Multiple Upper Bound then the Generic Class implement both the interfaces must be used as 'Type' to create object i.e. rule no.2 is must . </i></h3>
+
+<h1> </h1>
+
+<h3><li>6. In Upper Bound WildCard if WildCard extends a generic interface it creates another <i>Inner Upper Bound Wild Card </i>.  </li></h3>
+
+<h3>
+
+```Syntax
+
+interface A{
+
+}
+
+interface B<T>{
+
+}
+
+interface E<T> {
+
+}
+
+class WildCards <T extends E<? extends B<? extends A>>>{
+
+public static void main(String[] args) {
+
+WildCards<E<B<A>>> obj = new WildCards<>();
+
+     }
+
+
+}
+
+
+```
+
+</h3>
+
+<h3><i> If a generic class implements generic interfaces. Then the inner upper bound can be used with the generic class as Type to create object.  </i></h3>
+
+<h3>
+
+```Syntax
+
+interface A{
+
+}
+
+interface B<T>{
+
+}
+
+interface E<T> {
+
+}
+
+class D<T> implements E<T>,B<T>, A{
+
+}
+
+class WildCards <T extends E<? extends B<? extends A>>>
+
+{
+
+public static void main(String[] args) {
+
+WildCards<D<B<A>>> obj = new WildCards<>();
+
+     }
+
+
+}
+
+OR
+
+
+class WildCards <T extends D<? extends B<? extends A>>>
+
+//Here D is Class
+
+{
+
+public static void main(String[] args) {
+
+WildCards<D<B<A>>> obj = new WildCards<>();
+
+     }
+
+
+}
+
+
+
+```
+
+</h3>
+<h3><i> Now if there is Multiple Upper Bound present , it acts the same as above i.e. the inner upper bound can be used with the generic class as Type to create object.  </i></h3>
+
+<h3>
+
+```Syntax
+
+interface A {
+
+}
+
+interface B<T> {
+
+}
+
+interface E<T> {
+
+}
+
+interface F<T> {
+
+}
+
+class D<T> implements E<T>,B<T>, F<T>,A{
+
+}
+
+class WildCards<T extends E<? extends B<? extends A>> & F<? extends B<? extends A>>> {
+
+public static void main(String[] args) { 
+
+        WildCards<D<B<A>>> obj = new WildCards<>();
+
+       }
+
+}
+
+
+```
+
+</h3>
+
+<h3><i> But the generic class which implements the interfaces if put as multiple upper bound , then rule no.1 is implemented i.e.  Generic Class which implemented the generic interface and the  generic interface cannot co-exists in multiple upper bound wildcards. </i></h3>
+
+<h3>
+
+```Syntax
+
+interface A {
+
+}
+
+interface B<T> {
+
+}
+
+interface E<T> {
+
+}
+
+interface F<T> {
+
+}
+
+class D<T> implements E<T>,B<T>, F<T>,A{
+
+}
+
+Then
+
+class WildCards<T extends D<? extends B<? extends A>> &F<? extends B<? extends A>>> {}
+
+cannot occur that is:
+
+
+D<? extends B<? extends A>>  = F<? extends B<? extends A>>
+
+And both cannot co-exists.
+
+```
+
+</h3>
+
+<h1></h1>
 
 </ul>
 </ul>
