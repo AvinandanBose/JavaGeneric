@@ -1264,6 +1264,43 @@ public class WildCards6 <T extends B<? extends A>> {
 ```
 </h3>
 
+<h3> <li>3. if interface is not generic and class is generic which implements the interface then the generic class which have upper bound  wild card can have the interface too .</li></h3>
+
+<h3>
+
+```Syntax
+
+interface A {
+
+}
+
+interface B{
+
+}
+class Example<T> implements A,B {
+
+    //Creation of Object\'s
+    Example<String> e1 = new Example<String>();
+    Example<Integer> e2 = new Example<Integer>();
+    Example<Example<String>> e3 = new Example<Example<String>>();
+
+}
+
+ class WildCards6 <T extends Example<? extends A> & B >{
+
+    public static void main(String[] args){
+        
+        // Creation of Object\'s
+        WildCards6<Example<A>> obj = new WildCards6<>();
+    }
+    
+}
+
+```
+</h3>
+
+<h3> <i>But if the interface is generic , then the generic class which implements the generic interface cannot be present at same time with the interface i.e. rule 1.</i></h3>
+
 </ul>
 </ul>
 </ul>
