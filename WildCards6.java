@@ -1,4 +1,7 @@
 
+interface A{
+
+}
 interface B<T>{
 
 }
