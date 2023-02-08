@@ -1194,8 +1194,9 @@ class WildCards <T extends B<? extends A>> {
 
 public static void main(String[] args) {
 
-        WildCards<B<A>> obj = new WildCards<>();
-}
+    WildCards<B<A>> obj = new WildCards<>();
+
+  }
 
 }
 
@@ -1219,9 +1220,9 @@ class WildCards <T extends B<? extends A>> {
 
 public static void main(String[] args) {
 
-        WildCards<B<A>> obj = new WildCards<>();
+      WildCards<B<A>> obj = new WildCards<>();
 
-}
+    }
 
 }
 
