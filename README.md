@@ -1169,8 +1169,8 @@ class WildCards5 <T extends B<? extends A> & C<? extends A>> {
 public static void main(String[] args) {
 
        WildCards5<D<A>> obj = new WildCards5<>();
-        
-        }
+
+}
 
 
 }
@@ -1182,6 +1182,10 @@ public static void main(String[] args) {
 
 ```Syntax
 
+interface A{
+
+}
+
 interface B<T>{
 
 }
@@ -1191,8 +1195,7 @@ class WildCards <T extends B<? extends A>> {
 public static void main(String[] args) {
 
         WildCards<B<A>> obj = new WildCards<>();
-	
-	}
+}
 
 }
 
@@ -1203,21 +1206,22 @@ public static void main(String[] args) {
 
 ```Syntax
 
+class A{
+
+}
+
 interface B<T>{
 
 }
 
-class C<T> implements B<A> {
 
-}
-
-class WildCards <T extends C<? extends A>> {
+class WildCards <T extends B<? extends A>> {
 
 public static void main(String[] args) {
 
-        WildCards<C<A>> obj = new WildCards<>();
-	
-	}
+        WildCards<B<A>> obj = new WildCards<>();
+
+}
 
 }
 
@@ -1262,6 +1266,7 @@ class WildCards <T extends Example<? extends T> & A<? extends T>> {
 
 </h3>
 
+<h1> </h1>
 
 <h3> <li>2. The generic class that implements interfaces becomes the Type which helps to create the object of the classes.</li></h3>
 
@@ -1310,6 +1315,8 @@ public class WildCards6 <T extends B<? extends A>> {
 ```
 </h3>
 
+<h1> </h1>
+
 <h3> <li>3. if interface is not generic and class is generic which implements the interface then the generic class which have upper bound  wild card can have the interface too .</li></h3>
 
 <h3>
@@ -1348,6 +1355,63 @@ class Example<T> implements A,B {
 
 
 <h3> <i>But if the interface is generic , then the generic class which implements the generic interface cannot be present at same time with the interface i.e. rule 1.</i></h3>
+
+<h1> </h1>
+
+<h3> <li>4. In Upper Bound Wild Card : ? extends Interface / Class . And that Interface / Class must exist. Or will throw Error. </li></h3>
+
+<h3>
+
+```Syntax
+
+interface A{
+
+}
+
+interface B<T>{
+
+}
+
+class WildCards <T extends B<? extends A>>{
+
+public static void main(String[] args) {
+
+WildCards<B<A>> obj = new WildCards<>();
+
+
+     }
+
+
+}
+
+
+OR
+
+class A{
+
+}
+
+interface B<T>{
+
+}
+
+class WildCards <T extends B<? extends A>>{
+
+public static void main(String[] args) {
+
+WildCards<B<A>> obj = new WildCards<>();
+
+
+   }
+
+
+}
+
+
+
+```
+
+</h3>
 
 </ul>
 </ul>
