@@ -1893,21 +1893,7 @@ upperBoundWCEg1<ArrayList<ArrayList<A>>> obj =
 
 }
 
-:Now as per Rule 1 , if we implement:
-: Say ArrayList is a Class which extends AbstractList:
-:AbstractList is an abstract class.
-:Therefore:
 
-interface A1{
-
-}
-
-class upperBoundWCEg1<T extends AbstractList<? extends A1 > & List<? extends A1>>{}
-
-:Will Generate Error as Both cannot co exist:
-:As Abstract List Class implements List interface:
-:Also ArrayList Class implements List interface:
-:Hence ArrayList Class and List Interface too cannot co-exist in UpperBound Wildcards:
 
 ```
 
