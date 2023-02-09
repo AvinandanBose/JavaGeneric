@@ -2004,7 +2004,7 @@ T extends Map<K,V>
 Further:
 
 T extends Map<? extends TreeMap<K,V> ,
-? extends TreeMap<K,V>
+? extends TreeMap<K,V> >
 
 Further:
 
@@ -2019,7 +2019,38 @@ through SortedMap interface.
 TreeMap also implements Navigable Map.
 
 ```
+</h3>
 
+<h3 align="Center"> <a href="https://github.com/AvinandanBose/JavaGeneric/blob/main/upperBoundWCEg7.java">Seventh Example -7 </h3>
+
+<h3 align="Center">
+
+```Syntax
+
+T extends Map<K,V> & NavigableMap<K,V>
+
+Further:
+
+T extends Map<? extends TreeMap<K,V> ,
+? extends TreeMap<K,V> > & NavigableMap<
+? extends TreeMap<K,V> , ? extends TreeMap<K,V>>
+
+Further:
+
+T extends Map<? extends TreeMap<? extends K,? extends L> ,
+? extends TreeMap<? extends K,? extends L>> &
+NavigableMap<? extends K,? extends L> ,
+? extends TreeMap<? extends K,? extends L>>
+
+
+Where K and L are Interfaces , in the Example.
+
+And TreeMap is a Class which implements Map interface,
+through SortedMap interface.
+
+TreeMap also implements Navigable Map.
+
+```
 </h3>
 
 </ul>
