@@ -1850,6 +1850,67 @@ WildCards<A1<A>> obj = new WildCards<>();
 
 <h1></h1>
 
+<h3><i> <ins>Example of Implementation of Some of the PreBuilt Interfaces and Classes in Upper Bound WildCards.<ins> </i></h3>
+
+<ul>
+
+<h3><li> <a href="https://github.com/AvinandanBose/JavaGeneric/blob/main/upperBoundWCEg1.java">First Example -1 </li></h3>
+
+<h3 align="Center">
+
+```Syntax
+
+T extends List<? extends ArrayList<E>>
+
+```
+
+</h3>
+
+```Syntax
+
+java.util.List → is an Interface
+
+java.util.ArrayList → A class which implements List Interface.
+
+Therefore,
+
+class A  {}
+
+:Now, Class A can be an Interface:
+:i.e. Interface A:
+
+class upperBoundWCEg1<T extends List<? extends ArrayList<A>>>{
+
+public static void main(String[] args) {
+
+
+upperBoundWCEg1<ArrayList<ArrayList<A>>> obj =
+ new upperBoundWCEg1<>();
+ 
+    }
+
+}
+
+:Now as per Rule 1 , if we implement:
+: Say ArrayList is a Class which extends AbstractList:
+:AbstractList is an abstract class.
+:Therefore:
+
+interface A1{
+
+}
+
+class upperBoundWCEg1<T extends AbstractList<? extends A1 > & List<? extends A1>>{}
+
+:Will Generate Error as Both cannot co exist:
+:As Abstract List Class implements List interface:
+:Also ArrayList Class implements List interface:
+:Hence ArrayList Class and List Interface too cannot co-exist in UpperBound Wildcards:
+
+```
+
+</ul>
+
 </ul>
 
 <h2></h2>
