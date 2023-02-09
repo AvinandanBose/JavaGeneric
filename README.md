@@ -1925,6 +1925,39 @@ Where E is an Interface , in the Example.
 
 </h3>
 
+<h3 align="Center"> <a href="https://github.com/AvinandanBose/JavaGeneric/blob/main/upperBoundWCEg3.java">Third Example -3 </h3>
+
+<h3 align="Center">
+
+```Syntax
+
+T extends Set<E> & NavigableSet<E>
+
+Further:
+
+T extends Set<? extends TreeSet<E>> & NavigableSet<? extends TreeSet<E>>
+
+Where E is an Interface , in the Example.
+
+```
+
+</h3>
+
+```Syntax
+
+java.util.Set → Is an Interface
+java.util.NavigableSet → Is an Interface
+
+:And TreeSet is the class which implements NavigableSet:
+:NavigableSet extends SortedSet interface:
+:And SortedSet extends Set interface:
+
+:Hence to create object we need type:
+
+TreeSet<TreeSet<E>>
+
+```
+
 
 </ul>
 
