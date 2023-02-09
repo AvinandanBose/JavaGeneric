@@ -1798,7 +1798,8 @@ class WildCards<T  extends B1<? extends A1> & C<? extends A1>>{
 
 WildCards<TypeUnkown> obj = new WildCards<>();
 
-//As TypeUnkown we cannot create Object hence here we use unbounded wild card.
+//As TypeUnkown we cannot create Object 
+//hence here we use unbounded wild card.
 
 }
 
