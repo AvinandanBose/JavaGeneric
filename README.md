@@ -1966,6 +1966,30 @@ through SortedMap interface.
 
 </h3>
 
+<h3 align="Center"> <a href="https://github.com/AvinandanBose/JavaGeneric/blob/main/upperBoundWCEg5.java">Fourth Example -5 </h3>
+
+<h3 align="Center">
+
+```Syntax
+
+T extends Map<K,V> & NavigableMap<K,V>
+
+Further:
+
+T extends Map<? extends TreeMap<G,H> , ? extends TreeMap<G,H>> & 
+NavigableMap<? extends TreeMap<G,H> , ? extends TreeMap<G,H>>
+
+Where G and H are Interfaces , in the Example.
+
+And TreeMap is a Class which implements Map interface,
+through SortedMap interface.
+
+TreeMap also implements Navigable Map.
+
+```
+
+</h3>
+
 
 </ul>
 
