@@ -1958,6 +1958,28 @@ TreeSet<TreeSet<E>>
 
 ```
 
+<h3 align="Center"> <a href="https://github.com/AvinandanBose/JavaGeneric/blob/main/upperBoundWCEg4.java">Fourth Example -4 </h3>
+
+<h3 align="Center">
+
+```Syntax
+
+T extends Map<K,V>
+
+Further:
+
+T extends Map<? extends TreeMap<E,F> , 
+? extends TreeMap<E,F>>
+
+Where E and F are Interfaces , in the Example.
+
+And TreeMap is a Class which implements Map interface,
+through SortedMap interface.
+
+```
+
+</h3>
+
 
 </ul>
 
