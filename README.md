@@ -1595,7 +1595,8 @@ class D<T> implements E<T>,B<T>, F<T>,A{
 
 }
 
-class WildCards<T extends E<? extends B<? extends A>> & F<? extends B<? extends A>>> {
+class WildCards<T extends E<? extends B<? extends A>> 
+& F<? extends B<? extends A>>> {
 
 public static void main(String[] args) { 
 
@@ -1638,7 +1639,8 @@ class D<T> implements E<T>,B<T>, F<T>,A{
 
 Then
 
-class WildCards<T extends D<? extends B<? extends A>> &F<? extends B<? extends A>>> {}
+class WildCards<T extends D<? extends B<? extends A>> 
+&F<? extends B<? extends A>>> {}
 
 cannot occur that is:
 
