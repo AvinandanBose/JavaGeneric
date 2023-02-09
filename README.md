@@ -1854,13 +1854,15 @@ WildCards<A1<A>> obj = new WildCards<>();
 
 <ul>
 
-<h3><li> <a href="https://github.com/AvinandanBose/JavaGeneric/blob/main/upperBoundWCEg1.java">First Example -1 </li></h3>
+<h3 align="Center"> <a href="https://github.com/AvinandanBose/JavaGeneric/blob/main/upperBoundWCEg1.java">First Example -1 </h3>
 
 <h3 align="Center">
 
 ```Syntax
 
 T extends List<? extends ArrayList<E>>
+
+Where E is a Class , in the Example.
 
 ```
 
@@ -1908,6 +1910,21 @@ class upperBoundWCEg1<T extends AbstractList<? extends A1 > & List<? extends A1>
 :Hence ArrayList Class and List Interface too cannot co-exist in UpperBound Wildcards:
 
 ```
+
+<h3 align="Center"> <a href="https://github.com/AvinandanBose/JavaGeneric/blob/main/upperBoundWCEg2.java">Second Example -2 </h3>
+
+<h3 align="Center">
+
+```Syntax
+
+T extends List<? extends ArrayList<E>>
+
+Where E is an Interface , in the Example.
+
+```
+
+</h3>
+
 
 </ul>
 
