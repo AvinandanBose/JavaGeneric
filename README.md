@@ -2106,6 +2106,31 @@ TreeMap also implements Navigable Map.
 </h3>
 
 
+```Syntax
+
+Note :
+
+If ,
+
+T extends Map<? extends TreeMap<? extends I,? extends J> , 
+? extends TreeMap<? extends I,? extends J>> & 
+NavigableMap<? extends TreeMap<? extends I,? extends J >,
+? extends TreeMap<? extends I,? extends J > >
+
+As  Interface NavigableMap<K,V> extends Interface SortedMap<K,V>
+And Interface  SortedMap<K,V> extends Interface Map<K,V>
+
+Hence it will throw error as Both cannot co-exist as per Rule 10.
+
+
+```
+
+![Screenshot (235)](https://user-images.githubusercontent.com/38869235/218105535-07a90dc0-c55d-4b40-a9f4-445ff32b10c2.png)
+
+![Screenshot (236)](https://user-images.githubusercontent.com/38869235/218105606-244afc62-5db3-4579-9f31-6b525c1031e5.png)
+
+
+
 </ul>
 
 </ul>
