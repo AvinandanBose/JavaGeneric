@@ -1687,6 +1687,8 @@ class WildCards<T  extends A1<? extends A & B1 & C1>>
 ```
 </h3>
 
+<h1></h1>
+
 <h3><li>8. Suppose there are two classes and one of them is generic , then it is possible to create an Upper Bound Wild Card and its object.  </li></h3>
 
 <h3>
@@ -1715,6 +1717,8 @@ WildCards<B1<A1>> obj = new WildCards<>();
 
 ```
 </h3>
+
+
 
 <h3><i> Or an Interface and a generic class , then also it gives permission to create Upper Bound WildCards and its Object . </i></h3>
 
@@ -1849,6 +1853,50 @@ WildCards<A1<A>> obj = new WildCards<>();
 </h3>
 
 <h1></h1>
+
+<h3><li>10. If a generic interface extends another generic interface , then another generic class implements both the interfaces as Upper Bound Wild Card . Then the super interface become equal to the sub interface which extends the super interface and erase the sub interface and impose error. Like rule no.1 and this type of erasure called as: <i> <ins>Type Erasure. </ins></i>   </li></h3>
+
+<h3>
+
+```Syntax
+
+interface A{
+
+}
+
+interface B<E> extends A{
+	
+}
+
+interface C<E> extends B<E>{
+	
+}
+
+class D implements C<A>{
+	
+	
+}
+
+class WildCards<T extends C<? extends D> & B<? extends D>>{
+	
+}
+
+Then :
+
+C<? extends D> = B<? extends D>
+
+ B<? extends D> and B<? extends D> cannot co-exist
+
+
+```
+
+</h3>
+
+![Screenshot (226)](https://user-images.githubusercontent.com/38869235/218019547-414e3329-fbba-4f95-ab81-b6399ab1be91.png)
+![Screenshot (227)](https://user-images.githubusercontent.com/38869235/218022394-3836910f-14b3-4990-ab02-5a0c50f95591.png)
+
+
+<h1> </h1>
 
 <h3><i> <ins>Example of Implementation of Some of the PreBuilt Interfaces and Classes in Upper Bound WildCards.<ins> </i></h3>
 
