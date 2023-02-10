@@ -1997,6 +1997,21 @@ Where E is an Interface , in the Example.
 
 </h3>
 
+<h3><i><ins>Note:</ins></i></h3>
+
+![Screenshot (233)](https://user-images.githubusercontent.com/38869235/218048921-82c06041-46a9-4afc-9e8c-3f36c0179e46.png)
+
+```Syntax
+
+Implementation of Rule : 10 , Where,
+ 
+AbstractList is an Abstract Class which implements List interface,
+ 
+cannot co-exist with List in upper bound wild card.
+
+```
+
+
 <h3 align="Center"> <a href="https://github.com/AvinandanBose/JavaGeneric/blob/main/upperBoundWCEg3.java">Third Example -3 </h3>
 
 <h3 align="Center">
