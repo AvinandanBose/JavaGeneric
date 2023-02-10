@@ -1250,7 +1250,7 @@ class Example<T> implements A<T> {
 
 </h3>
 
-<h3>Then any class having upper bound wildcard cannot have both the class and the interface, As the upper bound wildcard of interface represent the same as upper bound wildcard of the class and both cannot co exists . As Java does Type Erasure for type safety, what it does after compilation, all generic types are erased and the class implemnts interface and the super interface looks sane in bytecode. </h3>
+<h3>Then any class having upper bound wildcard cannot have both the class and the interface, As the upper bound wildcard of interface represent the same as upper bound wildcard of the class and both cannot co exists . As Java does <i> <ins>Type Erasure </ins></i> for type safety, what it does after compilation, all generic types are erased and the class implements interface and the super interface looks same in bytecode. </h3>
 
 <h3>
 
