@@ -1854,7 +1854,7 @@ WildCards<A1<A>> obj = new WildCards<>();
 
 <h1></h1>
 
-<h3><li>10. If a generic interface extends another generic interface , then another generic class implements both the interfaces as Upper Bound Wild Card . Then the super interface become equal to the sub interface which extends the super interface and erase the sub interface and impose error. Like rule no.1 and this type of erasure called as: <i> <ins>Type Erasure. </ins></i>   </li></h3>
+<h3><li>10. If a generic interface extends another generic interface , then another generic class implements both the interfaces as Upper Bound Wild Card . Then the super interface become equal to the sub interface which extends the super interface and erase the sub interface and impose error. Like rule no.1 and this type of erasure called as: <i> <ins>Type Erasure. </ins></i> where after compilation, all generic types are erased, both interfaces ending looking the same in the bytecode.  </li></h3>
 
 <h3>
 
@@ -1895,6 +1895,38 @@ C<? extends D> = B<? extends D>
 ![Screenshot (226)](https://user-images.githubusercontent.com/38869235/218019547-414e3329-fbba-4f95-ab81-b6399ab1be91.png)
 ![Screenshot (227)](https://user-images.githubusercontent.com/38869235/218022394-3836910f-14b3-4990-ab02-5a0c50f95591.png)
 
+
+<h1> </h1>
+
+<h3><li>11. Iterating Rule 1 , 9 and 10 , if generic Abstract Class implements  Generic Interface . Where super interface and abstract class after compilation looks sane in bytecode causing <i><ins> Type Erasure.  </ins></i>   </li></h3>
+
+<h3>
+
+```Syntax
+
+interface A{}
+
+interface A1<T>{}
+
+
+abstract class B<T> implements A1<T>{}
+
+ class WildCardss<T extends B<? extends A> & A1<? extends A>> {}
+
+Then :
+
+B<? extends D> = A1<? extends A>
+
+A1<? extends A> and A1<? extends A> cannot co-exist
+
+
+```
+
+</h3>
+
+![Screenshot (228)](https://user-images.githubusercontent.com/38869235/218029985-bf989b93-1fa1-4492-b87b-52d33170649f.png)
+
+![Screenshot (229)](https://user-images.githubusercontent.com/38869235/218030019-599cd9b7-2bfd-4f2d-8473-8de9ae85d452.png)
 
 <h1> </h1>
 
