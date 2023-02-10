@@ -2003,7 +2003,7 @@ Where E is an Interface , in the Example.
 
 ```Syntax
 
-Implementation of Rule : 10 , Where,
+Implementation of Rule : 11 , Where,
  
 AbstractList is an Abstract Class which implements List interface,
  
