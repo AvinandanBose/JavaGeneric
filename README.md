@@ -2018,17 +2018,22 @@ cannot co-exist with List in upper bound wild card.
 
 ```Syntax
 
-T extends Set<E> & NavigableSet<E>
+T extends Set<E>
 
 Further:
 
-T extends Set<? extends TreeSet<E>> & NavigableSet<? extends TreeSet<E>>
+T extends Set<? extends TreeSet<E>>
 
 Where E is an Interface , in the Example.
 
 ```
 
 </h3>
+
+<h3><i><ins>Note:</ins></i></h3>
+
+![Screenshot (234)](https://user-images.githubusercontent.com/38869235/218069301-15c9dc5b-7e10-4a81-82a9-0d944b340f34.png)
+
 
 ```Syntax
 
@@ -2039,9 +2044,11 @@ java.util.NavigableSet → Is an Interface
 :NavigableSet extends SortedSet interface:
 :And SortedSet extends Set interface:
 
-:Hence to create object we need type:
-
-TreeSet<TreeSet<E>>
+:Implementaion of Rule 10 and As :
+:NavigableSet extends SortedSet interface:
+:And SortedSet extends Set interface:
+:Hence Set and NavigableSet cannot co-exist:
+:In Upper Bound Wild Card:
 
 ```
 
