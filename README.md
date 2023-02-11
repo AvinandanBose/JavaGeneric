@@ -2144,6 +2144,7 @@ Hence it will throw error as Both cannot co-exist as per Rule 10.
 
 <h3 align="Center"> <a href="https://github.com/AvinandanBose/JavaGeneric/blob/main/UpperBoundWildCardMeth1.java">T extends List ? extends String returnType FuncName(T t) [String]</h3>
 
+<h3><i>Note :Now its Same for Float, Double ,..., etc. </i></h3> 
 </ul>
 </ul>
 
