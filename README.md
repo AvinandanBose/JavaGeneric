@@ -2201,6 +2201,11 @@ T extends Map<? extends String, ? extends Number>
 <h3 align="Center"> <a href="https://github.com/AvinandanBose/JavaGeneric/blob/main/UpperBoundWildCardMeth4.java"> < T extends Map < ? extends String, ? extends Number > > returnType FuncName(T t) - Eg 4 </h3>
 
 </ul>
+
+<h2><i><ins>Implementing Upper Bound WildCard as Parameter of Method</ins></i></h2>
+<ul>
+
+</ul>
 </ul>
 
 <h2></h2>
