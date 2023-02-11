@@ -2237,7 +2237,7 @@ T extends Map<? extends String, ? extends Number>
 
 <h2><i><ins>Implementing Upper Bound WildCard as Object/Variable</ins></i></h2>
 <ul>
-<h3><i><ins>Note:</ins> We know List < Type/Object > can create List which can be editable and alterable i.e. we can add and remove during runtime. Similarly for Set < Type/Object > , Map < Key , Value > but when we say List < ? extends Type > , Set < ? extends Type > and Map < ? extends Key , ? extends  Value > i.e. their type information are not available at runtime i.e. <i> <ins>not reifiable</ins></i>, hence not alterable and editable. Therefore we cannot  add , remove , any element during runtime. Hence, we can use Set.of() and Map.of()  to create unmodifiable Set and Map and Arrays.asList() to convert an array into a List object . </i>
+<h3><i><ins>Note:</ins> We know List < Type/Object > can create List which can be editable and alterable i.e. we can add and remove during runtime. Similarly for Set < Type/Object > , Map < Key , Value > but when we say List < ? extends Type > , Set < ? extends Type > and Map < ? extends Key , ? extends  Value > i.e. their type information are not available at runtime i.e. <i> <ins>not reifiable</ins></i>, hence not alterable and editable. Therefore we cannot  add , remove , any element during runtime. Hence, we can use Set.of() and Map.of()  to create unmodifiable Set and Map and Arrays.asList() to convert an array into a List object . </i> </h3>
 
 <ul>
 
@@ -2245,7 +2245,7 @@ T extends Map<? extends String, ? extends Number>
 
 <h3><li> <a href="https://github.com/AvinandanBose/JavaGeneric/blob/main/WildCardUpperBoundVarMap.java"> 2.  Map < ? extends String , ? extends Integer > map = Map.of( ) -Eg 2</li></h3>
 
-<h3><li> <a href="https://github.com/AvinandanBose/JavaGeneric/blob/main/WildCardUpperBoundVarSet.java"> 3.  Set<? extends Number> set = Set.of( )-Eg 3 </li></h3>
+<h3><li> <a href="https://github.com/AvinandanBose/JavaGeneric/blob/main/WildCardUpperBoundVarSet.java"> 3.  Set< ? extends Number > set = Set.of( )-Eg 3 </li></h3>
 
 </ul>
 </ul>
