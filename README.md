@@ -2134,8 +2134,10 @@ Hence it will throw error as Both cannot co-exist as per Rule 10.
 </ul>
 <h2><i><ins>Implementing Upper Bound WildCard as returnType of Method</ins></i></h2>
 <ul>
-<h3><i>Note : What Does  T extends List<? extends Number>> returnType Test(T t) mean? </i></h3>
+<h3><i>Note : What Does  T extends List<? extends Number>> returnType FuncName(T t) mean? </i></h3>
 <h3> A parameter "t" of type T, where T is a generic type that extends a List of elements that are subtypes of Number. This means that the parameter "t" could be a List of any type of Number, such as Integer, Double, Float, etc. </h3>
+
+<h3 align="Center"> <a href="https://github.com/AvinandanBose/JavaGeneric/blob/main/UpperBoundWildCardMeth1.java">T extends List<? extends Number>> returnType FuncName(T t) </h3>
 </ul>
 </ul>
 
