@@ -2130,6 +2130,46 @@ Hence it will throw error as Both cannot co-exist as per Rule 10.
 ![Screenshot (236)](https://user-images.githubusercontent.com/38869235/218105606-244afc62-5db3-4579-9f31-6b525c1031e5.png)
 
 
+<h3 align="Center"> <a href="https://github.com/AvinandanBose/JavaGeneric/blob/main/UpperBoundWildCardMeth5.java">Sixth Example -6 </h3>
+
+<h3 align="Center">
+
+```Syntax
+
+T extends List<? extends Number>
+
+
+```
+
+</h3>
+
+
+<h3 align="Center"> <a href="https://github.com/AvinandanBose/JavaGeneric/blob/main/UpperBoundWildCardMeth6.java">Seventh Example -7 </h3>
+
+<h3 align="Center">
+
+```Syntax
+
+T extends Set<? extends Number>
+
+
+```
+
+</h3>
+
+<h3 align="Center"> <a href="https://github.com/AvinandanBose/JavaGeneric/blob/main/UpperBoundWildCardMeth7.java">Eighth Example -8 </h3>
+
+<h3 align="Center">
+
+```Syntax
+
+T extends Map<? extends String, ? extends Number>
+
+
+```
+
+</h3>
+
 
 </ul>
 <h2><i><ins>Implementing Upper Bound WildCard as returnType of Method</ins></i></h2>
