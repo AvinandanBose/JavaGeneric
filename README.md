@@ -2247,6 +2247,8 @@ T extends Map<? extends String, ? extends Number>
 
 <h3><li> <a href="https://github.com/AvinandanBose/JavaGeneric/blob/main/WildCardUpperBoundVarSet.java"> 3.  Set< ? extends Number > set = Set.of( )-Eg 3 </li></h3>
 
+<h3><i><ins>Note:</ins> List < ? extends Number > means can store 'Any Type Of Number'i.e. any subclasses of Number including Number itself but what type , which we donot know or the information is not available during runtime. This goes same for Set and Map. </i> </h3>
+
 </ul>
 </ul>
 </ul>
