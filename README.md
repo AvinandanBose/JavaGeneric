@@ -2226,6 +2226,10 @@ T extends Map<? extends String, ? extends Number>
 
 <h3> <a href="https://github.com/AvinandanBose/JavaGeneric/blob/main/UpperBoundWildCardMeth11.java"> 2.  Set < ? extends Number > FuncName ( Set < ? extends Number > num)- [ Return Type Set ] -Eg 8 </h3> 
 
+<h3> <a href="https://github.com/AvinandanBose/JavaGeneric/blob/main/UpperBoundWildCardMeth12.java"> 3.  void FuncName ( Map < ? extends String , ? extends Number > map )- [ Return Type Void ] -Eg 8 </h3>
+
+<h3> <a href="https://github.com/AvinandanBose/JavaGeneric/blob/main/UpperBoundWildCardMeth13.java"> 4.  Map < ? extends String , ? extends Number > FuncName ( Map < ? extends String , ? extends Number > map )- [ Return Type Map ] -Eg 9 </h3>
+
 </ul>
 
 
