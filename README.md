@@ -2234,6 +2234,11 @@ T extends Map<? extends String, ? extends Number>
 
 
 </ul>
+
+<h2><i><ins>Implementing Upper Bound WildCard as Object/Variable</ins></i></h2>
+<ul>
+
+</ul>
 </ul>
 
 <h2></h2>
