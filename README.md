@@ -2205,6 +2205,12 @@ T extends Map<? extends String, ? extends Number>
 <h2><i><ins>Implementing Upper Bound WildCard as Parameter of Method</ins></i></h2>
 <ul>
 
+<h3><i>Note : What Does   ' void test( List < ? extends Number > num ) ' mean?  </i></h3>
+
+<h3>This method takes a list of objects that are instances of or subclasses of the Number class. The wildcard ? extends Number specifies that the list can contain elements of any type that is a subclass of Number, including Number itself. Since this method has a void return type, it doesn't return the list. </h3>
+
+<h3 align="Center"> <a href="https://github.com/AvinandanBose/JavaGeneric/blob/main/UpperBoundWildCardMeth8.java"> void test( List < ? extends Number > num ) - [Return Type Void ] -Eg 5 </h3>
+
 </ul>
 </ul>
 
