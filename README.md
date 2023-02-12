@@ -2258,7 +2258,7 @@ T extends Map<? extends String, ? extends Number>
 <h2></h2>
 <h2>1.B. Lower Bound And Lower Bounded Wildcards</h2>
 <ul>
-
+<h3><i> <ins>Description</ins> :  In the Java programming language, a lower bound is a type that specifies that a type parameter must be either the specified type or a supertype of the specified type. Lower bounds are specified using the super keyword followed by the type that you want to use as the lower bound. </i></h3>
 </ul>
 </ul>
 </ul>
