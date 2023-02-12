@@ -2312,7 +2312,7 @@ type.remove(a); //Cannot takes place it will throw Error
 ```
 </h3>
 
-<h3><i>And we know that : ArrayList < Integer > , ArrayList < Float >,  ArrayList < Double > ...etc. are all bound to < T extends List < ? extends Number > > and after the addition and removal i.e. alteration of elements , the objects of ArrayList < Integer > , ArrayList < Float >,  ArrayList < Double > ...etc. passed to the method as actual parameter .As it takes constant elements according to their types in a fixed compile time . </i></h3>
+<h3><i>And we know that : ArrayList < Integer > , ArrayList < Float >,  ArrayList < Double > ...etc. are all bound to < T extends List < ? extends Number > > , since Integer extends Number , Float extends Number, Double extends Number ...etc . Here Integer, Float , Double ...etc. are all sub-classes or child-classes of Number abstract class and after the addition and removal i.e. alteration of elements , the objects of ArrayList < Integer > , ArrayList < Float >,  ArrayList < Double > ...etc. passed to the method as actual parameter .As it takes constant elements according to their types in a fixed compile time . </i></h3>
 
 <h3 align="Left">
 
