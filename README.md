@@ -2249,6 +2249,7 @@ T extends Map<? extends String, ? extends Number>
 
 <h3><i><ins>Note:</ins> List < ? extends Number > means can store 'Any Type Of Number'i.e. any subclasses of Number including Number itself but what type , which we donot know or the information is not available during runtime. This goes same for Set and Map. </i> </h3>
 
+
 </ul>
 </ul>
 
@@ -2259,6 +2260,20 @@ T extends Map<? extends String, ? extends Number>
 <h2>1.B. Lower Bound And Lower Bounded Wildcards</h2>
 <ul>
 <h3><i> <ins>Description</ins> :  In the Java programming language, a lower bound is a type that specifies that a type parameter must be either the specified type or a supertype of the specified type. Lower bounds are specified using the super keyword followed by the type that you want to use as the lower bound. </i></h3>
+
+<h3><i>'Super' keyword is used to refer and invoke parent class's properties . But unlike upper bound 'extend' , we cannot just call 'Super' after Type 'T' i.e. `T super AnyClass/Interface` . It generally comes  with the `?` wildcard i.e. what we called `Lower Bound Wild Card`. </i></h3> 
+
+<ul>
+<h3><i><ins>Lower Bound Wild Card</ins></i></h3>
+<ul>
+
+
+
+</ul>
+
+
+</ul>
+
 </ul>
 </ul>
 </ul>
