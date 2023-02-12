@@ -2266,7 +2266,86 @@ T extends Map<? extends String, ? extends Number>
 <ul>
 <h3><i><ins>Lower Bound Wild Card</ins></i></h3>
 <ul>
+<h3><i><ins>Explanation :</ins> To explain about Lower Bound Wild Card , lets take example of Upper Bound Wild Card : < T extends List < ? extends Number > >, here , T extends List falls under Upper Bound where `Type is bound to List` and we know ArrayList class extends List, hence say ,the Type is ArrayList then Object of Type `T` can access all of its predefined methods .   </i></h3>
 
+<h3 align="Left">
+
+```Syntax
+
+<T extends List <Number>> void test (T type, Integer a){
+
+type.add(a); //Here `type` is Object of T 
+
+
+} 
+
+//Say T is ArrayList which `Extends` List
+//formal object reference 'type`will be replaced by the Object of ArrayList
+//That is:
+
+ArrayList<Integer> al =  new ArrayList<>();
+
+test(al,1);
+
+//That is al.add(1) 
+
+```
+</h3>
+
+<h3><i>Now, for < T extends List < ? extends Number > >  , < ? extends Number > ,is known as Upper Bound WildCard . Due to the use of `?` Wild Card , Compiler could not recognise which subclass of Number will be there for `?` during run time , hence type information remain unavailable i.e. <i> <ins>not reifiable</ins></i> ,hence we cannot alter without knowing its type. Hence: </i></h3>
+
+<h3 align="Left">
+
+```Syntax
+
+<T extends List <? extends Number>> void test (T type, Integer a){
+
+type.add(a); //Cannot takes place it will throw Error 
+
+type.remove(a); //Cannot takes place it will throw Error 
+
+
+} 
+
+
+```
+</h3>
+
+<h3><i>And we know that : ArrayList < Integer > , ArrayList < Float >,  ArrayList < Double > ...etc. are all bound to < T extends List < ? extends Number > > and after the addition and removal i.e. alteration of elements , the objects of ArrayList < Integer > , ArrayList < Float >,  ArrayList < Double > ...etc. passed to the method as actual parameter .As it takes constant elements according to their types in a fixed compile time . </i></h3>
+
+<h3 align="Left">
+
+```Syntax
+
+<T extends List <? extends Number>> void test (T type){} 
+
+ArrayList<Integer> intList = new ArrayList<>();
+intList.add(1);
+intList.add(2);
+intList.add(3);
+intList.remove(1);
+
+test(intList);
+
+```
+</h3>
+
+<h3><i>Now, <ins> Lower Bound Wild Card </ins> i.e. < T extends List < ? super Number > > , super keyword will fetch all elements that contains inside the class Number.  Abstract Class Number have abstract methods which returns byte, double, float, int, long, and short. Moreover the abstract class Number is the superclass/parent class of platform classes(Wrapper Classes :Integer, Float, Byte,Double,Long and Short) representing numeric values that are convertible to the primitive types byte, double, float, int, long, and short. Hence now `Compiler` knows what type of information needed i.e. Number which implies Integer, Float, Byte,Double,Long and Short. Hence now it is <i> <ins> reifiable</ins></i> : `Now information available at runtime.` . </i></h3>
+
+<h3 align="Left">
+
+```Syntax
+
+<T extends List <? super Number>> void test (T type){
+t.add(1);
+t.add(2);
+t.add(3);
+t.remove(1);
+} 
+
+//Not it is possible to alter during runtime .
+```
+</h3>
 
 
 </ul>
