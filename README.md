@@ -2360,7 +2360,41 @@ test(list2);
 <h3><i> Hence ArrayList < Number > ,ArrayList < Object >, and  ArrayList < Serializable > are lower bound to  < T extends List < ? super Number > > where  Number, Object and Serializable are super types of Number. And Lower Bound WildCard is <ins> reifiable .</ins></i></h3>
 
 </ul>
+<h3><i><ins>Rules :</ins> </i></h3>
 
+<ul>
+<h3><i><ins> Note: </ins>  The rules are similar to the Upper Bound WildCard.</i></h3>
+<ul>
+<h3><i> <li> 1. If a generic class implements generic interface then during multiple upper bound including lower bound wild card implemented , cannot co-exist , it causes type erasure - same like Upper Bound .</li></i></h3>
+
+<h3 align="Left">
+
+```Syntax
+
+interface A{
+
+}
+
+interface A1<T>{
+
+}
+
+class B<T> implements A1<T>,A{
+
+}
+
+public class JavaWild1 <T extends B<? super A> & A1< ? super A>>{}
+
+:As→B<? super A> = A1< ? super A>:
+:And A1< ? super A> & A1< ? super A> cannot co-exists.:
+
+```
+</h3>
+
+
+
+</ul>
+</ul>
 
 </ul>
 
