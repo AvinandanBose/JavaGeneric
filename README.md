@@ -2280,7 +2280,8 @@ type.add(a); //Here `type` is Object of T
 } 
 
 //Say T is ArrayList which `Extends` List
-//formal object reference 'type`will be replaced by the Object of ArrayList
+//formal object reference 'type`will be ,
+//replaced by the Object of ArrayList
 //That is:
 
 ArrayList<Integer> al =  new ArrayList<>();
