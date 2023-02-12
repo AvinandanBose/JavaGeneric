@@ -2345,9 +2345,9 @@ t.remove(1);
 
 //Now it is possible to alter during runtime .
 
-List<Number>list = new ArrayList<>();
-List<Object> list1 = new ArrayList<>();
-List<Serializable> list2 = new ArrayList<>();
+ArrayList<Number>list = new ArrayList<>();
+ArrayList<Object> list1 = new ArrayList<>();
+ArrayList<Serializable> list2 = new ArrayList<>();
 
 test(list);
 test(list1);
@@ -2356,6 +2356,7 @@ test(list2);
 ```
 </h3>
 
+<h3><i> Hence ArrayList < Number > ,ArrayList < Object >, and  ArrayList < Serializable > are lower bound to  < T extends List < ? super Number > > where  Number, Object and Serializable are super types of Number. And Lower Bound WildCard is <ins> reifiable .</ins></i></h3>
 
 </ul>
 
