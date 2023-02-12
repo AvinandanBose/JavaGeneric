@@ -2344,6 +2344,15 @@ t.remove(1);
 } 
 
 //Now it is possible to alter during runtime .
+
+List<Number>list = new ArrayList<>();
+List<Object> list1 = new ArrayList<>();
+List<Serializable> list2 = new ArrayList<>();
+
+test(list);
+test(list1);
+test(list2);
+
 ```
 </h3>
 
