@@ -2391,7 +2391,110 @@ public class JavaWild1 <T extends B<? super A> & A1< ? super A>>{}
 ```
 </h3>
 
+<h3><i> <li> 2. Instantiation.</li></i></h3>
+<ul>
+<h3><i> <li> 2.a. Based only on Interfaces .</li></i></h3>
 
+<h3 align="Left">
+
+```Syntax
+
+interface A {
+
+}
+
+interface C extends A{
+
+}
+
+interface A1<T>{
+
+}
+
+ class JavaWild1 <T extends A1<? super C>>{
+
+    public static void main(String[] args) {
+        JavaWild1<A1<C>> jw1 = new JavaWild1<>();
+        JavaWild1<A1<A>> jw2 = new JavaWild1<>();
+    }
+}
+
+Note→ A is Super interface of C.
+
+Hence , both C and A are used as Type to create Object.
+
+```
+</h3>
+
+
+<h3><i> <li> 2.b. Based only on Classes .</li></i></h3>
+
+<h3 align="Left">
+
+```Syntax
+
+class A{
+
+}
+
+class B extends A{
+
+}
+
+class C<T> extends B {
+
+}
+public class JavaWild2<T extends C<? super B>> {
+    public static void main(String[] args) {
+        JavaWild2<C<B>> jw1 = new JavaWild2<>();
+        JavaWild2<C<A>> jw2 = new JavaWild2<>();
+    }
+    
+}
+
+Note→ A is Super Class of B.
+
+Hence , both B and A are used as Type to create Object.
+
+```
+</h3>
+
+
+<h3><i> <li> 2.c. Based on  Classes & Interfaces .</li></i></h3>
+
+<h3 align="Left">
+
+```Syntax
+
+interface A{
+
+}
+
+interface B extends A{
+
+}
+
+
+class C<T> implements B{
+
+}
+
+public class JavaWild3<T extends C<? super B>>{
+
+    public static void main(String[] args) {
+        JavaWild3<C<B>> jw1 = new JavaWild3<>();
+        JavaWild3<C<A>> jw2 = new JavaWild3<>();
+    }
+}
+
+Note→ A is Super Interface of B.
+
+Hence , both B and A are used as Type to create Object.
+
+```
+</h3>
+
+</ul>
 
 </ul>
 </ul>
