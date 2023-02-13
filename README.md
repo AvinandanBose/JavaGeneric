@@ -3027,6 +3027,21 @@ are super types of Number class .
 
 <h3 align="Center"> <a href="https://github.com/AvinandanBose/JavaGeneric/blob/main/LowerBoundWildCard5.java">  < T extends List < ? super Number > > returnType FuncName(T t) - Eg 1 </h3>
 
+```Syntax
+
+public static < T extends List < ? super Number > > T test(T t, Integer a) {
+
+for (Object n : t) {
+            System.out.println(n);
+        }
+}
+
+Here what type of element we have input is unknown ,
+till we run the program i.e. in runtime , hence object
+of an Object class is passed.
+
+```
+
 <h3><i><ins>Similarly,  </ins></i></h3>
 
 <h3 align="Center"> <a href="https://github.com/AvinandanBose/JavaGeneric/blob/main/LowerBoundWildCard6.java">  < T extends List < ? super String > >  returnType FuncName (T t) - Eg 2 </h3>
