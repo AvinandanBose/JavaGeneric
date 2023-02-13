@@ -2992,6 +2992,31 @@ are super types of TreeMap .
 </h3>
 
 
+<h3 align="Center"> <a href="https://github.com/AvinandanBose/JavaGeneric/blob/main/LowerBoundWildCard4.java">Fifth Example -5 </h3>
+
+<h3 align="Center">
+
+```Syntax
+
+T extends List<? super Number>
+
+Where Number is a pre-defined abstract class in Java.
+
+Here in the Example:
+
+ArrayList<Number>,
+ArrayList<Object> ,
+ArrayList<Serializable> ,
+are bound to :
+T extends List<? super Number>
+
+And Number, Object, Serializable
+are super types of Number class . 
+```
+
+</h3>
+
+
 </ul>
 </ul>
 </ul>
