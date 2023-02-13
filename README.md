@@ -2654,7 +2654,8 @@ Note →  Super types of A1 is: B , C, A and A1.
 To implement A1 as type i.e. A1 we cannot implement as Generic , 
 i.e. Cannot be Parameterized , which will generate error,
 i.e. A1<A>, A1<B> cannot be used, where A,B is super of B.
-Rather than we implement it as RAW type and will generate Warning.
+Rather than we implement it as RAW type and will ,
+generate Warning of saying Parameterized.
 
 As,
 JavaWild6<A2<A1>> jw4 = new JavaWild6<>();
