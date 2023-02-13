@@ -2683,7 +2683,9 @@ interface C1<T> {}
 
 class A3<T> implements C1<T> {}
 
-public class JavaWild10<T extends C1<? extends A1<? super B>>> {
+public class JavaWild10<T extends C1<? extends A1<? super B>>> 
+
+{
 
         public static void main(String[] args) {
 
