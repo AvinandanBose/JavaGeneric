@@ -2466,18 +2466,12 @@ Hence , both B and A are used as Type to create Object.
 
 ```Syntax
 
-interface A{
+interface A{}
 
-}
-
-interface B extends A{
-
-}
+interface B extends A{}
 
 
-class C<T> implements B{
-
-}
+class C<T> implements B{}
 
 public class JavaWild3<T extends C<? super B>>{
 
@@ -2505,29 +2499,17 @@ Hence , both B and A are used as Type to create Object.
 
 ```Syntax
 
-interface A {
+interface A {}
 
-}
+interface C extends A {}
 
-interface C extends A {
+interface B extends C {}
 
-}
+interface A1<T> {}
 
-interface B extends C {
+interface C1<T> {}
 
-}
-
-interface A1<T> {
-
-}
-
-interface C1<T> {
-
-}
-
-class A2<T> implements A1<T>,C1<T> {
-
-}
+class A2<T> implements A1<T>,C1<T> {}
 
 public class JavaWild4 <T extends A1<? super B> 
 			& C1<? super B>> {
@@ -2557,29 +2539,18 @@ Hence , both B,C and A are used as Type to create Object.
 
 ```Syntax
 
-interface A {
+interface A {}
 
-}
+interface C extends A {}
 
-interface C extends A {
+interface B extends C {}
 
-}
+interface A1<T> {}
 
-interface B extends C {
+interface C1<T> {}
 
-}
+class A2<T> implements A1<T>, C1<T> {}
 
-interface A1<T> {
-
-}
-
-interface C1<T> {
-
-}
-
-class A2<T> implements A1<T>, C1<T> {
-
-}
 public class JavaWild5 <T extends A1<? super C> 
 			& C1<? super B>>{
 			
@@ -2610,29 +2581,17 @@ Hence B Cannot be taken as Type.
 
 ```Syntax
 
-interface A {
+interface A {}
 
-}
+interface C extends A {}
 
-interface C extends A {
+interface B extends C {}
 
-}
+interface A1<T> extends B {}
 
-interface B extends C {
+interface C1<T>  {}
 
-}
-
-interface A1<T> extends B {
-
-}
-
-interface C1<T>  {
-
-}
-
-class A2<T> implements C1<T>{
-
-}
+class A2<T> implements C1<T>{}
 
 public class JavaWild6 <T extends C1<? super A1<? super B>>> {
 
@@ -2670,33 +2629,19 @@ JavaWild6<C1<A1>> jw8 = new JavaWild6<>();
 
 ```Syntax
 
-interface A {
+interface A {}
 
-}
+interface C extends A {}
 
-interface C extends A {
+interface B extends C {}
 
-}
+interface A1<T> extends B {}
 
-interface B extends C {
+interface A2<T> extends A1<T> {}
 
-}
+interface C1<T> {}
 
-interface A1<T> extends B {
-
-}
-
-interface A2<T> extends A1<T> {
-
-}
-
-interface C1<T> {
-
-}
-
-class A3<T> implements C1<T>, A2<T> {
-
-}
+class A3<T> implements C1<T>, A2<T> {}
 
 public class JavaWild8 <T extends C1<? super A1<? super B>> & 
 				A2<? super A1<? super C>>>{
@@ -2710,6 +2655,167 @@ public class JavaWild8 <T extends C1<? super A1<? super B>> &
     }
     
 }
+
+```
+</h3>
+
+</ul>
+
+<h3><i> <li> 5. Instantiation based on Inner  Lower Bound and Inner Upper Bound.</li></i></h3>
+<ul>
+<h3><i> <li> 5.a. Instantiation based on Inner  Lower Bound and Inner Upper Bound -1 .</li></i></h3>
+
+<h3 align="Left">
+
+```Syntax
+
+interface A {}
+
+interface C extends A {}
+
+interface B extends C {}
+
+interface A1<T> extends B {}
+
+interface A2<T> extends A1<T> {}
+
+interface C1<T> {}
+
+class A3<T> implements C1<T> {}
+
+public class JavaWild10<T extends C1<? extends A1<? super B>>> {
+
+        public static void main(String[] args) {
+
+            JavaWild10<C1<A1<B>>> jw1 = new JavaWild10<>();
+            JavaWild10<C1<A1<C>>> jw2 = new JavaWild10<>();
+            JavaWild10<C1<A1<A>>> jw3 = new JavaWild10<>();
+            
+            JavaWild10<A3<A1<A>>> jw4 = new JavaWild10<>();
+            JavaWild10<A3<A1<B>>> jw5 = new JavaWild10<>();
+            JavaWild10<A3<A1<C>>> jw6 = new JavaWild10<>();
+    
+        }
+    
+}
+
+
+```
+</h3>
+
+<h3><i> <li> 5.b. Instantiation based on Inner  Lower Bound and Inner Upper Bound -2 .</li></i></h3>
+
+<h3 align="Left">
+
+```Syntax
+
+interface C extends A {}
+
+interface B extends C {}
+
+interface A1<T> extends B {}
+
+interface A2<T> extends A1<T> {}
+
+interface C1<T> {}
+
+class A3<T> implements C1<T> {
+
+}
+
+public class JavaWild10<T extends C1<? super A1<? extends C>>> {
+    
+        public static void main(String[] args) {
+            JavaWild10<A3<A>> jw1 = new JavaWild10<>();
+            JavaWild10<A3<B>> jw2 = new JavaWild10<>();
+            JavaWild10<A3<C>> jw3 = new JavaWild10<>();
+            JavaWild10<A3<A1>> jw4 = new JavaWild10<>();
+
+
+            JavaWild10<C1<A>> jw5 = new JavaWild10<>();
+            JavaWild10<C1<B>> jw6 = new JavaWild10<>();
+            JavaWild10<C1<C>> jw7 = new JavaWild10<>();
+            JavaWild10<C1<A1>> jw8 = new JavaWild10<>();
+    
+        }
+    
+}
+
+```
+
+<h3><i> <li> 5.c. Instantiation based on Inner  Lower Bound and Inner Upper Bound -3 .</li></i></h3>
+
+<h3 align="Left">
+
+```Syntax
+
+interface A {}
+
+interface C extends A {}
+
+interface B extends C {}
+
+interface A1<T> extends B {}
+
+interface A2<T> extends A1<T> {}
+
+interface C1<T> {}
+
+class A3<T> implements C1<T>, A2<T> {}
+
+public class JavaWild9<T extends C1<? extends A1<? super B>> 
+			& A2<? extends A1<? super C>>> {
+
+    public static void main(String[] args) {
+        JavaWild9<A3<A1<A>>> jw1 = new JavaWild9<>();
+        
+
+    }
+
+}
+
+
+```
+</h3>
+
+<h3><i> <li> 5.c. Instantiation based on Inner  Lower Bound and Inner Upper Bound -4 .</li></i></h3>
+
+<h3 align="Left">
+
+```Syntax
+
+interface A {}
+
+interface C extends A {}
+
+interface B extends C {}
+
+interface A1<T> extends B {}
+
+interface A2<T> extends A1<T> {}
+
+interface C1<T> {}
+
+class A3<T> implements C1<T>, A2<T> {
+
+    }
+
+public class JavaWild9<T extends C1<? super A1<? extends B>> 
+			& A2<? super A1<? extends C>>> {
+
+    public void add () {
+        System.out.println("int");
+    }
+
+    public static void main(String[] args) {
+        JavaWild9<A3<A>> jw1 = new JavaWild9<>();
+        JavaWild9<A3<B>> jw2 = new JavaWild9<>();
+        JavaWild9<A3<C>> jw3 = new JavaWild9<>();
+        JavaWild9<A3<A1>> jw4 = new JavaWild9<>();       
+     
+    }	
+}
+
 
 ```
 </h3>
