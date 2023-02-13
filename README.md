@@ -2963,6 +2963,34 @@ are super types of TreeSet .
 
 </h3>
 
+<h3 align="Center"> <a href="https://github.com/AvinandanBose/JavaGeneric/blob/main/LowerBoundWildCard3.java">Fourth Example -4 </h3>
+
+<h3 align="Center">
+
+```Syntax
+
+T extends Map<? super TreeMap<E, F>, ? super TreeMap<E, F>>
+
+Where E and F are  Interfaces , in the Example.
+
+Here in the Example:
+
+TreeMap<TreeMap<E, F>, TreeMap<E, F>> ,
+TreeMap<Object, Object> ,
+TreeMap<Map<E, F>, Map<E, F>> ,
+TreeMap<SortedMap<E, F>, SortedMap<E, F>> ,
+TreeMap<NavigableMap<E, F>, NavigableMap<E, F>> and
+TreeMap<AbstractMap<E, F>, AbstractMap<E, F>> 
+are bound to :
+T extends Map<? super TreeMap<E, F>, ? super TreeMap<E, F>>
+
+And TreeMap, Object , Map, SortedMap,
+NavigableMap, and AbstractMap
+are super types of TreeMap . 
+```
+
+</h3>
+
 
 </ul>
 </ul>
