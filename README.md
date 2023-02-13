@@ -3018,6 +3018,19 @@ are super types of Number class .
 
 
 </ul>
+
+<h2><i><ins>Implementing Lower Bound WildCard as returnType of Method</ins></i></h2>
+<ul>
+<h3><i>Note : What Does < T extends List < ? super Number > > returnType FuncName(T t) mean?</i></h3>
+
+<h3> This means that this method takes in a generic argument of type T, where T must extend a List of elements that are either of type Number or a superclass of Number. The super classes of Numbers are Object and Serializable. In other words, the method accepts a list of objects that are either of type Number or a superclass of Number. Here 't' is the parameter of the method. It is of type T, which is a List of elements that is a Number or superclass of "Number".</h3>
+
+<h3 align="Center"> <a href="https://github.com/AvinandanBose/JavaGeneric/blob/main/LowerBoundWildCard5.java">  < T extends List < ? super Number > > returnType FuncName(T t) - Eg 1 </h3>
+
+
+
+</ul>
+
 </ul>
 </ul>
 <h1> Implementation of  Set in Java Generics</h1>
