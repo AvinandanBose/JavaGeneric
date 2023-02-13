@@ -2896,7 +2896,7 @@ B<? super A> = B<? super A> cannot co-exist.
 
 ```Syntax
 
-T extends List<? extends ArrayList<E>>
+T extends List<? super ArrayList<E>>
 
 Where E is a Class , in the Example.
 
@@ -2920,7 +2920,7 @@ are super types of ArrayList .
 
 ```Syntax
 
-T extends List<? extends ArrayList<E>>
+T extends List<? super ArrayList<E>>
 
 Where E is an Interface , in the Example.
 
@@ -2933,6 +2933,32 @@ T extends List<? extends ArrayList<E>>
 And AbstractList, Object , and ArrayList
 are super types of ArrayList .
 
+```
+
+</h3>
+
+
+
+<h3 align="Center"> <a href="https://github.com/AvinandanBose/JavaGeneric/blob/main/LowerBoundWildCard2.java">Third Example -3 </h3>
+
+<h3 align="Center">
+
+```Syntax
+
+T extends Set<? super TreeSet<E>>
+
+Where E is an Interface , in the Example.
+
+Here in the Example:
+
+TreeSet<TreeSet<E>>,TreeSet<Object>,
+TreeSet<Set<E>> , TreeSet<AbstractSet<E>>,
+TreeSet<NavigableSet<E>> and TreeSet<SortedSet<E>>
+are bound to T extends Set<? super TreeSet<E>>
+
+And TreeSet, Object , Set , AbstractSet,
+AbstractSet, NavigableSet and SortedSet
+are super types of TreeSet . 
 ```
 
 </h3>
