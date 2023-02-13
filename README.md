@@ -2746,7 +2746,7 @@ public class JavaWild10<T extends C1<? super A1<? extends C>>>
 
 ```
 
-<h3><i> <li> 5.d. Instantiation based on Inner  Lower Bound and Inner Upper Bound -3 .</li></i></h3>
+<h3><i> <li> 5.c. Instantiation based on Inner  Lower Bound and Inner Upper Bound -3 .</li></i></h3>
 
 <h3 align="Left">
 
@@ -2782,7 +2782,7 @@ public class JavaWild9<T extends C1<? extends A1<? super B>>
 ```
 </h3>
 
-<h3><i> <li> 5.c. Instantiation based on Inner  Lower Bound and Inner Upper Bound -4 .</li></i></h3>
+<h3><i> <li> 5.d. Instantiation based on Inner  Lower Bound and Inner Upper Bound -4 .</li></i></h3>
 
 <h3 align="Left">
 
