@@ -1904,7 +1904,7 @@ C<? extends D> = B<? extends D>
 
 <h1> </h1>
 
-<h3><li>11. Iterating Rule 1 , 9 and 10 , if generic Abstract Class implements  Generic Interface . Where super interface and abstract class after compilation looks sane in bytecode causing <i><ins> Type Erasure.  </ins></i>   </li></h3>
+<h3><li>11. Iterating Rule 1 , 9 and 10 , if generic Abstract Class implements  Generic Interface . Where super interface and abstract class after compilation looks same in bytecode causing <i><ins> Type Erasure.  </ins></i>   </li></h3>
 
 <h3>
 
@@ -2825,7 +2825,62 @@ public class JavaWild9<T extends C1<? super A1<? extends B>>
 </h3>
 
 </ul>
+<h3><i> <li> 6. Other Type Erasures.</li></i></h3>
+<ul>
+<h3><i> <li> 6.a Other Type Erasures-1.</li></i></h3>
 
+<h3 align="Left">
+
+```Synatx
+
+interface A {}
+
+interface B<T> extends A {}
+
+interface C<T> extends B<T> {}
+
+class D implements C<A> {}
+
+public class JavaWild11<T extends C<? super D> & B<? super D>> {}
+
+```
+</h3>
+
+<h3><i><ins>Note:</ins> Generic interface C<T> extends B<T> , hence super or parent is B , during compilation the byte code and erase the sub interface and impose error for type safety which also known as Type Erasure. </i></h3>
+
+<h3><i> <li> 6.b Other Type Erasures-2. [Same Rule for Abstract Class ]</li></i></h3>
+
+<h3 align="Left">
+
+```Synatx
+
+interface A {}
+
+interface B<T> extends A {}
+
+interface C<T> extends B<T> {}
+
+abstract class D<T> implements C<T>{} 
+
+class JavaWild11<T extends D<? super A> & C<? super A>> {}
+
+class JavaWild12<T extends D<? super A> & B<? super A>> {}
+
+[Explanation:]
+
+D<? super A> = C<? super A>
+C<? super A> = C<? super A> cannot co-exist.
+
+
+D<? super A> = B<? super A>
+B<? super A> = B<? super A> cannot co-exist.
+
+```
+</h3>
+
+<h3><i><ins>Note:</ins> Abstract Class and Class 's rules are same . </i></h3>
+
+</ul>
 </ul>
 </ul>
 
