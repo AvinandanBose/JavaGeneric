@@ -3027,7 +3027,20 @@ are super types of Number class .
 
 <h3 align="Center"> <a href="https://github.com/AvinandanBose/JavaGeneric/blob/main/LowerBoundWildCard5.java">  < T extends List < ? super Number > > returnType FuncName(T t) - Eg 1 </h3>
 
+<h3><i><ins>Similarly,  </ins></i></h3>
 
+<h3 align="Center"> <a href="https://github.com/AvinandanBose/JavaGeneric/blob/main/LowerBoundWildCard6.java">  < T extends List < ? super String > >  returnType FuncName (T t) - Eg 2 </h3>
+
+<h3 align="Center">
+
+```Syntax
+
+Here String,Object,Serializable,Comparable<String> and CharSequence 
+Are Super Types of String.
+
+```
+
+</h3>
 
 </ul>
 
