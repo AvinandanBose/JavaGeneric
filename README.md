@@ -2499,7 +2499,7 @@ Hence , both B and A are used as Type to create Object.
 <h3><i> <li> 3. Instantiation[Multiple Upper Bound].</li></i></h3>
 
 <ul>
-<h3><i> <li> 3.a. Instantiation based on Multiple Upper Bound -2 .</li></i></h3>
+<h3><i> <li> 3.a. Instantiation based on Multiple Upper Bound -1 .</li></i></h3>
 
 <h3 align="Left">
 
@@ -2551,7 +2551,7 @@ Hence , both B,C and A are used as Type to create Object.
 ```
 </h3>
 
-<h3><i> <li> 3.a. Instantiation based on Multiple Upper Bound -1 .</li></i></h3>
+<h3><i> <li> 3.b. Instantiation based on Multiple Upper Bound -2.</li></i></h3>
 
 <h3 align="Left">
 
