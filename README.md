@@ -2598,9 +2598,123 @@ Hence B Cannot be taken as Type.
 
 ```
 </h3>
+</ul>
 
+<h3><i> <li> 4. Instantiation based on Inner  Lower Bound .</li></i></h3>
+
+<ul>
+
+<h3><i> <li> 4.a. Instantiation based on Inner  Lower Bound  -1 .</li></i></h3>
+
+<h3 align="Left">
+
+```Syntax
+
+interface A {
+
+}
+
+interface C extends A {
+
+}
+
+interface B extends C {
+
+}
+
+interface A1<T> extends B {
+
+}
+
+interface C1<T>  {
+
+}
+
+class A2<T> implements C1<T>{
+
+}
+
+public class JavaWild6 <T extends C1<? super A1<? super B>>> {
+
+    public static void main(String[] args) {
+        JavaWild6<A2<A>> jw1 = new JavaWild6<>();
+        JavaWild6<A2<B>> jw2 = new JavaWild6<>();
+        JavaWild6<A2<C>> jw3 = new JavaWild6<>();
+        JavaWild6<A2<A1>> jw4 = new JavaWild6<>();
+        JavaWild6<C1<A>> jw5 = new JavaWild6<>();
+        JavaWild6<C1<B>> jw6 = new JavaWild6<>();
+        JavaWild6<C1<C>> jw7 = new JavaWild6<>();
+        JavaWild6<C1<A1>> jw8 = new JavaWild6<>();
+        
+    }
+    
+}
+
+Note →  Super types of A1 is: B , C, A and A1.
+To implement A1 as type i.e. A1 we cannot implement as Generic , 
+i.e. Cannot be Parameterized , which will generate error,
+i.e. A1<A>, A1<B> cannot be used, where A,B is super of B.
+Rather than we implement it as RAW type and will generate Warning.
+
+As,
+JavaWild6<A2<A1>> jw4 = new JavaWild6<>();
+JavaWild6<C1<A1>> jw8 = new JavaWild6<>();
+
+```
+</h3>
+
+<h3><i> <li> 4.b. Instantiation based on Inner  Lower Bound  -2 .</li></i></h3>
+
+<h3 align="Left">
+
+```Syntax
+
+interface A {
+
+}
+
+interface C extends A {
+
+}
+
+interface B extends C {
+
+}
+
+interface A1<T> extends B {
+
+}
+
+interface A2<T> extends A1<T> {
+
+}
+
+interface C1<T> {
+
+}
+
+class A3<T> implements C1<T>, A2<T> {
+
+}
+
+public class JavaWild8 <T extends C1<? super A1<? super B>> & 
+				A2<? super A1<? super C>>>{
+
+    public static void main(String[] args) {
+        JavaWild8<A3<A>> jw1 = new JavaWild8<>();
+        JavaWild8<A3<B>> jw2 = new JavaWild8<>();
+        JavaWild8<A3<C>> jw3 = new JavaWild8<>();
+        JavaWild8<A3<A1>> jw4 = new JavaWild8<>();
+        
+    }
+    
+}
+
+```
+</h3>
 
 </ul>
+
 </ul>
 </ul>
 
