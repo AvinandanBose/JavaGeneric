@@ -2723,7 +2723,8 @@ class A3<T> implements C1<T> {
 
 }
 
-public class JavaWild10<T extends C1<? super A1<? extends C>>> {
+public class JavaWild10<T extends C1<? super A1<? extends C>>>
+{
     
         public static void main(String[] args) {
             JavaWild10<A3<A>> jw1 = new JavaWild10<>();
@@ -2764,7 +2765,8 @@ interface C1<T> {}
 class A3<T> implements C1<T>, A2<T> {}
 
 public class JavaWild9<T extends C1<? extends A1<? super B>> 
-			& A2<? extends A1<? super C>>> {
+			& A2<? extends A1<? super C>>> 
+{
 
     public static void main(String[] args) {
         JavaWild9<A3<A1<A>>> jw1 = new JavaWild9<>();
