@@ -2886,9 +2886,32 @@ B<? super A> = B<? super A> cannot co-exist.
 </ul>
 </ul>
 </ul>
-
 </ul>
+<h1> </h1>
+<h3><i> <ins>Example of Implementation of Some of the PreBuilt Interfaces and Classes in Lower Bound WildCards. </ins></i></h3>
 
+<h3 align="Center"> <a href="https://github.com/AvinandanBose/JavaGeneric/blob/main/LowerBoundWildCard1.java">First Example -1 </h3>
+
+<h3 align="Center">
+
+```Syntax
+
+T extends List<? extends ArrayList<E>>
+
+Where E is a Class , in the Example.
+
+Here in the Example:
+
+ArrayList<AbstractList<E>>,ArrayList<ArrayList<E>>,
+ArrayList<Object> are bound to 
+T extends List<? extends ArrayList<E>>
+
+And AbstractList, Object , and ArrayList
+are super types of ArrayList .
+
+```
+
+</h3>
 </ul>
 </ul>
 </ul>
