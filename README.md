@@ -2496,6 +2496,108 @@ Hence , both B and A are used as Type to create Object.
 
 </ul>
 
+<h3><i> <li> 3. Instantiation[Multiple Upper Bound].</li></i></h3>
+
+<ul>
+<h3><i> <li> 3.a. Instantiation based on Multiple Upper Bound -2 .</li></i></h3>
+
+<h3 align="Left">
+
+```Syntax
+
+interface A {
+
+}
+
+interface C extends A {
+
+}
+
+interface B extends C {
+
+}
+
+interface A1<T> {
+
+}
+
+interface C1<T> {
+
+}
+
+class A2<T> implements A1<T>,C1<T> {
+
+}
+
+public class JavaWild4 <T extends A1<? super B> & C1<? super B>> {
+
+    public static void main(String[] args) {
+        JavaWild4<A2<A>> jw1 = new JavaWild4<>();
+        JavaWild4<A2<B>> jw2 = new JavaWild4<>();
+        JavaWild4<A2<C>> jw3 = new JavaWild4<>();
+        
+    }
+    
+}
+
+Note→ A is Super Interface of B.
+And, C is Super Interface of B.
+And, Including B itself.
+Hence , both B,C and A are used as Type to create Object.
+
+
+
+```
+</h3>
+
+<h3><i> <li> 3.a. Instantiation based on Multiple Upper Bound -1 .</li></i></h3>
+
+<h3 align="Left">
+
+```Syntax
+
+interface A {
+
+}
+
+interface C extends A {
+
+}
+
+interface B extends C {
+
+}
+
+interface A1<T> {
+
+}
+
+interface C1<T> {
+
+}
+
+class A2<T> implements A1<T>, C1<T> {
+
+}
+public class JavaWild5 <T extends A1<? super C> & C1<? super B>>{
+    public static void main(String[] args) {
+        JavaWild5<A2<A>> jw1 = new JavaWild5<>();
+        JavaWild5<A2<C>> jw3 = new JavaWild5<>();
+    }
+    
+}
+
+Note→ A is Super Interface of B.
+And, C is Super Interface of B.
+And, But B is not super interface of C.
+
+Hence B Cannot be taken as Type.
+
+```
+</h3>
+
+
+</ul>
 </ul>
 </ul>
 
