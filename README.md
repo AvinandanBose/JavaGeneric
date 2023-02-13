@@ -2841,7 +2841,8 @@ interface C<T> extends B<T> {}
 
 class D implements C<A> {}
 
-public class JavaWild11<T extends C<? super D> & B<? super D>> {}
+public class JavaWild11<T extends C<? super D> & B<? super D>>{
+}
 
 ```
 </h3>
