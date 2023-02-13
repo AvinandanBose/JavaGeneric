@@ -2862,9 +2862,11 @@ interface C<T> extends B<T> {}
 
 abstract class D<T> implements C<T>{} 
 
-class JavaWild11<T extends D<? super A> & C<? super A>> {}
+class JavaWild11<T extends D<? super A> & C<? super A>>{
+}
 
-class JavaWild12<T extends D<? super A> & B<? super A>> {}
+class JavaWild12<T extends D<? super A> & B<? super A>>{
+}
 
 [Explanation:]
 
