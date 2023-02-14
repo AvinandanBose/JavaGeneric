@@ -3087,6 +3087,32 @@ Which satisfies T extends Set.
 
 </h3>
 
+<h3 align="Center"> <a href="https://github.com/AvinandanBose/JavaGeneric/blob/main/LowerBoundWildCard8.java">  < T extends Map < ? super String, ? super Number > > returnType FuncName (T t) - Eg 3 </h3>
+
+<h3> <i> <ins> Explanation: </ins> The generic method  that takes a single argument of a type T, which must be a subtype(Sub Classes) of Map with keys of type String or a supertype of String, and values of type Number or a subtype of Number. The method returns the same type T that was passed in as an argument. </i></h3>
+
+
+<h3 align="Center">
+
+```Syntax
+
+We already know:
+ 
+Serializable,Number,Serializable,and Object are Super Types of Number.
+
+String,Object,Serializable,Comparable<String> and CharSequence 
+Are Super Types of String.
+
+Where as , HashMap<String, Number>, HashMap<String, Serializable>
+...etc. are bound to T extends Map<? super String, ? super Number> .
+
+And HashMap is subclass/childclass of Map.
+Which satisfies T extends Map.
+
+```
+
+</h3>
+
 </ul>
 
 </ul>
