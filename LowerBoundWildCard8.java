@@ -1,4 +1,5 @@
 import java.io.Serializable;
+import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Map;
 
@@ -44,12 +45,12 @@ public class LowerBoundWildCard8 {
     }
 
     public static void main(String[] args) {
-        Map<String, Number> map = new java.util.HashMap<>();
-        Map<String, Serializable> map1 = new java.util.HashMap<>();
-        Map<String, Object> map2 = new java.util.HashMap<>();
-        Map<Object, Number> map3 = new java.util.HashMap<>();
-        Map<Object, Serializable> map4 = new java.util.HashMap<>();
-        Map<Object, Object> map5 = new java.util.HashMap<>();
+        HashMap<String, Number> map = new HashMap<>();
+        HashMap<String, Serializable> map1 = new HashMap<>();
+        HashMap<String, Object> map2 = new HashMap<>();
+        HashMap<Object, Number> map3 = new HashMap<>();
+        HashMap<Object, Serializable> map4 = new HashMap<>();
+        HashMap<Object, Object> map5 = new HashMap<>();
         
         test(map, 1, "a");
         test(map, 2, "b");
