@@ -3134,6 +3134,21 @@ Which satisfies T extends Map.
 
 
 </ul>
+<h2><i><ins>Implementing Lower Bound WildCard as Variable</ins></i></h2>
+<ul>
+<h3> <i> <ins>Note:</ins> When we say List < ? super Type > , Set < ? super Type > and Map < ? super Key , ? super Value > i.e. their type information are  available at runtime i.e.  <ins>reifiable</ins>, hence  alterable and editable. As super keyword calls the same Class and its super type classes.Therefore we can add , remove , any element during runtime. </i> </h3>
+
+<ul>
+
+<h3><li> <a href="https://github.com/AvinandanBose/JavaGeneric/blob/main/LowerBoundWildCard12.java"> 1.  List < ? super Number > list = new ArrayList < > ( ) -Eg 1 </li></h3>
+
+<h3><li> <a href="https://github.com/AvinandanBose/JavaGeneric/blob/main/LowerBoundWildCard13.java"> 2.  Set < ? super Number > set = new HashSet < > ( ) -Eg 2</li></h3>
+
+<h3><li> <a href="https://github.com/AvinandanBose/JavaGeneric/blob/main/LowerBoundWildCard14.java"> 3.  Map < ? super String , ? super Number > map = new HashMap < >( )  -Eg 3 </li></h3>
+
+</ul>
+</ul>
+
 
 </ul>
 </ul>
