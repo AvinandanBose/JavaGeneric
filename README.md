@@ -3252,6 +3252,38 @@ create Object.
 ```
 
 </h3>
+	
+<h3> <i>3. When a class and interface is used in Multiple Upper Bound and no class exist that inherit both the class and interface.</i></h3>
+
+<h3> <a href="https://github.com/AvinandanBose/JavaGeneric/blob/main/UnboundedWildCards2.java"> Unbound Wild Card  Eg -3 </a> </h3>
+
+<h3 align="left">
+
+```Syntax
+
+import java.util.Set;
+import java.util.ArrayList;
+
+public class WildCards<T extends ArrayList<Number> & Set<Number>> {
+
+    public static void main(String[] args) {
+
+        WildCards<?> a = new  WildCards<>();
+        WildCards<?> b = new  WildCards<>();
+        WildCards<?> c = new  WildCards<>();
+        // .....etc.
+	
+    }
+
+}
+
+Here there are no class exist that extends ArrayList and implements Set 
+interface  hence UnBounded Wild Card is used. 
+
+```
+
+</h3>
+	
 
 </ul>
 
