@@ -3046,7 +3046,7 @@ of an Object class is passed.
 
 <h3 align="Center"> <a href="https://github.com/AvinandanBose/JavaGeneric/blob/main/LowerBoundWildCard6.java">  < T extends List < ? super String > >  returnType FuncName (T t) - Eg 2 </h3>
 
-<h3><i><ins>Explanation</ins>The method  takes a generic type parameter "T" that extends List of some type that is a superclass of String and it takes a parameter which is an object of type "T" .</i></h3>
+<h3><i><ins>Explanation:</ins>The method  takes a generic type parameter "T" that extends List of some type that is a superclass of String and it takes a parameter which is an object of type "T" .</i></h3>
 
 <h3 align="Center">
 
