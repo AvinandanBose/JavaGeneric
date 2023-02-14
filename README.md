@@ -3185,6 +3185,42 @@ Hence "Wild Card" is must here.
 
 </h3>
 
+<h3> <i>1. Unbound Wild Card Over Class </i></h3> 
+<ul>
+
+<h3> <a href="https://github.com/AvinandanBose/JavaGeneric/blob/main/UnboundedWildCards.java"> Unbound Wild Card Over Class Eg -1 </a> </h3>
+
+<h3 align="left">
+
+```Syntax
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class WildCards<T extends List<?>> {
+
+    public static void main(String[] args) {
+
+        WildCards<ArrayList<Integer>> a = new WildCards<>();
+        WildCards<Float>> b = new WildCards<>();
+       	WildCards<ArrayList<Double>> c = new WildCards<>();
+        WildCards<ArrayList<Comparable<Number>>> c1 = new WildCards<>();
+        // .....etc.
+	
+    }
+
+}
+
+Here we see as List<?> is unbounded it take Integer,
+Float, Double , Comparable etc. any types as its bound while 
+creating object.
+
+```
+
+</h3>
+
+
+</ul>
 
 
 </ul>
