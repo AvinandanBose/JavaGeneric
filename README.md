@@ -3154,7 +3154,37 @@ Which satisfies T extends Map.
 
 <h3><i><ins>Unbounded WildCard: </ins>Unbounded means here not bounded by any Upper Bound "extends" or Lower Bound "super" . Then the Type is only bounded by WildCard "?" which enables all types of reference to be passed in parameter. It accepts everything dynamically to be passed in type during runtime . Hence it is known as <ins> "Unbounded WildCards" </ins> .</i></h3>
 
-<h3> <i><ins>Note:</ins>When we donot know what would be the type to pass in parameter , suppose there are two interfaces but there is no class that implement the interfaces and both the interfaces are bounded by a Generic class, hence the only option remains to create object of that class is using "< ? >" unbounded wild card.</i></h3>
+<h3> <i><ins>Note : </ins> When we donot know what would be the type to pass in parameter , suppose there are two interfaces but there is no class that implement the interfaces and both the interfaces are bounded by a Generic class, hence the only option remains to create object of that class is using "< ? >" unbounded wild card.</i></h3>
+
+
+<h3 align="left">
+
+```Syntax
+
+interface A{}
+
+interface B<T>{}
+
+interface C<T>{}
+
+ class WildCards< T extends B<? extends A> & C<? super A>> {
+
+    public static void main(String[] args) {
+       
+        WildCards<?> a = new WildCards<>();
+
+    }
+    
+}
+	
+Here we see there is no class exist ,
+that implement interfaces B and C.
+Hence "Wild Card" is must here.
+
+```
+
+</h3>
+
 
 
 </ul>
