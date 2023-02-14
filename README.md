@@ -3188,7 +3188,7 @@ Hence "Wild Card" is must here.
 <h3> <i>1. Unbound Wild Card Over Class </i></h3> 
 <ul>
 
-<h3> <a href="https://github.com/AvinandanBose/JavaGeneric/blob/main/UnboundedWildCards.java"> Unbound Wild Card Over Class Eg -1 </a> </h3>
+<h3> <a href="https://github.com/AvinandanBose/JavaGeneric/blob/main/UnboundedWildCards.java"> Unbound Wild Card Eg -1 </a> </h3>
 
 <h3 align="left">
 
@@ -3219,6 +3219,39 @@ creating object.
 
 </h3>
 
+<h3> <i>2. When no class implements two Interfaces in a Multiple Upper Bound </i></h3>
+
+<h3> <a href="https://github.com/AvinandanBose/JavaGeneric/blob/main/UnboundedWildCards1.java"> Unbound Wild Card  Eg -2 </a> </h3>
+
+
+<h3 align="left">
+
+```Syntax
+
+import java.util.Set;
+import java.util.List;
+
+public class WildCards<T extends List<Number> & Set<Number>> {
+
+    public static void main(String[] args) {
+
+        WildCards<?> a = new  WildCards<>();
+        WildCards<?> b = new  WildCards<>();
+        WildCards<?> c = new  WildCards<>();
+        // .....etc.
+	
+    }
+
+}
+
+Here there is no class no class that implements,
+both interface of List and Set. Hence we need to
+pass "UnBound WildCard" as Type as shown above to
+create Object.
+
+```
+
+</h3>
 
 </ul>
 
