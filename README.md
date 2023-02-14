@@ -3117,6 +3117,24 @@ Which satisfies T extends Map.
 
 <h2><i><ins>Implementing Lower Bound WildCard as Parameter of Method</ins></i></h2>
 
+<ul>
+<h3><i>Note : What Does   ' void funcName ( List < ? super Number > num ) ' mean?  </i></h3>
+
+<h3><i> <ins>Explanation:</ins> `void` indicates that the function does not return any value."funcName" is the name of the function. "List" is a generic interface in Java that represents an ordered collection of elements. " < ? super Number > " is a bounded wildcard type that specifies that the list can contain elements of any type that is a superclass of the Number class. This means that the list can contain objects of type Number or any of its subclasses (such as Integer, Double, etc.). As we know it takes Number and its super types of abtsract Number class i.e. Serializable and Object. </i></h3>
+
+<h3 align="Center"> <a href="https://github.com/AvinandanBose/JavaGeneric/blob/main/LowerBoundWildCard9.java"> void funcName ( List < ? super Number > num ) - [Return Type Void ] -Eg 4 </h3>
+
+<h3><i>Note : What Does   ' List < ? super Number > funcName ( List < ? super Number > num ) ' mean?  </i></h3>
+
+<h3><i> <ins>Explanation:</ins> The method signature " List < ? super Number > funcName ( List < ? super Number > num)" declares a method named "funcName" that takes in a list of elements that are either of type Number or a superclass of Number, and returns a List of elements that are also either of type Number or a superclass of Number. The keyword "super" is used to denote a lower bound on the type parameter, which means that the list can contain elements of the specified type or any of its superclasses. </i></h3>
+
+<h3 align="Center"> <a href="https://github.com/AvinandanBose/JavaGeneric/blob/main/LowerBoundWildCard10.java"> List < ? super Number > funcName ( List < ? super Number > num )  - [Return Type Bounded List ] -Eg 5 </h3>
+
+<h3><i> Similarly, it goes same for <ins> Set </ins> , <ins> Map </ins>  ... etc.</i></h3>
+
+
+</ul>
+
 </ul>
 </ul>
 <h1> Implementation of  Set in Java Generics</h1>
