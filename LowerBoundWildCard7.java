@@ -28,14 +28,15 @@ public class LowerBoundWildCard7 {
     }
 
     public static void main(String[] args) {
-        Set<Number> set = new HashSet<>();
-        Set<Serializable> set1 = new HashSet<>();
-        Set<Object> set2 = new HashSet<>();
+        HashSet<Number> set = new HashSet<>();
+        HashSet<Serializable> set1 = new HashSet<>();
+        HashSet<Object> set2 = new HashSet<>();
         test(set, 1);
         test(set, 2);
         test(set, 3);
         test(set1, 2);
         test(set2, 3);
+       
 
     }
 
