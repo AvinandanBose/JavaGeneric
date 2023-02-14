@@ -3148,7 +3148,14 @@ Which satisfies T extends Map.
 
 </ul>
 </ul>
+<h1> </h1>
+<h1 align="Center"> UnBounded Wild Card</h1>
+<ul>
 
+<h3><i><ins>Unbounded WildCard: </ins>Unbounded means here not bounded by any Upper Bound "extends" or Lower Bound "super" . Then the Type is only bounded by WildCard "?" which enables all types of reference to be passed in parameter. It accepts everything dynamically to be passed in type during runtime . Hence it is known as <ins> "Unbounded WildCards" </ins> .</i></h3>
+
+
+</ul>
 
 </ul>
 </ul>
