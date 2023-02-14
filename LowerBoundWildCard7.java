@@ -1,4 +1,5 @@
 import java.io.Serializable;
+import java.util.HashSet;
 import java.util.Iterator;
 import java.util.Set;
 
@@ -27,9 +28,9 @@ public class LowerBoundWildCard7 {
     }
 
     public static void main(String[] args) {
-        Set<Number> set = new java.util.HashSet<>();
-        Set<Serializable> set1 = new java.util.HashSet<>();
-        Set<Object> set2 = new java.util.HashSet<>();
+        Set<Number> set = new HashSet<>();
+        Set<Serializable> set1 = new HashSet<>();
+        Set<Object> set2 = new HashSet<>();
         test(set, 1);
         test(set, 2);
         test(set, 3);
