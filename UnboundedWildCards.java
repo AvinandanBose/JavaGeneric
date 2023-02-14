@@ -12,13 +12,13 @@ public class UnboundedWildCards<T extends List<?>> {
         UnboundedWildCards<ArrayList<Integer>> a = new UnboundedWildCards<>();
         UnboundedWildCards<ArrayList<Float>> b = new UnboundedWildCards<>();
         UnboundedWildCards<ArrayList<Double>> c = new UnboundedWildCards<>();
-
+        UnboundedWildCards<ArrayList<Comparable<Number>>> c1 = new UnboundedWildCards<>();
         // .....etc.
 
         a.add(1, 2);
         b.add(1, 2);
         c.add(1, 2);
-
+        c1.add(1, 2);
     }
 
 }
