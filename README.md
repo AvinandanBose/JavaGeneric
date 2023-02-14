@@ -3066,6 +3066,27 @@ Which satisfies T extends List .
 
 </h3>
 
+<h3 align="Center"> <a href="https://github.com/AvinandanBose/JavaGeneric/blob/main/LowerBoundWildCard7.java">  < T extends Set < ? super Number > >  returnType FuncName (T t) - Eg 2 </h3>
+
+<h3> <i> <ins> Explanation: </ins> It  defines a generic method  that takes a parameter of a type T, which must be a subtype of Set and can contain any superclass of Number. The method returns the same type T.In other words, the method  can accept any type of Set, such as HashSet < Serializable >, HashSet < Number > and HashSet < Object > i.e. It accept a Number or its supertype. The method returns the same type T that was passed in as a parameter. </i></h3>
+
+
+<h3 align="Center">
+
+```Syntax
+
+Here Serializable,Number,Serializable,and Object are Super Types of Number.
+
+Where as  HashSet<Serializable>, HashSet<Number> and HashSet<Object> 
+are bound to T extends Set < ? super Number >  .
+
+And HashSet is subclass/childclass of Set.
+Which satisfies T extends Set.
+
+```
+
+</h3>
+
 </ul>
 
 </ul>
