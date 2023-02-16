@@ -837,9 +837,46 @@ special conditions apply. </h3>
  <h2> 3. Run-Time Comparisons within a Generic Hierarchy </h2> 
  
  <ul>
+  <h3> <a href="https://github.com/AvinandanBose/JavaGeneric/blob/main/GenHierarchy6.java"> Generic Hierarchy→ Eg- 6 </a></h3>
+	 
+<h3 align="Left">
  
+ ```Synatx
+ 
+class Gen3<T>{ ... }
+	
+class Gen4<T> extends Gen3<T>{ ... }
+	
+class HierDemo{ 
+
+	Gen3<Integer> iOb = new Gen3<Integer>();
+        Gen4<Integer> iOb2 = new Gen4<Integer>();
+        Gen4<String> strOb2 = new Gen4<String>();
+	
+	if(iOb2 instanceof Gen4<Integer>){...}
+
+        if (iOb2 instanceof Gen3<Integer>) {...}
+
+        if(strOb2 instanceof Gen4<String>){...}
+ 
+        if (strOb2 instanceof Gen3<String>) {...}
+
+        if (iOb instanceof Gen3<Integer>) {...}
+
+        if (iOb instanceof Gen4<Integer>) {...}
+           
+	
+	}
+ 
+ ```
+ 
+ </h3>
+	 
+<h3> Explanation: The program performs these instanceof tests on the type of Objects through <i> instanceof </i> which shows RunTime Comparisons between Objects with a specified type. </h3>
  
  </ul>
+
+ <h2> 4. Casting </h2> 
 
 </ul>
 
