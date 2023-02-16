@@ -692,6 +692,103 @@ the Gen superclass. Thus, even if a subclass of a generic superclass would
 otherwise not need to be generic, it still must specify the type parameter(s)
 required by its generic superclass. If type "T" is not specified then we have to specify the type of class Gen whether <i>Integer</i>, <i>String</i> etc. during Inheritance and then compiler will ask to have a  constructor of Sub Class as super Generic class have a constructor and the SubClass's constructor will have a cast of Type "< T >" as shown above.</i></h3>
 
+<h3><i> A subclass is free to add its own type parameters, if needed.</i></h3>
+
+ <h3> <a href="https://github.com/AvinandanBose/JavaGeneric/blob/main/GenHierarchy3.java"> Generic Hierarchy→ Eg- 3 </a></h3>
+
+<h3 align="Left">
+
+```Synatx
+
+class Gen<T> {
+    T obj;
+
+    Gen(T o) {
+        obj = o;
+    }
+
+    T getObj() {
+        return obj;
+    }
+
+}
+
+public class GenHierarchy3<V> extends Gen<V> {
+
+    GenHierarchy3(V o) {
+        super(o);
+        
+    }
+
+    public static void main(String args[]) {
+        GenHierarchy3<String> x = new GenHierarchy3<String>("Generics Test");
+        System.out.println(x.getObj());
+    }
+    
+}
+
+
+```
+</h3>
+
+<h3> Here if Sub Class have single Type parameter and if it changes , then the same type must be put to the "Type" to the Parent class.  </h3>
+
+<h3> <a href="https://github.com/AvinandanBose/JavaGeneric/blob/main/GenHierarchy4.java"> Generic Hierarchy→ Eg- 4 </a></h3>
+
+<h3 align="Left">
+
+```Synatx
+
+class Gen<T> {
+    T obj;
+
+    Gen(T o) {
+        obj = o;
+    }
+
+    T getObj() {
+        return obj;
+    }
+
+}
+
+ public class GenHierarchy4<V,T> extends Gen<T> {
+    V ob2;
+
+    GenHierarchy4(T o, V o2) {
+        super(o);
+        ob2 = o2;
+        
+    }
+
+    V getOb2() {
+        return ob2;
+    }
+
+    public static void main(String args[]) {
+        GenHierarchy4<Integer, String> x = new GenHierarchy4<>("Generics Test", 88);
+        System.out.println(x.getObj());
+        System.out.println(x.getOb2());
+    }
+    
+}
+
+
+
+```
+</h3>
+
+<h3>Here, T is the type passed to Gen, and V is the type that is specific to GenHierarchy4. V
+is used to declare an object called ob2, and as a return type for the method
+getob2( ). In main( ), a Gen2 object is created in which type parameter T is
+String, and type parameter V is Integer.</h3>
+ 
+ </ul>
+ 
+ <h2> 2. A Generic Subclass </h2> 
+ 
+ <ul>
+ 
  
  
  </ul>
