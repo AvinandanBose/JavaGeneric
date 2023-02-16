@@ -687,10 +687,10 @@ public class GenHierarchy2 extends Gen<String> {
 
 </h3>
 
-<h3><i>Notice also that Gen2 does not use the type parameter T except to support
+<h3><i>Notice also that GenHierarchy2 does not use the type parameter T except to support
 the Gen superclass. Thus, even if a subclass of a generic superclass would
 otherwise not need to be generic, it still must specify the type parameter(s)
-required by its generic superclass.</i></h3>
+required by its generic superclass. If type "T" is not specified then we have to specify the type of class Gen whether <i>Integer</i>, <i>String</i> etc. during Inheritance and then compiler will ask to have a  constructor of Sub Class as super Generic class have a constructor and the SubClass's constructor will have a cast of Type "< T >" as shown above.</i></h3>
 
  
  
