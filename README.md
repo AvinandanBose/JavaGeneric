@@ -651,8 +651,47 @@ class GenHierarchy1 <T> extends Gen<T>
 
 <h3> <i>It passes String as type parameter to <i>Gen</i>. Thus the obj inside the Gen portion of Gen2 will be of type Integer.</i></h3> 
 
+ <h3> <a href="https://github.com/AvinandanBose/JavaGeneric/blob/main/GenHierarchy2.java"> Generic Hierarchy→ Eg- 2 </a></h3>
  
- 
+ <h3 align="Left">
+
+```Synatx
+
+class Gen<T> {
+    T obj;
+
+    Gen(T o) {
+        obj = o;
+    }
+
+    T getObj() {
+        return obj;
+    }
+
+}
+
+public class GenHierarchy2 extends Gen<String> {
+    <T> GenHierarchy2(T o) {
+        super((String)o);
+    }
+
+    public static void main(String args[]) {
+        GenHierarchy2 x = new GenHierarchy2("Generics Test");
+        System.out.println(x.getObj());
+    }
+    
+}
+
+
+```
+
+</h3>
+
+<h3><i>Notice also that Gen2 does not use the type parameter T except to support
+the Gen superclass. Thus, even if a subclass of a generic superclass would
+otherwise not need to be generic, it still must specify the type parameter(s)
+required by its generic superclass.</i></h3>
+
  
  
  </ul>
