@@ -583,7 +583,15 @@ class A2<T>{
   <h3><li><a href= "https://github.com/AvinandanBose/JavaGeneric/blob/main/java_generics38.java" >Eg-5  </a></li></h3>
   </ul>
   </ul>
-<h2> Bounded Generic Types</h2>
+  
+<h1>Generic Class Hierarchies</h1>
+<h3> Generics classes can be part of a class hierarchy in just the same way as a non-generic class. Thus a generic class can act as a super-class or be a subclass. The key difference between generic and non-generic is that in a generic hierarchy, any type arguments needed by a generic super-class must be passed up the hierarchy by all subclasses. This is similar to the way that constructor arguments must be passed up a hierarchy. </h3>
+<ul>
+<h2> 1. Using a Generic Superclass </h2> 
+
+</ul>
+
+<h1> Bounded Generic Types</h1>
 <ul>
 <h3><li>1. There are times when we want to restrict the kind of types that are allowed to be passed to a type parameter.</li></h3>
 <h3><li>2. To declare a bounded type parameter, list the parameter's name , followed by the extends keyword.</li></h3>
