@@ -877,6 +877,42 @@ class HierDemo{
  </ul>
 
  <h2> 4. Casting </h2> 
+ 
+ <ul>
+ <h3>We can cast one instance of a generic class into another only if the two are
+otherwise compatible and their type arguments are the same. For example,
+assuming the foregoing program, this cast is legal: </h3>
+
+ <h3> <a href="https://github.com/AvinandanBose/JavaGeneric/blob/main/GenHierarchy7.java"> Generic Hierarchy→ Eg- 7 </a></h3>
+
+<h3 align="Left">
+
+```Syntax
+
+((Gen<Integer>) iOb2 ).obj = 100; //Legal
+((Gen<String>) strOb2).obj = "Generics Test 2";// Legal
+((Gen<Integer>) iOb).obj = 1000;// Legal
+
+```
+</h3>
+
+<h3> iOb2 includes an instance of Gen < Integer > , strOb2 includes an instance of Gen < String > and iOb is an instance of Gen < Integer > . But, this cast: </h3>
+
+<h3 align="Left">
+
+```Syntax
+
+((Gen<Long>) iOb2).obj = 101; Illegal
+
+```
+</h3>
+
+<h3> is not legal because iOb2 is not an instance of Gen < Long >. </h3>
+ 
+ </ul>
+ 
+ 
+<h2> 5. Overriding Methods in a Generic Class </h2> 
 
 </ul>
 
