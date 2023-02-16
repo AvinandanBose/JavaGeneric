@@ -588,6 +588,74 @@ class A2<T>{
 <h3> Generics classes can be part of a class hierarchy in just the same way as a non-generic class. Thus a generic class can act as a super-class or be a subclass. The key difference between generic and non-generic is that in a generic hierarchy, any type arguments needed by a generic super-class must be passed up the hierarchy by all subclasses. This is similar to the way that constructor arguments must be passed up a hierarchy. </h3>
 <ul>
 <h2> 1. Using a Generic Superclass </h2> 
+ <ul>
+ <h3> <a href="https://github.com/AvinandanBose/JavaGeneric/blob/main/GenHierarchy1.java"> Generic Hierarchy→ Eg- 1 </a></h3>
+ 
+ <h3 align="Left">
+ 
+ ```Syntax
+ 
+ class Gen<T> {
+    T obj;
+
+    Gen(T o) {
+        obj = o;
+    }
+
+    T getObj() {
+        return obj;
+    }
+
+}
+
+public class GenHierarchy1 <T> extends Gen<T> {
+    GenHierarchy1(T o) {
+        super(o);
+    }
+
+    public static void main(String args[]) {
+        GenHierarchy1<String> x = new GenHierarchy1<String>("Generics Test");
+        System.out.println(x.getObj());
+    }
+ 
+ 
+ ```
+ 
+ </h3>
+ 
+ <h3 align="Left">
+
+```Synatx
+
+class GenHierarchy1 <T> extends Gen<T>
+
+
+```
+
+</h3>
+
+
+<h3> <i> Here type 'T' is specified by Gen2 and is also passed to Gen in the extends clause.</i></h3>
+<h3> <i> This means that whatever type is passed to Gen2 will also be passed to Gen.</i></h3>
+
+<h3 align="Left">
+
+```Synatx
+
+
+ GenHierarchy1<String> x = new GenHierarchy1<String>("Generics Test");
+
+```
+
+</h3>
+
+<h3> <i>It passes String as type parameter to <i>Gen</i>. Thus the obj inside the Gen portion of Gen2 will be of type Integer.</i></h3> 
+
+ 
+ 
+ 
+ 
+ </ul>
 
 </ul>
 
