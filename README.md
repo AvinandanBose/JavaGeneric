@@ -766,7 +766,8 @@ class Gen<T> {
     }
 
     public static void main(String args[]) {
-        GenHierarchy4<Integer, String> x = new GenHierarchy4<>("Generics Test", 88);
+        GenHierarchy4<Integer, String> x = 
+		new GenHierarchy4<>("Generics Test", 88);
         System.out.println(x.getObj());
         System.out.println(x.getOb2());
     }
@@ -787,8 +788,55 @@ String, and type parameter V is Integer.</h3>
  
  <h2> 2. A Generic Subclass </h2> 
  
+ <h3> <a href="https://github.com/AvinandanBose/JavaGeneric/blob/main/GenHierarchy5.java"> Generic Hierarchy→ Eg- 5 </a></h3>
+ 
  <ul>
  
+ <h3 align="Left">
+ 
+ ```Synatx
+ 
+ class NonGen {... }
+ 
+ class Gen<T> extends NonGen { ... }
+ 
+ class HierDemo {
+ 
+  public static void main(String args[]) {
+     
+     Gen<String> x = new Gen<String>();
+	
+}
+ 
+ 
+ ```
+ 
+ </h3>
+ 
+ <h3> In the program, notice how Gen inherits NonGen in the following
+declaration: </h3>
+
+<h3 align="Left">
+ 
+ ```Synatx
+ 
+class Gen<T> extends NonGen {...}
+ 
+ ```
+ 
+ </h3>
+ 
+  <h3> Because NonGen is not generic, no type argument is specified. Thus, even
+though Gen declares the type parameter T, it is not needed by (nor can it be
+used by) NonGen. Thus, NonGen is inherited by Gen in the normal way. No
+special conditions apply. </h3>
+ 
+ 
+ </ul>
+ 
+ <h2> 3. Run-Time Comparisons within a Generic Hierarchy </h2> 
+ 
+ <ul>
  
  
  </ul>
