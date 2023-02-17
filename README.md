@@ -3891,7 +3891,55 @@ public <Integer> Integer get(Integer t) {
 ```
 </h3>
 
+<h3><i>Similarly, </i></h3>
+
+<h3> <a href="https://github.com/AvinandanBose/JavaGeneric/blob/main/ErasureTypes3.java"> Erasure Types - Eg - 3 </a> </h3>
+
+<h3 align="left">
+
+```Syntax
+
+class Shape {...}
+
+class Circle extends Shape {...}
+
+class Rectangle extends Shape {...}
+
+class Program {
+
+    public static <T extends Shape> void draw(T shape) {
+        System.out.println("Drawing a " + shape.getClass().getSimpleName());
+
+    }
+
+    public static void main(String[] args) {
+        Circle circle = new Circle();
+        Rectangle rectangle = new Rectangle();
+
+        draw(circle);
+        draw(rectangle);
+    }
+
+}
+
+```
+</h3>
+
+<h3>The Java compiler replaces T with Shape:</h3>
+
+<h3 align="left">
+
+```Syntax
+
+public static void draw(Shape shape) { /* ... */ }
+
+```
+</h3>
+
 </ul>
+
+<h2></h2>
+<h2>3. Effects of Type Erasure and Bridge Methods.</h2>
 
 
 </ul>
