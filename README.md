@@ -3785,9 +3785,65 @@ interface  hence UnBounded Wild Card is used.
 <h3> <i> <li>3.Generate bridge methods to preserve polymorphism in extended generic types.</li></i></h3>
 <h3> <i>Type erasure ensures that no new classes are created for parameterized types; consequently, generics incur no runtime overhead.</i></h3>
 
-</ul>
+<h2></h2>
+<h2>1. Erasure of Generic Types</h2>
+
+<h3> <a href="https://github.com/AvinandanBose/JavaGeneric/blob/main/ErasureTypes1.java"> Erasure Types - Eg - 1 </a> </h3>
+
+<ul>
+
+<h3 align="left">
+
+```Syntax
+
+
+class Node<T> {
+
+    T data;
+    Node<T> next;
+
+    public Node(T data) {
+        this.data = data;
+        this.next = null;
+    }
+
+public static void main(String[] args) {
+        Node<String> n1 = new Node<String>("Hello");
+        Node<String> n2 = new Node<String>("World");
+        n1.next = n2;
+        System.out.println(n1.data);
+        System.out.println(n1.next.data);
+    }
+
+}
+
+```
+</h3>
+
+<h3> Note here T is replaces with String by compiler during Compilation. Hence erasing  Generic  type 'T' with desired Class. </h3>
+
+<h3 align="left">
+
+```Syntax
+
+////During Compilation
+
+class Node<String> {
+
+    String data;
+    Node<String> next;
+
+    public Node(String data) {
+        this.data = data;
+        this.next = null;
+    }
+
+///
+```
+</h3>
 
 </ul>
+
 <h1> Implementation of  Set in Java Generics</h1>
 <ul>
 <li><h2> Implementation of  Hash Set in Java Generics</h2></li>
