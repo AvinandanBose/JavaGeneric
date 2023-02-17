@@ -1,16 +1,13 @@
 // Erasure of Methods
 
-class GenericBase<T> {
+class GenericBase {
 
-    private T element;
-
-    public T get(T element) {
-        this.element = element;
-        return element;
+    public <Integer> Integer get(Integer t) {
+        return t;
     }
 
     public static void main(String[] args) {
-        GenericBase<Integer> gb = new GenericBase<Integer>();
+        GenericBase gb = new GenericBase();
         System.out.println(gb.get(10));
     }
 
