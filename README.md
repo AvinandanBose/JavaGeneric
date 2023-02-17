@@ -914,6 +914,71 @@ assuming the foregoing program, this cast is legal: </h3>
  
 <h2> 5. Overriding Methods in a Generic Class </h2> 
 
+<ul>
+<h3> <a href="https://github.com/AvinandanBose/JavaGeneric/blob/main/GenHierarchy8.java"> Overriding Methods in a Generic Class - Eg</a></h3>
+
+<h3 align="Left">
+
+```Syntax
+
+class Gen9<T> {
+    T ob;
+
+    Gen9(T o) {
+        ob = o;
+    }
+
+    T getob() {
+        System.out.print("Gen9's getob(): ");
+        return ob;
+    }
+}
+
+class Gen10<T> extends Gen9<T> {
+    Gen10(T o) {
+        super(o);
+    }
+
+    // Override getob()
+    T getob() {
+        System.out.print("Gen10's getob(): ");
+        return ob;
+    }
+}
+
+class OverrideDemo {
+    public static void main(String args[]) {
+        Gen9<Integer> iOb = new Gen9<Integer>(88);
+        Gen10<Integer> iOb2 = new Gen10<Integer>(99);
+        Gen10<String> strOb2 = new Gen10<String>("Generics Test");
+
+        System.out.println(iOb.getob());
+        System.out.println(iOb2.getob());
+        System.out.println(strOb2.getob());
+    }
+}
+
+Output
+-----------
+
+Gen9's getob(): 88
+Gen10's getob(): 99
+Gen10's getob(): Generics Test
+
+```
+
+<h3>As the output confirms, the overridden version of getob( ) is called for objects
+of type Gen10, but the superclass version is called for objects of type Gen9.</h3>
+
+</ul>
+
+
+<h2> 6. Type Inference with Generics </h2>
+
+<ul>
+
+</ul>
+
 </ul>
 
 <h1> Bounded Generic Types</h1>
