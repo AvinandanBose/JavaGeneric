@@ -3848,7 +3848,48 @@ class Node<String> {
 <h2></h2>
 <h2>2. Erasure of Generic Methods.</h2>
 
+<h3> <a href="https://github.com/AvinandanBose/JavaGeneric/blob/main/ErasureTypes2.java"> Erasure Types - Eg - 2 </a> </h3>
+
 <ul>
+
+<h3 align="left">
+
+```Syntax
+
+class GenericBase {
+
+    public <T> T get(T t) { 
+    
+    	return t; 
+    
+    }
+
+    public static void main(String[] args) {
+        GenericBase gb = new GenericBase();
+        System.out.println(gb.get(10));
+    }
+
+}
+
+```
+</h3>
+
+<h3> Note here `T`  replaces with Integer by compiler during Compilation and it erase the type 'T' with Integer  . As above class is not generic , hence we have to put a cast < T > before starting the method.  The type erasure process is shown below : </h3>
+
+<h3 align="left">
+
+```Syntax
+
+////During Compilation
+
+public <Integer> Integer get(Integer t) {
+        return t;
+    }
+
+///
+
+```
+</h3>
 
 </ul>
 
