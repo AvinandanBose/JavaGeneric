@@ -3772,6 +3772,13 @@ interface  hence UnBounded Wild Card is used.
 </ul>
 
 </ul>
+
+<h1>Type Erasure</h1>
+
+<ul>
+
+</ul>
+
 </ul>
 <h1> Implementation of  Set in Java Generics</h1>
 <ul>
