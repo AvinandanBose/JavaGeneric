@@ -62,7 +62,7 @@ p3 = new Pair<>(3, "orange"); //Rely on type interference.
   p2 = new Pair(2, "pear"); // Classic Type
 
 ```
-<h2> <ins> 1. Type Interference </ins> </h2>
+<h2> <ins> 1. Type Inference </ins> </h2>
 
 <h3>
 
@@ -73,7 +73,7 @@ p3 = new Pair<>(3, "orange");
 ```
 </h3>
 
-<h3> After the new operator , we provide the name of the generic class , then an empty set of angle brackets(known as "diamond") and finally the parameters to the constructor. An instance of the generic class is created , with the actual types for the formal type parameters determined based upon the original declaration of the variable to which it is assigned . This process is known as <i> <ins> Type Interference <ins> </i> and was introduced to the generics framework in JAVA SE 7 .</h3> 
+<h3> After the new operator , we provide the name of the generic class , then an empty set of angle brackets(known as "diamond") and finally the parameters to the constructor. An instance of the generic class is created , with the actual types for the formal type parameters determined based upon the original declaration of the variable to which it is assigned . This process is known as <i> <ins> Type Inference <ins> </i> and was introduced to the generics framework in JAVA SE 7 .</h3> 
 
 <h2> <ins> 2. Generic Type Parameters Are Explicitly Specified Between Angle Brackets During Instantiation.  </ins> </h2>
 
