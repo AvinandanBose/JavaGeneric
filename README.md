@@ -977,6 +977,89 @@ of type Gen10, but the superclass version is called for objects of type Gen9.</h
 
 <ul>
 
+<h3> Here <i> Inference :</i> means Compiler decision making ability to decide where to put the Context  based on its Type. Hence its known as <i> Type Inference </i> . That is : </h3>
+
+<h3 align= "Left">
+
+```Syntax
+
+class MyClass<T, V> {
+    T ob1;
+    V ob2;
+
+    MyClass(T o1, V o2) {
+        ob1 = o1;
+        ob2 = o2;
+    }
+    
+    public static void main(String[] args) { 
+    
+    MyClass<Integer, String> a = new MyClass<Integer, String>(100, "Generics");
+    
+    }
+    
+ }
+ 
+ 
+
+```
+
+<h3>
+
+<h3 > Here <i> MyClass < Integer , String > a = new MyClass < Integer , String > (  100 , " Generics " ) ; </i> here ,Compiler decides that 100 is for Integer and " Generics " for String . As we know " < > " is known as <i><ins>Diamond Operator</ins></i>  and Syntax it goes like:</h3>
+
+<h3 align= "Left">
+
+```Syntax
+
+class-name<type-arg-list> var-name = 
+	new class-name<>(cons-arg-list);
+	
+Where,
+
+cons→Constructor.
+arg→Argument.
+ 
+
+```
+
+</h3>
+
+<h3><i><ins>Consider the example:</ins></i></h3>
+<h3> <a href="https://github.com/AvinandanBose/JavaGeneric/blob/main/GenHierarchy9.java"> Type Inference in Java - Eg</a></h3>
+
+<h3 align= "Left">
+
+```Syntax
+
+boolean isEqual(MyClass<T, V> o) {
+        if (ob1 == o.ob1 && ob2 == o.ob2) {
+            return true;
+        } else {
+            return false;
+        }
+
+       
+
+    }
+    
+    MyClass<Integer, String> a = new MyClass<Integer, String>(100, "Generics");
+
+        if (a.isEqual(new MyClass<Integer, String>(100, "Generics"))) {
+            System.out.println("Equal");
+        } else {
+            System.out.println("Not Equal");
+        }
+ 
+
+```
+
+</h3>
+
+<h3> In this case , the type arguments for the arguments passed to <i> isSame() </i> can be Inferred from the parameter's type </h3>
+
+<h3> <i> Note: Some part of Type Inference is discussed above. </i></h3>
+
 </ul>
 
 </ul>
