@@ -3773,9 +3773,17 @@ interface  hence UnBounded Wild Card is used.
 
 </ul>
 
+</ul>
+
 <h1>Type Erasure</h1>
 
 <ul>
+<h3>Generics were introduced to the Java language to provide tighter type checks at compile time and to support generic programming. To implement generics, the Java compiler applies type erasure to: </h3>
+<ul>
+<h3> <i> <li>1.Replace all type parameters in generic types with their bounds or Object if the type parameters are unbounded. The produced bytecode, therefore, contains only ordinary classes, interfaces, and methods.</li></i></h3>
+<h3> <i> <li>2.Insert type casts if necessary to preserve type safety.</li></i></h3>
+<h3> <i> <li>3.Generate bridge methods to preserve polymorphism in extended generic types.</li></i></h3>
+<h3> <i>Type erasure ensures that no new classes are created for parameterized types; consequently, generics incur no runtime overhead.</i></h3>
 
 </ul>
 
