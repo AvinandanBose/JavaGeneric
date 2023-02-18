@@ -4179,7 +4179,7 @@ stringList = (List<String>) (List) integerList; // This causes heap pollution
 
 </h3>
 
-
+<h3 align="Center"> <i><ins>Handling Heap Pollution</ins></i></h3>
 
 
 
