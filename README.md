@@ -4129,6 +4129,59 @@ public void setData(Integer data) {
 <h2> B. Heap Pollution </h2>
 <h3>Heap pollution occurs when a variable of a parameterized type refers to an object that is not of that parameterized type. This situation occurs if the program performed some operation that gives rise to an unchecked warning at compile-time. An unchecked warning is generated if, either at compile-time (within the limits of the compile-time type checking rules) or at runtime, the correctness of an operation involving a parameterized type (for example, a cast or method call) cannot be verified. For example, heap pollution occurs when mixing raw types and parameterized types, or when performing unchecked casts.</h3>
 
+<h3> <i>For Example</i></h3>
+
+<h3 align="left">
+
+```Syntax
+import java.util.ArrayList;
+import java.util.List;
+
+public class HeapPollution {
+
+public static void main(String[] args) {
+
+List<String> stringList = new ArrayList<>();
+List<Integer> integerList = new ArrayList<>();
+integerList.add(42);
+stringList = (List<String>) (List) integerList; 
+System.out.println(stringList.get(0));
+}
+}
+
+```
+
+<h3><i>In the above code, a List<String> named stringList and a List<Integer> named integerList are created. Then, the integerList is added to stringList, but to make the assignment work, the integerList is cast to a raw type List and then cast to List<String>.This is heap pollution because the stringList was intended to hold only String objects, but now it contains Integer objects as well. This can lead to unexpected behavior and errors when the stringList is accessed and the code expects to find only String objects in it.</i></h3>
+
+<h3 align="left">
+
+```Syntax
+
+// Heap pollution occurs when adding integerList to stringList
+// because stringList is expected to hold only String objects
+stringList = (List<String>) (List) integerList; // This causes heap pollution
+
+```
+
+</h3>
+
+<h3><i> And, </i></h3>
+
+
+<h3 align="left">
+
+```Syntax
+
+ System.out.println(stringList.get(0)); 
+// This causes ClassCastException to be thrown
+
+```
+
+</h3>
+
+
+
+
 
 </ul>
 
