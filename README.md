@@ -3940,6 +3940,13 @@ public static void draw(Shape shape) { /* ... */ }
 
 <h2></h2>
 <h2>3. Effects of Type Erasure and Bridge Methods.</h2>
+<ul>
+
+<h3><li>Java compiler creates a synthetic method known as <i>Bridge Method</i> when compiling a class or interface that extends a parameterized class or interface as part of type erassure.</li></h3>
+
+
+
+</ul>
 
 
 </ul>
