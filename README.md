@@ -3944,6 +3944,49 @@ public static void draw(Shape shape) { /* ... */ }
 
 <h3><li>Java compiler creates a synthetic method known as <i>Bridge Method</i> when compiling a class or interface that extends a parameterized class or interface as part of type erassure.</li></h3>
 
+<h3> <a href="https://github.com/AvinandanBose/JavaGeneric/blob/main/ErasureTypes4.java"> Bridge Methods- Eg-1 </a></h3>
+
+<h3 align="left">
+
+```Syntax
+
+class Gener<T>{
+    T obj;
+    Gener(T o){
+        obj = o;
+    }
+    T getObj(){
+        return obj;
+    }
+}
+
+class Gener2 extends Gener<String>{
+    Gener2(String  o){
+        super(o);
+    }
+
+    String getObj(){
+        System.out.println("Gener2's getObj()");
+        return obj;
+    }
+}
+
+class BridgeDemo {
+
+    public static void main(String args[]){
+        Gener2 strOb2 = new Gener2("Generics Test");
+
+        String str = strOb2.getObj();
+
+        System.out.println(str);
+    }
+
+}
+
+
+```
+
+</h3>
 
 
 </ul>
