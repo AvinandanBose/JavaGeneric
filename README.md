@@ -4181,6 +4181,18 @@ stringList = (List<String>) (List) integerList; // This causes heap pollution
 
 <h3 align="Center"> <i><ins>Handling Heap Pollution</ins></i></h3>
 
+<h3> To understand handling Heap Pollution, we have to understand : <a href="https://github.com/AvinandanBose/Java_VarArgs"> VarArgs of Java </a></h3>
+
+<h3 align="left">
+
+```Syntax
+
+
+
+```
+
+</h3>
+
 
 
 </ul>
