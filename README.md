@@ -3995,9 +3995,25 @@ class BridgeDemo {
 ```Syntax
 class Gener2 extends Gener<java.lang.String>{
 
-Gener2(java.lang.String);
-java.lang.String getObj();//Java calls for Bridge Method
-java.lang.Object getObj(); //After Type Erasure
+//Type Erasure 
+Gener2(java.lang.String){
+  super(o)
+}
+
+//Bridge Method[Java Preserves It]
+java.lang.Object getObj(){
+
+ 	return (java.lang.String) ob;
+
+}
+
+//Type Erasure 
+java.lang.String getObj(){
+
+	return (java.lang.String) ob;
+
+}
+
 
 }
 
@@ -4005,7 +4021,7 @@ java.lang.Object getObj(); //After Type Erasure
 
 </i></h3>
 
-<h3><i>Here after Type Erasure , "java.lang.Object getObj();" is acceptable method . Here what happens is that "Due to Type Erasure , The Perfectly Acceptable form is : Object getob{...}, To handle this problem, the compiler generates a bridge method with the preceding signature that calls the String version "java.lang.String getObj()".The Bridge Method Is Used To Preserve The Type Safety Of Generic Types And <ins>The Polymorphism</ins> Of Generic Types After Type Erasure."</i></h3>
+<h3><i>Here after Type Erasure , "java.lang.Object getObj();" is acceptable method . Here what happens is that "Due to Type Erasure , The Perfectly Acceptable form is : Object getob{...}, To handle this problem, the compiler generates a bridge method [Here is java.lang.Object getObj()] with the preceding signature that calls the String version "java.lang.String getObj()".The Bridge Method Is Used To Preserve The Type Safety Of Generic Types And <ins>The Polymorphism</ins> Of Generic Types After Type Erasure."</i></h3>
 
 <h3><i>Again,</i></h3>
 
@@ -4046,6 +4062,50 @@ class BridgeMethods {
         Node1<Integer> node = new MyNode(5);
         node.setData(4);
     }
+}
+
+```
+</h3>
+
+<h3><i><ins>Type Erasure and Bridge Method </ins></i></h3>
+
+<h3 align="left">
+
+```Syntax
+
+//Replacing Type with Object Class
+class Node1 {
+
+     Object data;
+
+     Node1(Object data) {
+        this.data = data;
+    }
+
+     void setData(Object data) {
+        System.out.println("Node.setData");
+        this.data = data;
+    }
+}
+
+
+class MyNode extends Node1<Integer> {
+
+     MyNode(java.lang.Integer data) {
+        super(data);
+    }
+
+//Bridge Method[Preserved]
+     void setData(java.lang.Object data) {
+        setData((java.lang.Integer)data);
+    }
+
+//Type Erasure 
+public void setData(Integer data) {
+        System.out.println("MyNode.setData");
+        super.setData(data);
+    }
+
 }
 
 ```
