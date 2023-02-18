@@ -3988,8 +3988,28 @@ class BridgeDemo {
 
 </h3>
 
+<h3> Compiling process is as shown below: </h3>
+
+<h3 align="left"> <i>
+
+```Syntax
+class Gener2 extends Gener<java.lang.String>{
+
+Gener2(java.lang.String);
+java.lang.String getObj();//Java calls for Bridge Method
+java.lang.Object getObj(); //After Type Erasure
+
+}
+
+```
+
+</i></h3>
+
+<h3><i>Here after Type Erasure , "java.lang.Object getObj();" is acceptable method . Here what happens is that "Due to Type Erasure , The Perfectly Acceptable form is : Object getob{...}, To handle this problem, the compiler generates a bridge method with the preceding signature that calls the String version "java.lang.String getObj()".The Bridge Method Is Used To Preserve The Type Safety Of Generic Types And <ins>The Polymorphism</ins> Of Generic Types After Type Erasure."</i></h3>
 
 </ul>
+
+
 
 
 </ul>
