@@ -4007,6 +4007,50 @@ java.lang.Object getObj(); //After Type Erasure
 
 <h3><i>Here after Type Erasure , "java.lang.Object getObj();" is acceptable method . Here what happens is that "Due to Type Erasure , The Perfectly Acceptable form is : Object getob{...}, To handle this problem, the compiler generates a bridge method with the preceding signature that calls the String version "java.lang.String getObj()".The Bridge Method Is Used To Preserve The Type Safety Of Generic Types And <ins>The Polymorphism</ins> Of Generic Types After Type Erasure."</i></h3>
 
+<h3><i>Again,</i></h3>
+
+<h3> <a href="https://github.com/AvinandanBose/JavaGeneric/blob/main/ErasureTypes5.java"> Bridge Methods- Eg-2 </a></h3>
+
+<h3 align="left">
+
+```Syntax
+
+class Node1<T> {
+
+     T data;
+
+     Node1(T data) {
+        this.data = data;
+    }
+
+     void setData(T data) {
+        System.out.println("Node.setData");
+        this.data = data;
+    }
+}
+
+class MyNode extends Node1<Integer> {
+     MyNode(Integer data) {
+        super(data);
+    }
+
+     void setData(Integer data) {
+        System.out.println("MyNode.setData");
+        super.setData(data);
+    }
+}
+
+class BridgeMethods {
+
+    public static void main(String[] args) {
+        Node1<Integer> node = new MyNode(5);
+        node.setData(4);
+    }
+}
+
+```
+</h3>
+
 </ul>
 
 
