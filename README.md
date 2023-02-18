@@ -4193,7 +4193,7 @@ stringList = (List<String>) (List) integerList; // This causes heap pollution
 import java.util.ArrayList;
 import java.util.List;
 
-class Geeks {
+public class HeapPollution {
    
     public static void merge(List<String>... stringList) {
        
@@ -4204,6 +4204,7 @@ class Geeks {
 
         String firstEle = stringList[0].get(0);//ClassCastException
         System.out.println(firstEle);
+        
     }
 
     
@@ -4211,9 +4212,9 @@ class Geeks {
         List<String> list1 = new ArrayList<>();
         List<String> list2 = new ArrayList<>();
         List<String> list3 = new ArrayList<>();
-        list1.add("Geeks");
-        list2.add("for");
-        list3.add("geeks");
+        list1.add("My Name");
+        list2.add("is");
+        list3.add("Avinandan");
 
         merge(list1, list2, list3);
     }
@@ -4224,6 +4225,7 @@ class Geeks {
 
 </h3>
 
+<h3> <i>Here , In the above program it throws warning  <ins>Type safety: Potential heap pollution via varargs parameter stringList </ins> at <i>List<String>... stringList</i> and stringList[0].get(0) tries to access the first element of the first list in the input using the get method, but this results in a ClassCastException because the first list has been replaced with an ArrayList<Integer> and no longer contains strings i.e. [ArrayList<String>]  during runtime .Hence after compilation firstEle becomes Integer type and change occurs during runtime causing ClassCastException.</i></h3>
 
 
 </ul>
