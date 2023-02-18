@@ -4122,6 +4122,13 @@ public void setData(Integer data) {
 
 </ul>
 <h1>Non-Reifiable Types and Heap Pollution</h1>
+<ul>
+<h2> A. Non Refiable and Refiable Types </h2>
+<h3> A <i><ins>Reifiable type</i></ins> is a type whose type information is fully available at runtime. <i><ins>Non-reifiable</i></ins> types are types where information has been removed at compile-time by type erasure — invocations of generic types that are not defined as unbounded wildcards. A non-reifiable type does not have all of its information available at runtime. Refiable and Non-Refiable types are already discussed earlier.</h3>
+
+
+</ul>
+
 
 </ul>
 
