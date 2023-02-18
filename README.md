@@ -4228,6 +4228,33 @@ public class HeapPollution {
 <h3> <i>Here , In the above program it throws warning  <ins>Type safety: Potential heap pollution via varargs parameter stringList </ins> at <i> List < String > ... stringList</i> and stringList[0].get(0) tries to access the first element of the first list in the input using the get method, but this results in a ClassCastException because the first list has been replaced with an ArrayList<Integer> and no longer contains strings i.e. [ ArrayList < String > ]  during runtime .Hence after compilation firstEle becomes Integer type and change occurs during runtime causing ClassCastException.</i></h3>
 
 
+<h3> Solution: To remove Warning we put the annotation @SafeVarargs and as the change occurs during runtime , we just change the type <i>"firstEle"</i> to java.lang.Object as shown Below: </h3>
+
+<h3><li><a href= "https://github.com/AvinandanBose/JavaGeneric/blob/main/HeapPollution1.java" >Heap Pollution- Eg -2 </a></li></h3>
+
+<h3 align="left">
+
+```Syntax
+
+
+@SafeVarargs
+    public static void merge(List<String>... stringList) {
+
+	Object[] arr = stringList;
+        List<Integer> temp = new ArrayList<Integer>();
+        temp.add(420);
+        arr[0] = temp;
+
+        Object firstEle = stringList[0].get(0);
+        System.out.println(firstEle);
+}
+
+
+```
+
+</h3>
+
+
 </ul>
 
 
