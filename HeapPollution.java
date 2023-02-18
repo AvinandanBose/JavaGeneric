@@ -3,7 +3,7 @@
 import java.util.ArrayList;
 import java.util.List;
 
-class Geeks {
+public class HeapPollution {
    
     public static void merge(List<String>... stringList) {
        
@@ -14,6 +14,7 @@ class Geeks {
 
         String firstEle = stringList[0].get(0);//ClassCastException
         System.out.println(firstEle);
+        
     }
 
     
@@ -21,9 +22,9 @@ class Geeks {
         List<String> list1 = new ArrayList<>();
         List<String> list2 = new ArrayList<>();
         List<String> list3 = new ArrayList<>();
-        list1.add("Geeks");
-        list2.add("for");
-        list3.add("geeks");
+        list1.add("My Name");
+        list2.add("is");
+        list3.add("Avinandan");
 
         merge(list1, list2, list3);
     }
