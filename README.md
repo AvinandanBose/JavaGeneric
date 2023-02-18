@@ -4127,6 +4127,8 @@ public void setData(Integer data) {
 <h3> A <i><ins>Reifiable type</i></ins> is a type whose type information is fully available at runtime. <i><ins>Non-reifiable</i></ins> types are types where information has been removed at compile-time by type erasure — invocations of generic types that are not defined as unbounded wildcards. A non-reifiable type does not have all of its information available at runtime. Reifiable and Non-Reifiable types are already discussed earlier.</h3>
 
 <h2> B. Heap Pollution </h2>
+<h3>Heap pollution occurs when a variable of a parameterized type refers to an object that is not of that parameterized type. This situation occurs if the program performed some operation that gives rise to an unchecked warning at compile-time. An unchecked warning is generated if, either at compile-time (within the limits of the compile-time type checking rules) or at runtime, the correctness of an operation involving a parameterized type (for example, a cast or method call) cannot be verified. For example, heap pollution occurs when mixing raw types and parameterized types, or when performing unchecked casts.</h3>
+
 
 </ul>
 
