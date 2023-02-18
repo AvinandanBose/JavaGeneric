@@ -4183,10 +4183,41 @@ stringList = (List<String>) (List) integerList; // This causes heap pollution
 
 <h3> To understand handling Heap Pollution, we have to understand : <a href="https://github.com/AvinandanBose/Java_VarArgs"> VarArgs of Java </a></h3>
 
+<h3><li><a href= "https://github.com/AvinandanBose/JavaGeneric/blob/main/HeapPollution.java" >Heap Pollution- Eg -1 </a></li></h3>
+
+
 <h3 align="left">
 
 ```Syntax
 
+import java.util.ArrayList;
+import java.util.List;
+
+class Geeks {
+   
+    public static void merge(List<String>... stringList) {
+       
+        Object[] arr = stringList;
+        List<Integer> temp = new ArrayList<Integer>();
+        temp.add(420);
+        arr[0] = temp;
+
+        String firstEle = stringList[0].get(0);//ClassCastException
+        System.out.println(firstEle);
+    }
+
+    
+    public static void main(String args[]) {
+        List<String> list1 = new ArrayList<>();
+        List<String> list2 = new ArrayList<>();
+        List<String> list3 = new ArrayList<>();
+        list1.add("Geeks");
+        list2.add("for");
+        list3.add("geeks");
+
+        merge(list1, list2, list3);
+    }
+}
 
 
 ```
