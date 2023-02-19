@@ -4585,6 +4585,38 @@ class Example <T>{
 ```
 </h3>
 
+<h3><i>And in solution2: </i></h3>
+<h3><a href= "https://github.com/AvinandanBose/JavaGeneric/blob/main/Example.java"> Solution 2 </a> </h3>
+
+<h3 align="Left">
+
+```
+Solution Eg-2
+
+class Example<T > {
+
+T vals[];
+
+Example( T[] nums) {
+
+vals = nums;
+
+   }
+
+}
+public static void main(String[]args){
+Integer n[] = {1,2,3,4,5};
+Example<Integer> iob = new Example<Integer>( n);
+
+}
+
+```
+</h3>
+
+<h3><i> Here it is OK to assign reference to existent array. </i></h3>
+
+
+
 
 </ul>
 
