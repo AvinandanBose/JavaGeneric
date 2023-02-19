@@ -4257,6 +4257,18 @@ public class HeapPollution {
 
 </ul>
 
+<h1> Restrictions in Java Generics</h1>
+
+<ul>
+
+<h2> <li>1. Ambiguity Errors in Java Generics</li></h2>
+<ul>
+
+
+</ul>
+
+</ul>
+
 
 </ul>
 
