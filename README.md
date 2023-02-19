@@ -4387,9 +4387,94 @@ class Example{
 ```
 </h3>
 
+<h3><i> <ins>4.b.Cast</ins></i></h3>
+
+
+<h3 align="Left">
+
+```
+import java.util.ArrayList;
+import java.util.List;
+
+class Example{
+    public static void main(String[] args) {
+        List<Integer> list = new ArrayList<>();
+	
+	//Invalid Cast
+        List<Number>  ln = (List<Number>) list;
+    }
+}
+
+```
+</h3>
+
+<h3><i> Cannot cast  ' java.util.List < java.lang.Integer > ' to ' java.util.List < java.lang.Number > ' as it cannot be converted. The valid cast would be: </i></h3>
+
+<h3 align="Left">
+
+```
+import java.util.ArrayList;
+import java.util.List;
+
+class Example{
+    public static void main(String[] args) {
+        List<Integer> list = new ArrayList<>();
+        List<Integer>  ln = (List<Integer>) list;
+	 ln.add(1);
+        System.out.println(ln);
+    }
+}
+
+```
+</h3>
+
+<h3><i> Also, </i></h3>
+
+<h3 align="Left">
+
+```
+import java.util.ArrayList;
+import java.util.List;
+
+class Example{
+    public static void main(String[] args) {
+        List<Integer> list = new ArrayList<>();
+        List<Integer>  ln = (ArrayList<Integer>) list;
+        ln.add(1);
+        System.out.println(ln);
+    }
+}
+
+```
+</h3>
+
+<h3><i> And: </i></h3>
+
+
+<h3 align="Left">
+
+```
+import java.util.ArrayList;
+import java.util.List;
+
+class Example{
+    public static void main(String[] args) {
+        List<Integer> list = new ArrayList<>();
+        ArrayList<Integer>  ln = (ArrayList<Integer>) list;
+        ln.add(1);
+        System.out.println(ln);
+    }
+}
+
+```
+</h3>
+
+
+<h3><i> Reason : In the above examples  the compiler knows that a type parameter is always valid and allows the cast. </i></h3>
+
 </ul>
 
-<h3><i> <ins>4.b.Cast</ins></i></h3>
+
 
 </ul>
 
