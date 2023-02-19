@@ -4289,6 +4289,7 @@ class Example<T> {
 
 <ul>
 <h3 align="Left">
+
 ```
 class Example<T> {
     Example() {
@@ -4303,14 +4304,6 @@ class Example<T> {
 
 <h3><li>3.Cannot Declare Static Fields Whose Types are Type Parameters or Restrictions of Static Members</li></h3>
 
-<ul>
-<h3 align="Left">
-```
-
-
-```
-</h3>
-</ul>
 
 </ul>
 
