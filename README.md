@@ -4304,6 +4304,40 @@ class Example<T> {
 
 <h3><li>3.Cannot Declare Static Fields Whose Types are Type Parameters or Restrictions of Static Members</li></h3>
 
+<ul>
+<h3 align="Left">
+
+```
+class Example<T> {
+
+    //Wrong no static variable of type T
+   static T ob;
+
+}
+
+```
+</h3>
+
+<h3><i> Similarly,</i></h3>
+
+<h3 align="Left">
+
+```
+class Example<T> {
+
+ //Wrong no static method can use T
+   static T get() {
+    return null;
+  }
+
+}
+
+```
+</h3>
+
+<h3><i><ins>Reason</ins>: A class's static field is a class-level variable shared by all non-static objects of the class. Hence, static fields of type parameters are not allowed. </i></h3>
+</ul>
+
 
 </ul>
 
