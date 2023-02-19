@@ -4261,40 +4261,7 @@ public class HeapPollution {
 
 <ul>
 
-<h2> <li>1. Ambiguity Errors in Java Generics</li></h2>
-<ul>
-<h3> <i><ins>Lets , take an example</ins></i></h3>
 
-<h3 align="left">
-
-```Syntax
-
-class Example<T, V> {
-    T ob1;
-    V ob2;
-    void setOb1(T ob1) {
-       this.ob1 = ob1;
-     }
-     void setOb2(V ob2) {
-         this.ob2 = ob2;
-     }
-
-    public static void main(String[] args){
-      Example<String, String> obj = new Example<>();
-      obj.setOb1("Avinandan");
-      obj.setOb2("Bose");
-       System.out.println(obj.ob1);
-       System.out.println(obj.ob2);
-      }
-    
-}
-
-
-```
-
-</h3>
-
-</ul>
 
 </ul>
 
