@@ -4703,7 +4703,7 @@ class Example {
 ```
 </h3>
 
-<h3> <i><ins>Note:</ins> Here we are using the lower bound and cast to recognize the compiler the "Type" and the approach becomes complicated , hence </i></h3>
+<h3> <i><ins>Note:</ins> Here we are using the lower bound and cast to recognize the compiler the "Type" and the approach becomes complicated , hence :</i></h3>
 
 <h3 align="Left">
 
