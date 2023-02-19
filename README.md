@@ -4338,6 +4338,58 @@ class Example<T> {
 <h3><i><ins>Reason</ins>: A class's static field is a class-level variable shared by all non-static objects of the class. Hence, static fields of type parameters are not allowed. </i></h3>
 </ul>
 
+<h3><li>4.Cannot Use Casts or instanceof with Parameterized Types</li></h3>
+
+<ul>
+
+<h3><i> <ins>4.a.InstanceOf</ins></i></h3>
+
+<h3 align="Left">
+
+```
+import java.util.ArrayList;
+import java.util.List;
+
+class Example{
+    public static <E> void rtti(List<E> list) {
+    
+    //Illegal use of instanceof
+    ------------------------------
+        if (list instanceof ArrayList<Integer>) {
+            System.out.println("ArrayList<Integer>");
+        }
+    }
+}
+
+```
+</h3>
+
+<h3><i>As Type E can be ArrayList < Integer > , ArrayList < String > etc. hence making E specific for ArrayList<Integer> will throw compile-time error. To make it run successfully we must use "?" unbound as parameter: </i></h3>
+
+<h3 align="Left">
+
+```
+import java.util.ArrayList;
+import java.util.List;
+
+class Example{
+    public static  void rtti(List<?> list) {
+        if (list instanceof ArrayList<?>) {
+            System.out.println(list.getClass());
+        }
+    }
+    public static void main(String[] args) {
+        List<Integer> list = new ArrayList<>();
+        rtti(list);
+    }
+}
+
+```
+</h3>
+
+</ul>
+
+<h3><i> <ins>4.b.Cast</ins></i></h3>
 
 </ul>
 
