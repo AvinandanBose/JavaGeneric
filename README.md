@@ -4474,11 +4474,121 @@ class Example{
 
 </ul>
 
+<h3><li>5.Cannot Create Arrays of Parameterized Types </li></h3>
+
+<ul>
+
+<h3><i> Some examples of  above rule: </i></h3>
+
+<h3 align="Left">
+
+```
+Eg -1
+
+import java.util.ArrayList;
+
+class Example{
+    public static void main(String[] args) {
+    
+    //Cannot Create Arrays of Parameterized Types
+    
+        ArrayList<String>[] arrayOfLists = new ArrayList<String>[10];
+
+    }
+}
+
+```
+</h3>
+
+
+<h3 align="Left">
+
+```
+Eg -2
+
+class Example <T>{
+    public static void main(String[] args){
+    
+    //Cannot Create Arrays of Parameterized Types
+        Example<Integer>[] e = new Example<Integer>[10];
+    }
+
+}
+
+```
+</h3>
+
+
+<h3 align="Left">
+
+```
+Eg -3
+
+class Example <T>{
+    public static void main(String[] args){
+    
+    //Cannot Create Arrays of Parameterized Types
+        Example<Integer>[] e = new Example<Integer>[10];
+    }
+
+}
+
+```
+</h3>
+
+
+<h3 align="Left">
+
+```
+Eg -4
+
+class Example <T>{
+
+    T vals[];
+     public void arr(){
+     
+         //Cannot create a generic array of T
+         //Also,Cannot be instantiated
+	 
+         vals = new T[10];
+     }
+}
+
+```
+</h3>
+
+<h3> <i> Reason: The reason  is that there is no way for the compiler to know what type of array to actually create . </i></h3>
+
+<h3><i> So , the solution is using "?" wildcard as shown below : </i></h3>
+
+<h3 align="Left">
+
+```
+Solution Eg-1
+
+class Example <T>{
+    public void print(){
+        System.out.println("Example");
+    }
+    public static void main(String[] args) {
+        Example<?>[] e = new Example<?>[10];
+        e[0] = new Example<String>();
+        e[1] = new Example<Integer>();
+        e[2] = new Example<Double>();
+        e[0].print();
+        e[1].print();
+        e[2].print();
+    }
+
+}
+
+```
+</h3>
 
 
 </ul>
 
-
+</ul>
 </ul>
 
 
