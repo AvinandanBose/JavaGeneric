@@ -4261,7 +4261,7 @@ public class HeapPollution {
 
 <ul>
 
-<h3><li>1.Cannot Instantiate Generic Types with Primitive Types</li></h3>
+<h2><li>1.Cannot Instantiate Generic Types with Primitive Types</li></h2>
 
 <ul>
 
@@ -4285,7 +4285,7 @@ class Example<T> {
 
 </ul>
 
-<h3><li>2.Cannot Create Instances of Type Parameters</li></h3>
+<h2><li>2.Cannot Create Instances of Type Parameters</li></h2>
 
 <ul>
 <h3 align="Left">
@@ -4302,7 +4302,7 @@ class Example<T> {
 </h3>
 </ul>
 
-<h3><li>3.Cannot Declare Static Fields Whose Types are Type Parameters or Restrictions of Static Members</li></h3>
+<h2><li>3.Cannot Declare Static Fields Whose Types are Type Parameters or Restrictions of Static Members</li></h2>
 
 <ul>
 <h3 align="Left">
@@ -4338,7 +4338,7 @@ class Example<T> {
 <h3><i><ins>Reason</ins>: A class's static field is a class-level variable shared by all non-static objects of the class. Hence, static fields of type parameters are not allowed. </i></h3>
 </ul>
 
-<h3><li>4.Cannot Use Casts or instanceof with Parameterized Types</li></h3>
+<h2><li>4.Cannot Use Casts or instanceof with Parameterized Types</li></h2>
 
 <ul>
 
@@ -4474,7 +4474,7 @@ class Example{
 
 </ul>
 
-<h3><li>5.Cannot Create Arrays of Parameterized Types </li></h3>
+<h2><li>5.Cannot Create Arrays of Parameterized Types </li></h2>
 
 <ul>
 
@@ -4718,6 +4718,8 @@ Example<?>[] e = new Example<?>[10];
 
 
 </ul>
+
+<h2><li>6. Cannot Create, Catch, or Throw Objects of Parameterized Types</li></h2>
 
 </ul>
 </ul>
