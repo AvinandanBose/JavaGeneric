@@ -4616,6 +4616,105 @@ Example<Integer> iob = new Example<Integer>( n);
 <h3><i> Here it is OK to assign reference to existent array. </i></h3>
 
 
+<h3> Now :</h3>
+
+<h3 align="Left">
+
+```
+import java.util.ArrayList;
+
+class Example {
+
+    public void print(){
+        System.out.println("Example");
+    }
+
+    public static void main(String[]args){
+        ArrayList<? >[] al1 =  new ArrayList<? >[10];
+        al1[0] = new ArrayList<String>();
+	
+	//Compiler doesnot recognize the type .
+        al1[0].add("Hello"); //Error
+	
+    }
+
+}
+
+
+```
+</h3>
+
+<h3 align="Left">
+
+```
+import java.util.ArrayList;
+
+class Example {
+
+    public void print(){
+        System.out.println("Example");
+    }
+
+    public static void main(String[]args){
+        ArrayList<? extends String >[] al1 = 
+		(ArrayList<? extends String>[]) new ArrayList<? >[10];
+		
+        al1[0] = new ArrayList<String>();
+	
+	//Compiler doesnot recognize the type .
+        al1[0].add("Hello");//Error
+
+    }
+
+}
+
+
+```
+</h3>
+
+<h3>Hence the solution here is :</h3>
+
+<h3 align="Left">
+
+```
+Solution Eg-3
+
+import java.util.ArrayList;
+
+class Example {
+
+    public void print(){
+        System.out.println("Example");
+    }
+
+    public static void main(String[]args){
+        ArrayList<? super String>[] al1 = 
+		(ArrayList<? super String>[]) new ArrayList<?>[10];
+        al1[0] = new ArrayList<String>();
+	
+	
+        al1[0].add("Hello"); //OK
+	
+        System.out.println(al1[0]);
+
+    }
+
+}
+```
+</h3>
+
+<h3> <i><ins>Note:</ins> Here we are using the lower bound and cast to recognize the compiler the "Type" and the approach becomes complicated , hence </i></h3>
+
+<h3 align="Left">
+
+```
+Example<?>[] e = new Example<?>[10];
+
+```
+</h3>
+
+
+<h3><i>i.e. Solution 1 is considered as better approach , as type checking is enforced.</i></h3>
 
 
 </ul>
