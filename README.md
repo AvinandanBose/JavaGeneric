@@ -4261,7 +4261,30 @@ public class HeapPollution {
 
 <ul>
 
+<h3><li>1.Cannot Instantiate Generic Types with Primitive Types</li></h3>
 
+<ul>
+
+<h3 align="Left">
+
+```
+class Example<T> {
+    T ob1;
+    void setOb1(T ob1) {
+        this.ob1 = ob1;
+    }
+
+    public static void main(String[] args){
+        Example<int> obj = new Example<>();//Cannot Instantiate
+    }
+
+}
+
+```
+</h3>
+
+
+</ul>
 
 </ul>
 
