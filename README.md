@@ -4283,7 +4283,33 @@ class Example<T> {
 ```
 </h3>
 
+</ul>
 
+<h3><li>2.Cannot Create Instances of Type Parameters</li></h3>
+
+<ul>
+<h3 align="Left">
+```
+class Example<T> {
+    Example() {
+        T = new T(); ///Cannot Instantiate
+    }
+
+}
+
+```
+</h3>
+</ul>
+
+<h3><li>3.Cannot Declare Static Fields Whose Types are Type Parameters or Restrictions of Static Members</li></h3>
+
+<ul>
+<h3 align="Left">
+```
+
+
+```
+</h3>
 </ul>
 
 </ul>
