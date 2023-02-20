@@ -4769,9 +4769,40 @@ class Example<T extends Exception> {
 
 ```
 </h3>
+	
+<h3><i> But "Throws" clause with type parameter is allowed: </i></h3>
+	
+<h3><a href= "https://github.com/AvinandanBose/JavaGeneric/blob/main/Example1.java"> Example of Throws with Type parameter </a> </h3>	
+
+<h3 align="Left">
+
+```
+import java.util.ArrayList;
+class Example<T extends Exception> {
+
+        public  T get(ArrayList<T> t) throws T {
+            return t.get(0);
+        }
+
+        public static void main(String[] args) {
+            Example<Exception> e = new Example<>();
+            ArrayList<Exception> al = new ArrayList<>();
+            al.add(new Exception("Exception Thrown"));
+            try {
+                System.out.println(e.get(al));
+            } catch (Exception exception) {
+                exception.printStackTrace();
+            }
+        }
+
+
+}
+
+```
+</h3>	
+	
 
 </ul>
-
 </ul>
 </ul>
 
