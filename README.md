@@ -3641,6 +3641,19 @@ Which satisfies T extends Map.
 
 </ul>
 </ul>
+<h2><i><ins>Implementing Lower Bound WildCard in Class and Method</ins></i></h2>
+<ul>
+<ul>
+
+<h3><li> <a href="https://github.com/AvinandanBose/JavaGeneric/blob/main/ClassAndMethodL1.java"> 1.  T extends List < ? super Number > -Eg 1 </li></h3>
+
+<h3><li> <a href="https://github.com/AvinandanBose/JavaGeneric/blob/main/ClassAndMethodL2.java"> 2. T extends Set < ? super Number > -Eg 2 </li></h3>
+
+<h3><li> <a href="https://github.com/AvinandanBose/JavaGeneric/blob/main/ClassAndMethodL3.java"> 3. T extends Map < ? super String, ? super Number > -Eg 3 </li></h3>
+
+
+</ul>
+</ul>
 <h1> </h1>
 <h1 align="Center"> UnBounded Wild Card</h1>
 <ul>
