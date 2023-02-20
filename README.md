@@ -2732,6 +2732,18 @@ T extends Map<? extends String, ? extends Number>
 
 
 </ul>
+
+</ul>
+<h2><i><ins>Implementing Upper Bound WildCard in Class and Method</ins></i></h2>
+<ul>
+<ul>
+<h3><li> <a href="https://github.com/AvinandanBose/JavaGeneric/blob/main/ClassAndMethod1.java"> 1.  T extends List < ? extends Number > -Eg 1 </li></h3>
+
+<h3><li> <a href="https://github.com/AvinandanBose/JavaGeneric/blob/main/ClassAndMethod2.java"> 2.  T extends Set < ? extends Number > -Eg 2 </li></h3>
+
+<h3><li> <a href="https://github.com/AvinandanBose/JavaGeneric/blob/main/ClassAndMethod3.java"> 3. T extends Map < ? extends String, ? extends  Number > -Eg 3 </li></h3>
+
+</ul>
 </ul>
 
 <h3><i><ins>Note:</ins> Rule 1 , 10, 11 of Upper Bound WildCard i.e. based on <ins>TypeErasure</ins> may get bypassed by some IDE like IntelliJ IDEA and some online editor like <a href="https://www.onlinegdb.com/"> ONLINE GDB COMPILER </a> and may get compiled successfully, the above rules are set based on IDE : <ins>VS CODE</ins> and <ins> ECLIPSE IDE .</ins> </i></h3>
