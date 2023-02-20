@@ -4896,6 +4896,12 @@ public  class Example<T> {
 
 </ul>
 
+<h1> Implementation of Lambda Expression, Functional Interface Method References AND ConstructorReference in Java Generics</h1>
+
+<ul>
+
+
+</ul>
 
 <h1> Implementation of  Set in Java Generics</h1>
 <ul>
@@ -4926,4 +4932,11 @@ public  class Example<T> {
 <h3> <i> </ins> Note: </ins> </i> Except EnumSet which only depends only on Enum type , Every other Set such as LinkedHashSet ,Navigable Set, TreeSet etc. follow the same kinds of implementation . </i> </h3>
       
       
+</ul>
+
+<h1> Implementation of  Map in Java Generics</h1>
+
+<ul>
+
+
 </ul>
