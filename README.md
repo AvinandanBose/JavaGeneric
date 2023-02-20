@@ -3668,6 +3668,16 @@ Which satisfies T extends Map.
 
 </ul>
 </ul>
+
+<h2><i><ins>Some Generics allowed in IDE like IntelliJ IDEA to Run</ins></i></h2>
+<ul>
+<ul>
+<h3><li> <a href="https://github.com/AvinandanBose/JavaGeneric/blob/main/Example5.java"> T extends Map < ? super  String, ? super Number > & NavigableMap < ? super  String, ? super Number > -Eg  </li></h3>
+
+<h3><i><ins>Note:</ins> If anyone see that NavigableMap extends Map interface , hence NavigableMap implements all the functions of Map , hence in VSCODE compiler compiles and while converting into bytecode erases the Type and it shows NavigableMap is put two times hence the implementation  T extends Map < ? super  String, ? super Number > & NavigableMap < ? super  String, ? super Number > =  T extends NavigableMap < ? super  String, ? super Number > . And it put a difference between two IDE between IntelliJ and VSCODE.</i></h3>
+</ul>
+</ul>
+
 <h1> </h1>
 <h1 align="Center"> UnBounded Wild Card</h1>
 <ul>
