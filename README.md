@@ -2746,7 +2746,21 @@ T extends Map<? extends String, ? extends Number>
 </ul>
 </ul>
 
-<h3><i><ins>Note:</ins> Rule 1 , 10, 11 of Upper Bound WildCard i.e. based on <ins>TypeErasure</ins> may get bypassed by some IDE like IntelliJ IDEA and some online editor like <a href="https://www.onlinegdb.com/"> ONLINE GDB COMPILER </a> and may get compiled successfully, the above rules are set based on IDE : <ins>VS CODE</ins> and <ins> ECLIPSE IDE .</ins> </i></h3>
+<h3><i><ins>Note:</ins> Rule 1 , 10, 11 of Upper Bound WildCard i.e. based on <ins>TypeErasure</ins> may get bypassed by some IDE like IntelliJ IDEA and some online editor like <a href="https://www.onlinegdb.com/"> ONLINE GDB COMPILER </a> and may get compiled successfully, the above rules are set based on IDE : <ins>VS CODE</ins> and <ins> ECLIPSE IDE . </i></h3>
+
+<h3><i><ins>Some Generics allowed in IDE like IntelliJ IDEA to Run </ins></i></h3>
+
+<ul>
+
+<h3><li> <a href="https://github.com/AvinandanBose/JavaGeneric/blob/main/Example2.java"> 1. T extends Set < ? extends  Number > & NavigableSet < ? extends Number > -Eg 1 </li></h3>
+
+<h3><li> <a href="https://github.com/AvinandanBose/JavaGeneric/blob/main/Example3.java"> 2.  T extends Map <? extends  String, ? extends Number > & NavigableMap < ? extends  String, ? extends Number > -Eg 2 </li></h3>
+
+<h3><i><ins>Note:</ins> If anyone see that NavigableSet extends Set interface , hence NavigableSet implements all the functions of Set , hence in VSCODE compiler compiles and while converting into bytecode erases the Type and it shows NavigableSet is put two times hence the implementation  T extends Set < ? extends  Number > & NavigableSet < ? extends Number > =  T extends NavigableSet < ? extends Number > . This is same for Map and NavigableMap .  </i></h3>
+
+
+</ul>
+
 </ul>
 
 <h2></h2>
