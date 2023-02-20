@@ -4720,6 +4720,57 @@ Example<?>[] e = new Example<?>[10];
 </ul>
 
 <h2><li>6. Cannot Create, Catch, or Throw Objects of Parameterized Types</li></h2>
+<ul>
+
+<h3><i> 1. Here are the Compile Time Errors: </i></h3>
+
+<h3 align="Left">
+
+```
+//Compile Time Error
+class Example<T>  extends Exception{ .....}
+```
+</h3>
+
+<h3 align="Left">
+
+```
+
+//Compile Time Error
+class Example<T>  extends Throwable{ .....}
+
+```
+</h3>
+
+
+<h3><i> 2. And, cannot Catch Type Parameters: </i></h3>
+
+<h3 align="Left">
+
+```
+import java.util.ArrayList;
+class Example<T extends Exception> {
+
+        public  T get(ArrayList<T> t) {
+            try {
+               System.out.println("try");
+                return t.get(0);
+            } 
+	    
+	    catch (T e) //Error
+	    
+	    {
+                return (T) e;
+            }
+        }
+
+
+}
+
+```
+</h3>
+
+</ul>
 
 </ul>
 </ul>
