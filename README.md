@@ -4803,7 +4803,48 @@ class Example<T extends Exception> {
 	
 
 </ul>
+<h2><li>7. A class cannot have two overloaded methods that will have the same signature after type erasure.</li></h2>
+<ul>
+
+<h3 align="Left">
+
+```
+
+import java.util.Set;
+
+public  class Example {
+
+//Compilation Error
+    public void print(Set<Integer> strSet) { }
+    public void print(Set<Integer> intSet) { }
+}
+
+```
+</h3>
+
+<h3> Also, </h3>
+
+<h3 align="Left">
+
+```
+public  class Example<T> {
+
+//Compilation Error
+    public void print(T a) { }
+    public void print(T b) { }
+}
+
+```
+</h3>
+
+<h3><i>The overloads would all share the same classfile representation and will generate a compile-time error.</i></h3>
+
+
+
 </ul>
+</ul>
+
+
 </ul>
 
 
