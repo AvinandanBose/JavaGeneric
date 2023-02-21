@@ -3716,6 +3716,48 @@ Which satisfies T extends Map.
 <ul>
 <h3><li> <a href="https://github.com/AvinandanBose/JavaGeneric/blob/main/Example5.java"> T extends Map < ? super  String, ? super Number > & NavigableMap < ? super  String, ? super Number > -Eg  </li></h3>
 
+<h3><i>i.e.</i></h3>
+
+<h3 align="Left">
+
+```
+interface A2{ }
+
+interface B2<T> {}
+interface C2<T> extends B2<T>{ }
+class D2<T> implements C2<T>,A2{ }
+
+public class Example6 <T extends B2<? super A2> & C2<? super A2>>{
+
+        public static void main(String[] args) {
+
+            Example6<D2<A2>> d = new Example6<>();
+
+        }
+}
+
+OR
+
+class/abstract class A2{ }
+[i.e. Class or Abstract Class]
+
+interface B2<T> {}
+interface C2<T> extends B2<T>{ }
+class D2<T> extends A2 implements C2<T> { }
+
+public class Example6 <T extends B2<? super A2> & C2<? super A2>>{
+
+        public static void main(String[] args) {
+
+            Example6<D2<A2>> d = new Example6<>();
+
+        }
+}
+
+
+```
+</h3>
+
 <h3><i><ins>Note:</ins> If anyone see that NavigableMap extends Map interface , hence NavigableMap implements all the functions of Map , hence in VSCODE compiler compiles and while converting into bytecode erases the Type and it shows NavigableMap is put two times hence the implementation  T extends Map < ? super  String, ? super Number > & NavigableMap < ? super  String, ? super Number > =  T extends NavigableMap < ? super  String, ? super Number > . And it put a difference between two IDE between IntelliJ and VSCODE.</i></h3>
 </ul>
 </ul>
