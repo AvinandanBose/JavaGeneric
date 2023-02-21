@@ -4990,7 +4990,14 @@ public  class Example<T> {
 <ul>
 <h2> 1. Implementation of Lambda Expression in Java Generics</h2>
 <ul>
-
+<h3><li><a href= "https://github.com/AvinandanBose/JavaGeneric/blob/main/LambdaGenerics1.java" >Simple Example of Implementation →Eg-1  </a></li></h3>
+<h3><li><a href= "https://github.com/AvinandanBose/JavaGeneric/blob/main/LambdaGenerics2.java" >Implementation of Lambda and Using Upper Bound  →Eg-2  </a></li></h3>
+<h3><li><a href= "https://github.com/AvinandanBose/JavaGeneric/blob/main/LambdaGenerics3.java" >Implementation of Lambda and Using Upper Bound  →Eg-3  </a></li></h3>
+<h3><li><a href= "https://github.com/AvinandanBose/JavaGeneric/blob/main/LambdaGenerics4.java" >Implementation of Lambda and Using Multiple Upper Bound  →Eg-4  </a></li></h3>
+<h3><li><a href= "https://github.com/AvinandanBose/JavaGeneric/blob/main/LambdaGenerics5.java" >Implementation of Lambda and Using Upper Bound with WildCard →Eg-5  </a></li></h3>
+<h3><li><a href= "https://github.com/AvinandanBose/JavaGeneric/blob/main/LambdaGenerics6.java" >Implementation of Lambda with Multiple Parameter and Using Multiple Upper Bound with WildCard →Eg-6  </a></li></h3>
+<h3><li><a href= "https://github.com/AvinandanBose/JavaGeneric/blob/main/LambdaGenerics7.java" >Implementation of Lambda with Multiple Parameter and Using Multiple Upper Bound and Lower Bound  with WildCard →Eg-7  </a></li></h3>
+<h3><li><a href= "https://github.com/AvinandanBose/JavaGeneric/blob/main/LambdaGenerics8.java" >Passing Wild Card in creation of Object →Eg-8  </a></li></h3>
 </ul>
 
 
