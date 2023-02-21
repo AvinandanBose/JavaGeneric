@@ -4982,6 +4982,9 @@ public  class Example<T> {
 
 </ul>
 
+<br>
+<br>
+
 <h1> Implementation of Lambda Expression, Functional Interface Method References AND ConstructorReference in Java Generics</h1>
 
 <ul>
