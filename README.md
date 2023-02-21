@@ -2756,6 +2756,48 @@ T extends Map<? extends String, ? extends Number>
 
 <h3><li> <a href="https://github.com/AvinandanBose/JavaGeneric/blob/main/Example3.java"> 2.  T extends Map <? extends  String, ? extends Number > & NavigableMap < ? extends  String, ? extends Number > -Eg 2 </li></h3>
 
+<h3><i>i.e.</i></h3>
+
+<h3 align="Left">
+
+```
+interface A1{ }
+
+interface B1<T> { }
+interface C1<T> extends B1<T>{ }
+class D1<T> implements C1<T>,A1{ }
+public class Example4 <T extends B1<? extends A1> & C1<? extends A1>>{
+
+    public static void main(String[] args) {
+
+        Example4<D1<A1>> d = new Example4<>();
+
+    }
+}
+
+OR
+
+class/abstract class A1{ }
+[i.e. Class or Abstract Class]
+
+interface B1<T> {}
+interface C1<T> extends B1<T>{ }
+class D1<T> extends A1 implements C1<T> { }
+public class Example4 <T extends B1<? extends A1> & C1<? extends A1>>{
+
+    public static void main(String[] args) {
+
+        Example4<D1<A1>> d = new Example4<>();
+
+    }
+}
+
+
+
+
+```
+</h3>
+
 <h3><i><ins>Note:</ins> If anyone see that NavigableSet extends Set interface , hence NavigableSet implements all the functions of Set , hence in VSCODE compiler compiles and while converting into bytecode erases the Type and it shows NavigableSet is put two times hence the implementation  T extends Set < ? extends  Number > & NavigableSet < ? extends Number > =  T extends NavigableSet < ? extends Number > . This is same for Map and NavigableMap .  </i></h3>
 
 
