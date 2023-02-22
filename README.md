@@ -5000,20 +5000,28 @@ public  class Example<T> {
 <h3><li><a href= "https://github.com/AvinandanBose/JavaGeneric/blob/main/LambdaGenerics8.java" >Passing Wild Card in creation of Object →Eg-8  </a></li></h3>
 <h3><li><a href= "https://github.com/AvinandanBose/JavaGeneric/blob/main/LambdaGenerics9.java" >Passing Lambda Expression as Argument Using Generics→Eg-9  </a></li></h3>
 
+
+</ul>
 <h2> 2. Implementation of  Method References in Java Generics</h2>
 <ul>
 <h3> 2.a. ClassName::methodName </h3>
 <ul>
+<h3><li><a href= "https://github.com/AvinandanBose/JavaGeneric/blob/main/MethodRefGen1.java" >Simple Implementation of ClassName::methodName in  Generics→Eg-1  </a></li></h3>
+<h3><li><a href= "https://github.com/AvinandanBose/JavaGeneric/blob/main/MethodRefGen2.java" >Implementation of ClassName::methodName in UpperBound Class→Eg-2  </a></li></h3>
+<h3><li><a href= "https://github.com/AvinandanBose/JavaGeneric/blob/main/MethodRefGen3.java" >Implementation of ClassName::methodName in Multiple UpperBound Class→Eg-3  </a></li></h3>
+<h3><li><a href= "https://github.com/AvinandanBose/JavaGeneric/blob/main/MethodRefGen4.java" >Implementation of ClassName::methodName in Multiple UpperBound with WildCard Class→Eg-4  </a></li></h3>
+<h3><li><a href= "https://github.com/AvinandanBose/JavaGeneric/blob/main/MethodRefGen5.java" >Implementation of ClassName::methodName in Lower Bound with WildCard Class→Eg-5  </a></li></h3>
+<h3><li><a href= "https://github.com/AvinandanBose/JavaGeneric/blob/main/MethodRefGen7.java" >Simple Implementation of ClassName::methodName in  Generics(2)→Eg-6  </a></li></h3>
 
+<h3><i><ins>Note:</ins> Here parameter or types  doesnot matter much. </i></h3>
 </ul>
 <h3> 2.b. objRef::methodName </h3>
 <ul>
-
+<h3><li><a href= "https://github.com/AvinandanBose/JavaGeneric/blob/main/MethodRefGen6.java" > Implementation of objRef::methodName in  Generics→Eg-7  </a></li></h3>
 </ul>
 
 </ul>
-</ul>
-
+<h2> 3. Implementation of  Constructor References in Java Generics</h2>
 
 </ul>
 
