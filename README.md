@@ -4999,6 +4999,19 @@ public  class Example<T> {
 <h3><li><a href= "https://github.com/AvinandanBose/JavaGeneric/blob/main/LambdaGenerics7.java" >Implementation of Lambda with Multiple Parameter and Using Multiple Upper Bound and Lower Bound  with WildCard →Eg-7  </a></li></h3>
 <h3><li><a href= "https://github.com/AvinandanBose/JavaGeneric/blob/main/LambdaGenerics8.java" >Passing Wild Card in creation of Object →Eg-8  </a></li></h3>
 <h3><li><a href= "https://github.com/AvinandanBose/JavaGeneric/blob/main/LambdaGenerics9.java" >Passing Lambda Expression as Argument Using Generics→Eg-9  </a></li></h3>
+
+<h2> 2. Implementation of  Method References in Java Generics</h2>
+<ul>
+<h3> 2.a. ClassName::methodName </h3>
+<ul>
+
+</ul>
+<h3> 2.b. objRef::methodName </h3>
+<ul>
+
+</ul>
+
+</ul>
 </ul>
 
 
