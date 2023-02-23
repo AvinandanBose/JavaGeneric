@@ -5022,6 +5022,31 @@ public  class Example<T> {
 
 </ul>
 <h2> 3. Implementation of  Constructor References in Java Generics</h2>
+<ul>
+<h3> <i>classname::new </i></h3>
+<h3><li><a href= "https://github.com/AvinandanBose/JavaGeneric/blob/main/ConstructorRefGen1.java" >Simple Implementation of Constructor Reference →Eg-1  </a></li></h3>
+<h3><li><a href= "https://github.com/AvinandanBose/JavaGeneric/blob/main/ConstructorRefGen2.java" >Constructor Reference with Upper Bound →Eg-2  </a></li></h3>
+	
+```Syntax
+
+Rule:
+	
+Here is a rule , constructor reference depends upon the 
+Functional Interface and calls the single function in the interface, 
+the Type parameter of Interface should match with the,
+Class's type parameter.	
+i.e.,
+
+interface ConstRef1<T extends Number>
+{
+ func();
+}
+class MyFunc1<T extends Number>
+{
+ MyFunc();
+}
+```
+</ul>
 
 </ul>
 
