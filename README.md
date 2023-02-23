@@ -1290,6 +1290,15 @@ Every class has Object as a superclass.
 java.lang.Comparable<T> → Comparable is an interface in java.lang package.
 
 ```
+
+<h3><i>Similarly, </i></h3>
+
+<h3><li><a href="https://github.com/AvinandanBose/JavaGeneric/blob/main/JavaGenMUB15.java">T extends AbstractList < Number > & List < Number ></a></li></h3>
+<h3><li><a href="https://github.com/AvinandanBose/JavaGeneric/blob/main/JavaGenMUB16.java">T extends AbstractSet < Number > & Set < Number ></a></li></h3>
+<h3><li><a href="https://github.com/AvinandanBose/JavaGeneric/blob/main/JavaGenMUB17.java">T extends Set < Number > & NavigableSet < Number ></a></li></h3>
+<h3><li><a href="https://github.com/AvinandanBose/JavaGeneric/blob/main/JavaGenMUB18.java">T extends AbstractMap < String ,Number > & Map < String ,Number ></a></li></h3>
+<h3><li><a href="https://github.com/AvinandanBose/JavaGeneric/blob/main/JavaGenMUB19.java">T extends HashMap < String, Number > & Map < String, Number ></a></li></h3>
+<h3><li><a href="https://github.com/AvinandanBose/JavaGeneric/blob/main/JavaGenMUB20.java">T extends NavigableMap < String, Number > & Map < String, Number ></a></li></h3>
 </ul>
 </ul>
  
