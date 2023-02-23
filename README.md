@@ -5039,12 +5039,48 @@ i.e.,
 
 interface ConstRef1<T extends Number>
 {
- func();
+ MyFunc1<T>func();
 }
 class MyFunc1<T extends Number>
 {
  MyFunc();
 }
+
+Hence, <T extends Number> should exist in both.
+```
+
+<h3><li><a href= "https://github.com/AvinandanBose/JavaGeneric/blob/main/ConstructorRefGen3.java" >Constructor Reference with Upper Bound WildCard →Eg-3  </a></li></h3>
+
+```Syntax
+
+Rule:
+	
+Note: In wild card upper bound if class Type is,
+extended to a class say Number then interface Type
+should be those classes which extends the Type Class
+(Sub Classes)or remain Same.
+
+//Same
+interface ConstRef1<T extends List < ? extends Number>>
+{
+ MyFunc1<T>func();
+}
+class MyFunc1<T extends List < ? extends Number>>
+{
+ MyFunc();
+}
+
+:OR:
+
+//Using Sub Class in Interface
+interface ConstRef1<T extends List <Integer>>
+{
+ MyFunc1<T>func();
+}
+class MyFunc1<T extends List < ? extends Number>>
+{
+ MyFunc();
+}	
 ```
 </ul>
 
