@@ -5083,7 +5083,7 @@ class MyFunc1<T extends List < ? extends Number>>
 }	
 ```
 
-<h3><li><a href= "https://github.com/AvinandanBose/JavaGeneric/blob/main/ConstructorRefGen8.java" >Constructor Reference with Lower Bound WildCard →Eg-3  </a></li></h3>
+<h3><li><a href= "https://github.com/AvinandanBose/JavaGeneric/blob/main/ConstructorRefGen8.java" >Constructor Reference with Lower Bound WildCard →Eg-4  </a></li></h3>
 
 ```Syntax
 
@@ -5120,6 +5120,14 @@ including Number itself.
 ```
 
 <h3><i>Other Examples:</i></h3>
+
+<h3><li><a href= "https://github.com/AvinandanBose/JavaGeneric/blob/main/ConstructorRefGen4.java" >Constructor Reference with Upper Bound WildCard Having More Than One Interface and One Class →Eg-5  </a></li></h3>
+
+<h3><li><a href= "https://github.com/AvinandanBose/JavaGeneric/blob/main/ConstructorRefGen5.java" >Constructor Reference with Multiple Upper Bound Having More Than One Interface and One Class →Eg-6  </a></li></h3>
+
+<h3><li><a href= "https://github.com/AvinandanBose/JavaGeneric/blob/main/ConstructorRefGen6.java" >Constructor Reference with Multiple Upper Bound WildCard Having More Than One Interface and One Class →Eg-7  </a></li></h3>
+
+<h3><li><a href= "https://github.com/AvinandanBose/JavaGeneric/blob/main/ConstructorRefGen7.java" >Constructor Reference with Multiple Upper Bound WildCard with Lower Bound Having More Than One Interface and One Class →Eg-8  </a></li></h3>
 
 </ul>
 
