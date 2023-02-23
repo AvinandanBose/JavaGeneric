@@ -5082,6 +5082,45 @@ class MyFunc1<T extends List < ? extends Number>>
  MyFunc();
 }	
 ```
+
+<h3><li><a href= "https://github.com/AvinandanBose/JavaGeneric/blob/main/ConstructorRefGen8.java" >Constructor Reference with Lower Bound WildCard →Eg-3  </a></li></h3>
+
+```Syntax
+
+Rule:
+	
+Note: In wild card upper bound if class Type is,
+Super to a class say Number then interface Type
+should be of Super classes or remain Same.
+
+//Same
+interface ConstRef1<T extends List < ? super Number>>
+{
+ MyFunc1<T>func();
+}
+class MyFunc1<T extends List < ? super Number>>
+{
+ MyFunc();
+}
+
+:OR:
+
+//Using Sub Class in Interface
+interface ConstRef1<T extends List <Serializable>
+{
+ MyFunc1<T>func();
+}
+class MyFunc1<T extends List < ? extends Number>>
+{
+ MyFunc();
+}
+
+Note: Object,Serializable are super Classes of Number
+including Number itself.
+```
+</ul>
+
+
 </ul>
 
 </ul>
