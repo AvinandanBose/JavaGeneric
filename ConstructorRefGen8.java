@@ -14,6 +14,10 @@ interface ImplGen2<T extends List<Number>> {
    CImplGen<T> add(int a, int b);
 }
 
+interface ImplGen3<T extends List<? super Number>> {
+   CImplGen<T> add(int a, int b);
+}
+
 class CImplGen<T extends List<? super Number>> {
     public CImplGen(int a, int b) {
         System.out.println("a = " + a + " " + "b = " + b);
@@ -30,6 +34,9 @@ public class ConstructorRefGen8 {
 
          ImplGen2<ArrayList<Number>> ref2 = CImplGen::new;
          ref2.add(10, 20);
+
+         ImplGen3<ArrayList<Number>> ref3 = CImplGen::new;
+         ref3.add(10, 20);
       }
 
 
