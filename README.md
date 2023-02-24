@@ -5182,7 +5182,26 @@ including Number itself.
 <li><h2> Implementation of  Hash Map in Java Generics</h2></li>
 
 <ul>
+
+<h3><li><a href= "https://github.com/AvinandanBose/JavaGeneric/blob/main/javaGenericsMap1.java" >Simple Implementation of Map with Single Parameter</a></li></h3>
+<h3><li><a href= "https://github.com/AvinandanBose/JavaGeneric/blob/main/javaGenericsMap2.java" >Simple Implementation of Map with Two Different Parameter</a></li></h3>
+
+<h3><li><a href= "https://github.com/AvinandanBose/JavaGeneric/blob/main/javaGenericsMap3.java" >Using Constructor to have different Functionalities of Map </a></li></h3>
+
+<h3><li><a href= "https://github.com/AvinandanBose/JavaGeneric/blob/main/javaGenericsMap4.java" >Using Constructor to Generate sum of all Keys using Stream and Lambda Function. </a></li></h3>
+
+<h3><li><a href= "https://github.com/AvinandanBose/JavaGeneric/blob/main/javaGenericsMap5.java" >Using Constructor to put Array Values in Map using Java Generics. </a></li></h3>
+
+<h3><i><ins>Now, </ins> lets implement every functions of the HashSet in Generics type method using the logic.</i></h3>
+<ul>
+<h3><li><a href= "https://github.com/AvinandanBose/JavaGeneric/blob/main/javaGenericsMap6.java" >Implementation of every functions of the Hash Map in Java Generics</a></li></h3>
+
+
+
+</ul>
 	
 </ul>
+
+<h3> <i> </ins> Note: </ins> </i> Except EnumMap which only depends only on Enum type , Every other Map such as Linked Hash Map ,Identity Hash Map, TreeMap etc. follow the same kinds of implementation . </i> </h3>
 
 </ul>
