@@ -5179,6 +5179,10 @@ including Number itself.
 <h1> Implementation of  Map in Java Generics</h1>
 
 <ul>
+<li><h2> Implementation of  Hash Map in Java Generics</h2></li>
 
+<ul>
+	
+</ul>
 
 </ul>
