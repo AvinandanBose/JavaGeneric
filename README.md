@@ -4988,6 +4988,14 @@ public  class Example<T> {
 </ul>
 </ul>
 
+<h1> Wild Card Capture , Sub Types , Generic Anonymous Class and Generic Inner Class. </h1>
+
+<ul>
+
+
+</ul>
+
+<h1 align="Center"> ------x-------</h1>
 
 </ul>
 
@@ -4995,6 +5003,7 @@ public  class Example<T> {
 <br>
 
 <h1> Implementation of Lambda Expression, Functional Interface Method References AND ConstructorReference in Java Generics</h1>
+
 
 <ul>
 <h2> 1. Implementation of Lambda Expression in Java Generics</h2>
