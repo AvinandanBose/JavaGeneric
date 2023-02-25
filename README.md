@@ -4991,7 +4991,102 @@ public  class Example<T> {
 <h1> Wild Card Capture , Sub Types , Generic Anonymous Class and Generic Inner Class. </h1>
 
 <ul>
+<h2><li>1.  Type Capture in Java Generics </li></h2>
+<ul>
+	
 
+<h3>In Java Generics, capture is the process of taking a type variable in a generic method or class, and introducing a new type parameter that captures the specific type that is inferred for that type variable in a given context.</h3>
+
+<h3>In other words, when the Java compiler encounters a generic method or class with a type variable, it needs to determine the actual type that will be used for that variable when the method or class is called. This process is called type inference. In some cases, the type inference algorithm can be ambiguous or unpredictable, which can lead to compile errors or unexpected runtime behavior.</h3>
+
+<h3>To resolve this issue, the compiler creates a new type parameter that "captures" the actual type that is inferred for the type variable in the current context. This new type parameter is called a capture, and it ensures that the generic method or class can work correctly with the specific type that is inferred for the type variable.</h3>
+
+<h3>Captures are used internally by the Java compiler and are not directly visible to the programmer.</h3>
+	
+<h3>
+
+```
+ Such as we have :
+
+class Example{
+ public static <T extends Comparable<T>> T[] max(T[] a, T[] b) {
+       for (int i = 0; i < a.length; i++) {
+           if (a[i].compareTo(b[i]) > 0) {
+               return a;
+           }
+       }
+         return b;
+    }
+public static void main(String[] args) {
+        Integer[] arr1 = {1, 2, 3};
+        Integer[] arr2 = {4, 5, 6};
+        Integer[] maxArr = max(arr1, arr2);
+        for (Integer i : maxArr) {
+            System.out.println(i);
+        }
+
+
+    }
+	
+}
+	
+Now while compilation , Compiler can create its own "Capture" the above method as:
+
+public static <T extends Comparable<T>> T[] maxHelper (T[] a, T[] b) {
+       for (int i = 0; i < a.length; i++) {
+           if (a[i].compareTo(b[i]) > 0) {
+               return a;
+           }
+       }
+         return b;
+    }
+
+i.e.
+And check that the type provided by the User is correct and then compile ,
+And it is not visible to Programmer as Compiler creates it internally i.e.
+	
+---------	
+class Example{
+ public static <T extends Comparable<T>> T[] max(T[] a, T[] b) {
+       for (int i = 0; i < a.length; i++) {
+           if (a[i].compareTo(b[i]) > 0) {
+               return a;
+           }
+       }
+         return b;
+    }
+public static void main(String[] args) {
+        Integer[] arr1 = {1, 2, 3};
+        Integer[] arr2 = {4, 5, 6};
+        Integer[] maxArr = max(arr1, arr2);
+        for (Integer i : maxArr) {
+            System.out.println(i);
+        }
+
+
+    }
+
+//During Compilation(Compiler creates an Capture) for type check
+public static <T extends Comparable<T>> T[] maxHelper (T[] a, T[] b) {
+       for (int i = 0; i < a.length; i++) {
+           if (a[i].compareTo(b[i]) > 0) {
+               return a;
+           }
+       }
+         return b;
+    }
+//Known to compiler Only, not visible to Programmer.
+		
+}
+	
+
+	
+```
+</h3>
+	
+</h3>
+	
+</ul>
 
 </ul>
 
