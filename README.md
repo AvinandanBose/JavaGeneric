@@ -5088,7 +5088,7 @@ public static <T extends Comparable<T>> T[] maxHelper (T[] a, T[] b) {
 </h3>
 	
 </ul>
-<h2><li>2.  Wild Card Capture in Java Generics </li></h2>
+<h2><li>2.  Wild Card Capture in Java Generics and Helper Method </li></h2>
 
 <ul>
 
@@ -5101,6 +5101,128 @@ public static <T extends Comparable<T>> T[] maxHelper (T[] a, T[] b) {
 <h3>To avoid this issue, the Java compiler can create a new type parameter that "captures" the wildcard expression, similar to how capture conversion works for type variables. This new type parameter can then be used in place of the wildcard expression, ensuring that the generic method or class works correctly with the specific type that is inferred for the wildcard.</h3>
 
 <h3>Wild Card Capture is an internal mechanism used by the Java compiler and is not directly visible to the programmer.</h3>
+
+<h3 align="Left">
+
+```
+
+Like :
+
+public class Example {
+	public static <T>void printList(List<T> list) {
+	    for (T o : list) {
+	        System.out.println(o);
+	    }
+	}
+	
+	public static void main(String[] args) {
+		List<Integer> numbers = Arrays.asList(1, 2, 3);
+		printList(numbers);
+
+    }
+    -----------------------------
+    //Compiler create a Capture
+    ----------------------------------
+    public static void printList(List<Integer> list) {
+	    for (Integer o : list) {
+	        System.out.println(o);
+	    }
+	}
+     ----------------------------------
+     //Only known to Compiler
+     --------------------------------
+     
+  Similarly:
+ 
+ public class Example {
+	public static <T>void printList(List<?> list) {
+	    for (Object o : list) {
+	        System.out.println(o);
+	    }
+	}
+	
+	public static void main(String[] args) {
+		List<Integer> numbers = Arrays.asList(1, 2, 3);
+		printList(numbers);
+
+        }
+
+    }
+    -----------------------------
+    //Compiler create a Capture
+    ------------------------------
+    public static void printList(List<Integer> list) {
+	    for (Integer o : list) {
+	        System.out.println(o);
+	    }
+	}
+     -----------------------------
+     //Only known to Compiler
+    -----------------------------
+    **************************************
+    **************************************
+    *Also  for Multiple Upper Bound Type:*
+    **************************************
+    **************************************
+    
+    public class Example {
+	public static <T>void printList(List<? extends Number> list) {
+	    for (Object o : list) {
+	        System.out.println(o);
+	    }
+	}
+	
+	public static void main(String[] args) {
+		List<Integer> numbers = Arrays.asList(1, 2, 3);
+		printList(numbers);
+
+    	}
+
+    }
+    ---------------------------
+    //Compiler create a Capture
+    --------------------------
+    public static void printList(List<Integer extends Number> list) {
+	    for (Integer o : list) {
+	        System.out.println(o);
+	    }
+	}
+      ---------------------------
+     //Only known to Compiler
+     ---------------------------------
+    **************************************
+    **************************************
+    *    Also  for Lower Bound Type:    *
+    **************************************
+    **************************************
+    
+    public class Example {
+	public static <T>void printList(List<? super Number> list) {
+	    for (Object o : list) {
+	        System.out.println(o);
+	    }
+	}
+	
+	public static void main(String[] args) {
+		List<Number> numbers = Arrays.asList(1, 2, 3);
+		printList(numbers);
+
+    	}
+
+    }
+    --------------------------
+    //Compiler create a Capture
+    ------------------------------
+    public static void printList(List<Number super Number> list) {
+	    for (Number o : list) {
+	        System.out.println(o);
+	    }
+	}
+    ---------------------------
+    //Only known to Compiler
+    ------------------------------
+```
+</h3>
 
 </ul>
 
