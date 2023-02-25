@@ -5030,7 +5030,8 @@ public static void main(String[] args) {
 	
 }
 	
-Now while compilation , Compiler can create its own "Capture" the above method as:
+Now while compilation , 
+Compiler can create its own "Capture" the above method as:
 
 public static <T extends Comparable<T>> T[] maxHelper (T[] a, T[] b) {
        for (int i = 0; i < a.length; i++) {
