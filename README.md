@@ -5228,7 +5228,46 @@ public class Example {
 
 </ul>
 
-<h2><li>3.  Sub Types </li></h2>
+<h2><li>3. Raw Types And  Sub Types </li></h2>
+
+<ul>
+<h3><i><ins>Raw Types:</ins></i> Raw types in Java Generics are a way to use a generic class or method without specifying its type parameters. Raw types are created by omitting the type parameter(s) from the generic class or method name.</h3>
+
+<h3 align="Left">
+
+```
+import java.util.ArrayList;
+import java.util.List;
+
+public class Example <T extends List<Number>>{
+	public static <T>void printList(List<? super Number> list) {
+	    for (Object o : list) {
+	        System.out.println(o);
+	    }
+	}
+	
+	public static void main(String[] args) {
+		Example eg = new Example();
+		List<Number> li = new ArrayList<>();
+		li.add(1);
+		li.add(2);
+		eg.printList(li);
+		
+
+    }
+    
+}
+
+```
+
+</h3>
+
+<h3> <i> Here "Example eg = new Example();" is in raw type i.e. doesnot mention "Type" in " < > " operator. </i></h3>
+
+<h3><i><ins>Sub Types:</ins></i> </h3>
+
+</ul>
+
 
 </ul>
 
