@@ -5088,6 +5088,11 @@ public static <T extends Comparable<T>> T[] maxHelper (T[] a, T[] b) {
 </h3>
 	
 </ul>
+<h2><li>2.  Wild Card Capture in Java Generics </li></h2>
+
+<ul>
+
+</ul>
 
 </ul>
 
