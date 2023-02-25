@@ -5264,7 +5264,81 @@ public class Example <T extends List<Number>>{
 
 <h3> <i> Here "Example eg = new Example();" is in raw type i.e. doesnot mention "Type" in " < > " operator. </i></h3>
 
-<h3><i><ins>Sub Types:</ins></i> </h3>
+<h3><i><ins>Sub Types:</ins></i> We can subtype a generic class or interface by extending or implementing it. The relationship between the type parameters of one class or interface and the type parameters of another are determined by the extends and implements clauses.</h3>
+
+<h3 align="Left">
+
+```
+
+import java.util.ArrayList;
+import java.util.List;
+
+interface b2<T> extends List<T> { }
+
+public class Example3<T extends b2<? extends Number>> {
+
+    T get(T t) {
+        t.forEach(System.out::println);
+        return t;
+    }
+
+    public static void main(String[] args) {
+        Example3<b2<Number>> e = new Example3<>();
+        Example3<b2<Integer>> e1 = new Example3<>();
+        List<Number> al = new ArrayList<>();
+        al.add(1);
+        al.add(2);
+        al.add(3);
+        System.out.println(e.get((b2<Number>) al));
+        
+        List<Integer> al1 = new ArrayList<>();
+        al1.add(1);
+        al1.add(2);
+        al1.add(3);
+
+
+        System.out.println(e1.get((b2<Integer>) al1));
+
+    }
+}
+
+```
+
+</h3>
+
+<h3> <i> Hence: </i></h3>
+
+<h3 align="Left">
+
+```
+interface b2<T> extends List<T> { }
+
+Then:
+
+class Example<T extends b2<? extends Number>>{
+
+ public static void main(String[] args) {
+ 
+ Example3<b2<Number>> e = new Example3<>();
+ Example3<b2<Integer>> e1 = new Example3<>();
+ Example3<b2<FLoat>> e1 = new Example3<>();
+ Example3<b2<Double>> e1 = new Example3<>();
+ 
+ 	}
+
+}
+
+i.e.,
+
+List<Number> --> b2<Number>
+List<Number> --> b2<Integer>
+List<Number> --> b2<FLoat>
+List<Number> --> b2<Double>
+
+```
+
+
+</h3>
 
 </ul>
 
