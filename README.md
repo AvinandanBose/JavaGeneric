@@ -5092,6 +5092,16 @@ public static <T extends Comparable<T>> T[] maxHelper (T[] a, T[] b) {
 
 <ul>
 
+<h3>Wild Card Capture is a mechanism in Java Generics that allows a wildcard expression to be captured by a type parameter, in a similar way to how a type variable can be captured by a type parameter using capture conversion.</h3>
+
+<h3>In Java Generics, a wildcard expression is a type argument that uses the wildcard character ("?") to represent an unknown type. Wildcards are commonly used in generic methods and classes to provide flexibility and enable more general-purpose code.</h3>
+
+<h3>However, when a wildcard is used in a context where a type parameter is expected, the Java compiler needs to perform capture conversion to infer the actual type that should be used for the wildcard. This process can be complex and may lead to unexpected behavior if not handled correctly.</h3>
+
+<h3>To avoid this issue, the Java compiler can create a new type parameter that "captures" the wildcard expression, similar to how capture conversion works for type variables. This new type parameter can then be used in place of the wildcard expression, ensuring that the generic method or class works correctly with the specific type that is inferred for the wildcard.</h3>
+
+<h3>Wild Card Capture is an internal mechanism used by the Java compiler and is not directly visible to the programmer.</h3>
+
 </ul>
 
 </ul>
