@@ -5224,7 +5224,11 @@ public class Example {
 ```
 </h3>
 
+<h3><i><ins>Helper Methods:</ins></i> The methods which compiler creates helps to identify <i>Types</i> , are called <i><ins>Helper Methods</ins></i> , and whenever the <i>Types</i> doesnot mathes it throws <i>"Capture of #"</i>error.</h3>
+
 </ul>
+
+<h2><li>3.  Sub Types </li></h2>
 
 </ul>
 
