@@ -5804,6 +5804,8 @@ Eg <type> e = Eg<type>{
 
 </h3>
 
+<h3> <i>***Until JDK 9 arrived , the diamond operator and generic class is possible only with normal classes , i.e. if we run any program with anonymous class and type parameter in JDK 7 it will throw error , hence Java developers extended the feature of the diamond operator in JDK 9 by allowing the diamond operator to be used with anonymous inner classes too.***</i></h3>
+
 </ul>
 
 <h2><li>4.  Generic Inner Class </li></h2>
