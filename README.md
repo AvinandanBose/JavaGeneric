@@ -5346,7 +5346,7 @@ List<Number> --> b2<Double>
 
 <ul>
 
-<h3><i><ins>Generic Anonymous Class:</ins></i> Like Anonymous CLass as those classes are nested class which have no name , hence Anonymous.Whatever the class returns stored in a variable created through that Class i.e. object of that class.As they are nested inside a class , also known as <i><ins> Anonymous Inner Class </ins></i>.As they can be <i>Parameterized</i>, hence <i><ins>Generic Anonymous Class</ins></i>.</h3>
+<h3><i><ins>Generic Anonymous Class:</ins></i> Like Anonymous CLass as those classes are nested class which have no name , hence Anonymous.Whatever the class returns stored in a variable created through that Class i.e. object of that class.As they are nested inside a class , also known as <i><ins> Anonymous Inner Class </ins></i>.As they can be <i>Parameterized</i>, hence <i><ins>Generic Anonymous Class</ins></i>.And they override the super class/abstract class/Interface's method, while inheriting it.</h3>
 
 <h3 align="Left">
 
