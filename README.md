@@ -5342,6 +5342,47 @@ List<Number> --> b2<Double>
 
 </ul>
 
+<h2><li>3.  Generic Anonymous Class </li></h2>
+
+<ul>
+
+<h3><i><ins>Generic Anonymous Class:</ins></i> Like Anonymous CLass as those classes are nested class which have no name , hence Anonymous.Whatever the class returns stored in a variable created through that Class i.e. object of that class.As they are nested inside a class , also known as <i><ins> Anonymous Inner Class </ins></i>.As they can be <i>Parameterized</i>, hence <i><ins>Generic Anonymous Class</ins></i>.</h3>
+
+<h3 align="Left">
+
+```
+++++++++
++Eg: 1 +
+++++++++
+
+interface A<T> {
+    T get(T t);
+}
+
+
+public class Example {
+    //Anynomous Generic Class
+    A<String> a = new A<String>() {
+        @Override
+        public String get(String s) {
+            System.out.println(s);
+            return s;
+        }
+    };
+public static void main(String[] args) {
+    Example e = new Example();
+    e.a.get("Hello");
+    }
+
+
+}
+
+```
+
+
+</h3>
+
+</ul>
 
 </ul>
 
