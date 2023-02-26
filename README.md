@@ -5658,6 +5658,123 @@ A2<ArrayList<Object>> a1 = new A2< ArrayList<Object>>() {
 
 </h3>
 
+<h3><i>Other Examples: </i></h3>
+<ul>
+<h3><li><a href="https://github.com/AvinandanBose/JavaGeneric/blob/main/Example6.java"> 1. Multiple Upper Bound  Wild Card </li></h3>
+
+```Syntax
+
+interface A<T> {
+    public T get(T a);
+}
+
+interface B<T> {
+    public T get(T b);
+}
+
+class C<T> implements A<T>, B<T> {
+    public T get(T c) {
+        return c;
+    }
+}
+
+class Example<T extends A<? extends Number> & B<? extends Number>>{
+    public static void main(String[] args) {
+        A<Number> a = new A<Number>(){
+            @Override
+            public Number get(Number a) {
+                return a;
+            }
+        };
+
+        System.out.println(a.get(1));
+
+        B<Integer> b = new B<Integer>(){
+            @Override
+            public Integer get(Integer b) {
+                return b;
+            }
+        };
+
+        System.out.println(b.get(2));
+
+        
+    }
+
+    // Same for Double, Float,
+    // Long, Short, Byte,
+    // Which are extended by Number
+     
+
+
+
+}
+
+```
+
+<h3><li><a href="https://github.com/AvinandanBose/JavaGeneric/blob/main/Example7.java"> 2. Multiple Upper Bound  Wild Card with Lower Bound</li></h3>
+
+```Syntax
+
+import java.io.Serializable;
+
+interface A1<T> {
+    public T get(T a);
+}
+
+interface B1<T> {
+    public T get(T b);
+}
+
+class C1<T> implements A1<T>, B1<T> {
+    public T get(T c) {
+        return c;
+    }
+}
+
+
+public class Example<T extends A1<? super Number> & B1<? super Number>> {
+
+    public static void main(String[] args) {
+        A1<Number> a = new A1<Number>(){
+            @Override
+            public Number get(Number a) {
+                return a;
+            }
+        };
+
+        System.out.println(a.get(1));
+
+        B1<Object> b = new B1<Object>(){
+            @Override
+            public Object get(Object b) {
+                return b;
+            }
+        };
+
+        System.out.println(b.get(2));
+
+
+        B1<Serializable> b2 = new B1<Serializable>() {
+            @Override
+            public Serializable get(Serializable b) {
+                return b;
+            }
+        };
+
+        System.out.println(b2.get(3));
+
+    }
+    
+    
+    
+}
+
+
+```
+
+</ul>
+
 <h3><i> Hence, everything depends upon what Type the Super Interface / Class have .</i></h3>
 
 <h3 align="Left">
@@ -5688,6 +5805,8 @@ Eg <type> e = Eg<type>{
 </h3>
 
 </ul>
+
+<h2><li>4.  Generic Inner Class </li></h2>
 
 </ul>
 
