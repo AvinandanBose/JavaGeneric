@@ -5619,6 +5619,36 @@ class Example3{
 
         System.out.println(a.m(al));
 
+A2<ArrayList<Object>> a1 = new A2< ArrayList<Object>>() {
+            @Override
+            public ArrayList<Object> m(ArrayList<Object> a) {
+                return a;
+            }
+        };
+
+        ArrayList<Object> al1 = new ArrayList<>();
+        al1.add(1);
+        al1.add(2.0f);
+        al1.add(3.33D);
+
+        System.out.println(a1.m(al1));
+
+        A2<ArrayList<Serializable>> a2 = new A2< ArrayList<Serializable>>() {
+            @Override
+            public ArrayList<Serializable> m(ArrayList<Serializable> a) {
+                return a;
+            }
+        };
+
+        ArrayList<Serializable> al2 = new ArrayList<>();
+        al2.add(1);
+        al2.add(2.0f);
+        al2.add(3.33D);
+
+        System.out.println(a2.m(al2));
+
+//Object and Serializable are super types of Number class
+
 
     }
 }
