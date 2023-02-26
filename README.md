@@ -5480,6 +5480,68 @@ class Example3{
 
 </h3>
 
+<h3><i>Similarly,Using Wild Card in Upper Bound : </i></h3>
+
+<h3 align="Left">
+
+```
+++++++++
++ Eg-3 +
+++++++++
+
+import java.util.ArrayList;
+import java.util.List;
+
+abstract class A2<T extends List<? extends Number>>{
+    public abstract T m(T a);
+}
+
+class Example3{
+    public static void main(String[] args) {
+        A2<List<Number>> a = new A2< List<Number>>() {
+            @Override
+            public List<Number> m(List<Number> a) {
+                return a;
+            }
+        };
+
+        List<Number> al = new ArrayList<>();
+        al.add(1);
+        al.add(2.0f);
+        al.add(3.33D);
+
+        System.out.println(a.m(al));
+
+
+
+        A2<List<Integer>> a1 = new A2< List<Integer>>() {
+            @Override
+            public List<Integer> m(List<Integer> a) {
+                return a;
+            }
+        };
+        List<Integer> al1 = new ArrayList<>();
+
+        al1.add(1);
+        al1.add(2);
+        al1.add(3);
+
+        System.out.println(a1.m(al1));
+
+        //Same for Double, Float,
+        // Long, Short, Byte,
+        //Which are extended by Number
+
+
+
+    }
+}
+
+
+```
+
+</h3>
+
 
 
 </ul>
