@@ -5382,6 +5382,106 @@ public static void main(String[] args) {
 
 </h3>
 
+<h3><i>Similarly,</i></h3>
+
+<h3 align="Left">
+
+```
+++++++++
++Eg: 2 +
+++++++++
+
+abstract class A2<T extends Number>{
+    public abstract T m(T a);
+}
+
+class Example3{
+    public static void main(String[] args) {
+        A2<Number> a = new A2< Number>() {
+            @Override
+            public Number m(Number a) {
+                return a;
+            }
+        };
+
+        System.out.println(a.m(1));
+        System.out.println(a.m(1.0));
+        System.out.println(a.m(1.0f));
+
+
+        A2<Integer> a1 = new A2< Integer>() {
+            @Override
+            public Integer m(Integer a) {
+                return a;
+            }
+        };
+
+        System.out.println(a1.m(1));
+        System.out.println(a1.m(2));
+
+
+    }
+}
+
+```
+
+
+</h3>
+
+<h3><i>i.e.,</i></h3>
+
+<h3 align="Left">
+
+```
+
+abstract class A2<T extends Number>{
+    public abstract T m(T a);
+}
+
+class Example3{
+    public static void main(String[] args) {
+        A2<Number> a = new A2< Number>() {
+            @Override
+            public Number m(Number a) {
+                return a;
+            }
+        };
+
+
+        A2<Integer> a1 = new A2< Integer>() {
+            @Override
+            public Integer m(Integer a) {
+                return a;
+            }
+        };
+
+       A2<Double> a2 = new A2< Double>() {
+            @Override
+            public Double m(Double a) {
+                return a;
+            }
+        };
+	
+	A2<Float> a3 = new A2< Float>() {
+            @Override
+            public Float m(Float a) {
+                return a;
+            }
+        };
+	
+	//....etc.
+
+
+    }
+}
+
+```
+
+
+</h3>
+
+
+
 </ul>
 
 </ul>
