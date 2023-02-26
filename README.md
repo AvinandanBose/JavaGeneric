@@ -5542,7 +5542,120 @@ class Example3{
 
 </h3>
 
+<h3><i>Similarly,in Multiple Upper Bound :</i></h3>
 
+<h3 align="Left">
+
+```
+++++++++
++ Eg-4 +
+++++++++
+
+import java.util.AbstractList;
+import java.util.ArrayList;
+import java.util.List;
+
+abstract class A2<T extends AbstractList<Number>&List<Number>>{
+    public abstract T m(T a);
+}
+
+class Example3{
+    public static void main(String[] args) {
+        A2<ArrayList<Number>> a = new A2< ArrayList<Number>>() {
+            @Override
+            public ArrayList<Number> m(ArrayList<Number> a) {
+                return a;
+            }
+        };
+
+        ArrayList<Number> al = new ArrayList<>();
+        al.add(1);
+        al.add(2.0f);
+        al.add(3.33D);
+
+        System.out.println(a.m(al));
+
+
+
+    }
+}
+
+
+```
+
+</h3>
+
+<h3><i>Similarly,using Lower Bound :</i></h3>
+
+<h3 align="Left">
+
+```
+++++++++
++ Eg-5 +
+++++++++
+
+import java.util.ArrayList;
+import java.util.List;
+
+ class A2<T extends List<? super Number>>{
+    public  T m(T a){
+        return a;
+    };
+}
+
+class Example3{
+    public static void main(String[] args) {
+        A2<ArrayList<Number>> a = new A2< ArrayList<Number>>() {
+            @Override
+            public ArrayList<Number> m(ArrayList<Number> a) {
+                return a;
+            }
+        };
+
+        ArrayList<Number> al = new ArrayList<>();
+        al.add(1);
+        al.add(2.0f);
+        al.add(3.33D);
+
+        System.out.println(a.m(al));
+
+
+    }
+}
+
+
+```
+
+</h3>
+
+<h3><i> Hence, everything depends upon what Type the Super Interface / Class have .</i></h3>
+
+<h3 align="Left">
+
+```
+
+
+class/ abstract class/Interface Eg <TYPE >{
+    
+    Method();
+}
+
+class Ex{
+
+Eg <type> e = Eg<type>{
+
+	@Ovveride
+	Method();
+
+   }
+
+}
+
+//type depends upon Type 
+
+```
+
+</h3>
 
 </ul>
 
