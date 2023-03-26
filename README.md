@@ -5811,7 +5811,7 @@ Eg <type> e = Eg<type>{
 <h2><li>4.  Generic Inner Class </li></h2>
 
 <ul>
-<h3><i>Diamond operator was introduced in Java 7 .The main purpose of the diamond operator is to simplify the use of generics when creating an object. The diamond operator could not be used with Anonymous inner classes in JDK 7. In JDK 9, it can be used with the anonymous class as well to simplify code and improves readability. </i></h3>
+<h3><i>Diamond operator was introduced in Java 7 .The main purpose of the diamond operator is to simplify the use of generics when creating an object. The diamond operator could not be used with Anonymous inner classes in JDK 7. In JDK 9, it can be used with the anonymous class as well to simplify code and improves readability. <ins>[As mentioned above] </ins></i></h3>
 
 <h3>According to the Java's Inner Class we know : </h3>
 
@@ -5934,7 +5934,95 @@ outerObj.LocalMethod();
 
 </ul>
 
+<h3><li> 2) Anonymous Inner Class </li></h3>
 
+<ul>
+
+<h3>
+
+```Syntax
+
+++++++
+Class
+++++++
+
+class A{
+ LocalMethod(){...}
+
+}
+
+class B{
+
+Main(){
+A a = new A(){
+    @override
+    LocalMethod(){...}
+     }
+  }
+
+ }
+
+}
+
+++++++
+Abstract Class
+++++++ 
+
+abstract class AnonymousInner {
+ abstract LocalMethod();
+ }
+ 
+ class Inner{
+ 
+ Main(){
+ 
+ AnonymousInner anIn = new  AnonymousInner(){
+ @Override
+ LocalMethod(){....}
+ 
+      }
+ 
+    }
+ 
+ }
+
+++++++
+Interface 
+++++++ 
+
+interface A {
+    LocalInterfaceMethod();
+}
+
+class Eg implements A{
+@Override
+LocalInterfaceMethod(){...}
+
+}
+class InnerClass{
+Main(){
+
+A a = new A(){
+
+@Override
+
+LocalInterfaceMethod(){...};
+
+	}
+
+   }
+
+}
+
+
+```
+
+</h3>
+
+<ul>
+<h3><li><a href="https://github.com/AvinandanBose/JavaGeneric/blob/main/InnnerClass9.java"> 1. Anonymous Inner Class- Eg(1)</li></h3>
+<h3><i><ins>Note:</ins> Anonymous Inner Class is already discussed as- "Generic Anonymous Class" . (Above)</i></h3>
+</ul>
 
 </ul>
 
