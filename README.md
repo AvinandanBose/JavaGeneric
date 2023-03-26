@@ -5815,7 +5815,7 @@ Eg <type> e = Eg<type>{
 
 <h3>According to the Java's Inner Class we know : </h3>
 
-<h3><li> 1) Nested Class </li></h3>
+<h3><li> 1) Nested Inner Class inside a Class</li></h3>
 
 <ul>
 
@@ -5844,32 +5844,97 @@ OuterClass.InnerNestedClass innerobj = outerObj. new InnerNestedClass();
 
 </h3>
 
-<h3><li><a href="https://github.com/AvinandanBose/JavaGeneric/blob/main/InnnerClass1.java"> 1. Generic Inner Class- Eg(1)</li></h3>
+<h3><li><a href="https://github.com/AvinandanBose/JavaGeneric/blob/main/InnnerClass1.java"> 1. Nested Inner Class inside a Class- Eg(1)</li></h3>
 
 <h3><li>  Using Upper Bound </li></h3>
 <ul>
-<h3><li><a href="https://github.com/AvinandanBose/JavaGeneric/blob/main/InnnerClass2.java"> 2. Generic Inner Class- Eg(2)</li></h3>
+<h3><li><a href="https://github.com/AvinandanBose/JavaGeneric/blob/main/InnnerClass2.java"> 2. Nested Inner Class inside a Class- Eg(2)</li></h3>
 
 </ul>
 
 
 <h3><li>  Using Upper Bound </li></h3>
 <ul>
-<h3><li><a href="https://github.com/AvinandanBose/JavaGeneric/blob/main/InnnerClass2.java"> 2. Generic Inner Class- Eg(2)</li></h3>
+<h3><li><a href="https://github.com/AvinandanBose/JavaGeneric/blob/main/InnnerClass2.java"> 2. Nested Inner Class inside a Class- Eg(2)</li></h3>
 </ul>
 
 <h3><li>  Using Multiple Upper Bound </li></h3>
 <ul>
-<h3><li><a href="https://github.com/AvinandanBose/JavaGeneric/blob/main/InnnerClass3.java"> 3. Generic Inner Class- Eg(3)</li></h3>
+<h3><li><a href="https://github.com/AvinandanBose/JavaGeneric/blob/main/InnnerClass3.java"> 3. Nested Inner Class inside a Class- Eg(3)</li></h3>
 </ul>
 
 <h3><li>  Using Lower Bound </li></h3>
 <ul>
-<h3><li><a href="https://github.com/AvinandanBose/JavaGeneric/blob/main/InnnerClass3a.java"> 4. Generic Inner Class- Eg(4)</li></h3>
+<h3><li><a href="https://github.com/AvinandanBose/JavaGeneric/blob/main/InnnerClass3a.java"> 4. Nested Inner Class inside a Class- Eg(4)</li></h3>
 </ul>
 
 
 </ul>
+
+<h3><li> 2)  Nested Inner Class in Local Method of a Class </li></h3>
+
+<ul>
+
+<h3>
+
+```Syntax
+
+OuterClass{
+
+ LocalMethod(){
+ 
+ InnerNestedClass{
+
+    }
+ 
+ 
+   }
+   
+   //Creation of Inner Class Object
+   InnerNestedClass innerobj = new InnerNestedClass();
+
+}
+
+main(){
+
+//Creation of Outer Class Object
+OuterClass outerObj = new OuterClass();
+
+//Calling the local Method
+outerObj.LocalMethod();
+
+
+}
+
+```
+
+</h3>
+
+<h3><li><a href="https://github.com/AvinandanBose/JavaGeneric/blob/main/InnnerClass4.java"> 1. Nested Inner Class in Local Method of a Class- Eg(1)</li></h3>
+
+<h3><li>  Using Generic in Method </li></h3>
+<ul>
+<h3><li><a href="https://github.com/AvinandanBose/JavaGeneric/blob/main/InnnerClass5.java"> 2. Nested Inner Class in Local Method of a Class- Eg(2)</li></h3>
+</ul>
+
+<h3><li>  Using Upper Bound  in Method </li></h3>
+<ul>
+<h3><li><a href="https://github.com/AvinandanBose/JavaGeneric/blob/main/InnnerClass6.java"> 3. Nested Inner Class in Local Method of a Class- Eg(3)</li></h3>
+</ul>
+
+<h3><li>  Using Multiple Upper Bound  in Method </li></h3>
+<ul>
+<h3><li><a href="https://github.com/AvinandanBose/JavaGeneric/blob/main/InnnerClass7.java"> 4. Nested Inner Class in Local Method of a Class- Eg(4)</li></h3>
+</ul>
+
+<h3><li>  Using Lower Bound  in Method </li></h3>
+<ul>
+<h3><li><a href="https://github.com/AvinandanBose/JavaGeneric/blob/main/InnnerClass8.java"> 5. Nested Inner Class in Local Method of a Class- Eg(5)</li></h3>
+</ul>
+
+</ul>
+
+
 
 </ul>
 
