@@ -5810,11 +5810,75 @@ Eg <type> e = Eg<type>{
 
 <h2><li>4.  Generic Inner Class </li></h2>
 
+<ul>
+<h3><i>Diamond operator was introduced in Java 7 .The main purpose of the diamond operator is to simplify the use of generics when creating an object. The diamond operator could not be used with Anonymous inner classes in JDK 7. In JDK 9, it can be used with the anonymous class as well to simplify code and improves readability. </i></h3>
+
+<h3>According to the Java's Inner Class we know : </h3>
+
+<h3><li> 1) Nested Class </li></h3>
+
+<ul>
+
+<h3>
+
+```Syntax
+
+OuterClass{
+InnerNestedClass{
+
+    }
+
+}
+
+main(){
+
+//Creation of Outer Class Object
+OuterClass outerObj = new OuterClass();
+
+//Creation of Inner Class Object
+OuterClass.InnerNestedClass innerobj = outerObj. new InnerNestedClass();
+
+}
+
+```
+
+</h3>
+
+<h3><li><a href="https://github.com/AvinandanBose/JavaGeneric/blob/main/InnnerClass1.java"> 1. Generic Inner Class- Eg(1)</li></h3>
+
+<h3><li>  Using Upper Bound </li></h3>
+<ul>
+<h3><li><a href="https://github.com/AvinandanBose/JavaGeneric/blob/main/InnnerClass2.java"> 2. Generic Inner Class- Eg(2)</li></h3>
+
+</ul>
+
+
+<h3><li>  Using Upper Bound </li></h3>
+<ul>
+<h3><li><a href="https://github.com/AvinandanBose/JavaGeneric/blob/main/InnnerClass2.java"> 2. Generic Inner Class- Eg(2)</li></h3>
+</ul>
+
+<h3><li>  Using Multiple Upper Bound </li></h3>
+<ul>
+<h3><li><a href="https://github.com/AvinandanBose/JavaGeneric/blob/main/InnnerClass3.java"> 3. Generic Inner Class- Eg(3)</li></h3>
+</ul>
+
+<h3><li>  Using Lower Bound </li></h3>
+<ul>
+<h3><li><a href="https://github.com/AvinandanBose/JavaGeneric/blob/main/InnnerClass3a.java"> 4. Generic Inner Class- Eg(4)</li></h3>
+</ul>
+
+
+</ul>
+
+</ul>
+
+</ul>
+
+
 </ul>
 
 <h1 align="Center"> ------x-------</h1>
-
-</ul>
 
 <br>
 <br>
