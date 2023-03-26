@@ -6026,6 +6026,41 @@ LocalInterfaceMethod(){...};
 
 </ul>
 
+<h3><li> 3) Static Nested Inner Class </li></h3>
+<ul>
+<h3><i>As the inner class is static , we will not make any object of Outer class and call directly the inner class in respect of outer class to create an object, and object call the inner class method.</i></h3>
+
+<h3>
+
+```Syntax
+
+OuterClass{
+
+static InnerNestedClass{
+
+LocalMethod(){....}
+
+  }
+
+Main(){
+
+OuterClass.InnerNestedClass innerobj = 
+		new OuterClass.InnerNestedClass<>();
+
+innerobj.LocalMethod();
+   }
+
+}
+
+```
+</h3>
+
+<ul>
+<h3><li><a href="https://github.com/AvinandanBose/JavaGeneric/blob/main/InnnerClass10.java"> Static Nested Inner Class-Eg(1)</li></h3>
+</ul>
+
+</ul>
+
 </ul>
 
 
